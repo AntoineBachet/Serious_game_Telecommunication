@@ -1,0 +1,294 @@
+[gd_scene load_steps=13 format=1]
+
+[ext_resource path="res://scripts/game/intro/potato_field.gd" type="Script" id=1]
+[ext_resource path="res://assets/game/intro/potato_field_bg.jpg" type="Texture" id=2]
+[ext_resource path="res://scripts/game/intro/potato_field_camera.gd" type="Script" id=3]
+[ext_resource path="res://scenes/game/cinematic.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/game/intro/potato-2-clip-art-at-clker-com-vector-clip-art-online-royalty-free-X7ILGT-clipart.png" type="Texture" id=5]
+[ext_resource path="res://assets/game/intro/basket.png" type="Texture" id=6]
+[ext_resource path="res://assets/game/intro/ccrop.png" type="Texture" id=7]
+[ext_resource path="res://assets/game/intro/mediumcrop.png" type="Texture" id=8]
+[ext_resource path="res://assets/game/intro/youngcrop.png" type="Texture" id=9]
+[ext_resource path="res://scenes/game/juliette.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/game/character.tscn" type="PackedScene" id=11]
+
+[sub_resource type="Animation" id=1]
+
+resource/name = "leave_screen"
+length = 3.0
+loop = false
+step = 1.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("character/AnimatedSprite/AnimationPlayer:playback/play")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0 ),
+"transitions": FloatArray( 1 ),
+"update": 1,
+"values": [ "walking_right" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("character:transform/pos")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = {
+"times": FloatArray( 0, 3 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1230, 820 ), Vector2( 2500, 820 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("juliette/Sprite/AnimationPlayer:playback/play")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = {
+"times": FloatArray( 0, 3 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 1,
+"values": [ "walking_right", "idle" ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("juliette:transform/pos")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = {
+"times": FloatArray( 0, 3 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 970, 826.742 ), Vector2( 2300, 826.742 ) ]
+}
+
+[node name="Node2D" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="bg" type="Sprite" parent="."]
+
+transform/pos = Vector2( 949.968, 559.889 )
+transform/scale = Vector2( 2.64059, 2.44268 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="cinematicAnimation" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/leave_screen = SubResource( 1 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+transform/pos = Vector2( 960, 540 )
+anchor_mode = 1
+rotating = false
+current = true
+zoom = Vector2( 1, 1 )
+limit/left = -10000000
+limit/top = -10000000
+limit/right = 10000000
+limit/bottom = 10000000
+drag_margin/h_enabled = true
+drag_margin/v_enabled = true
+smoothing/enable = false
+smoothing/speed = 5.0
+drag_margin/left = 0.2
+drag_margin/top = 0.2
+drag_margin/right = 0.2
+drag_margin/bottom = 0.2
+script/script = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="cinematic" parent="." instance=ExtResource( 4 )]
+
+[node name="potato2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 721.41, 870.856 )
+transform/rot = -324.291
+transform/scale = Vector2( 0.0502314, 0.0678973 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="potato1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 687.06, 868.64 )
+transform/rot = -180.0
+transform/scale = Vector2( 0.0502314, 0.0678973 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="potato3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 650.905, 903.015 )
+transform/rot = -180.0
+transform/scale = Vector2( 0.0349962, 0.0463948 )
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="basket" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 699.746, 891.928 )
+transform/rot = -7.92682
+transform/scale = Vector2( 0.888069, 0.860438 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="potato" type="Sprite" parent="basket"]
+
+transform/pos = Vector2( 77.3961, 70.7548 )
+transform/rot = -129.563
+transform/scale = Vector2( 0.0565935, 0.0788641 )
+texture = ExtResource( 5 )
+
+[node name="potatocrop" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 320.405, 772.931 )
+transform/scale = Vector2( 0.960045, 1.26295 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="crop1" type="Sprite" parent="potatocrop"]
+
+transform/pos = Vector2( 171.406, 1.1413 )
+texture = ExtResource( 7 )
+
+[node name="mediumcrop2" type="Sprite" parent="potatocrop"]
+
+transform/pos = Vector2( 234.364, 0.79187 )
+texture = ExtResource( 8 )
+
+[node name="mediumcrop7" type="Sprite" parent="potatocrop"]
+
+transform/pos = Vector2( 206.23, -18.6506 )
+texture = ExtResource( 8 )
+
+[node name="mediumcrop3" type="Sprite" parent="potatocrop"]
+
+transform/pos = Vector2( 88.5376, 57.0096 )
+texture = ExtResource( 8 )
+
+[node name="mediumcrop4" type="Sprite" parent="potatocrop"]
+
+transform/pos = Vector2( 88.5376, 57.0096 )
+texture = ExtResource( 8 )
+
+[node name="mediumcrop8" type="Sprite" parent="potatocrop"]
+
+transform/pos = Vector2( 48.5196, -9.25989 )
+texture = ExtResource( 8 )
+
+[node name="mediumcrop9" type="Sprite" parent="potatocrop"]
+
+transform/pos = Vector2( 132.018, -22.7043 )
+texture = ExtResource( 8 )
+
+[node name="youngcrop" type="Sprite" parent="potatocrop"]
+
+transform/pos = Vector2( 116.191, -0.0653591 )
+texture = ExtResource( 9 )
+
+[node name="youngcrop2" type="Sprite" parent="potatocrop"]
+
+transform/pos = Vector2( 129.461, 13.8663 )
+texture = ExtResource( 9 )
+
+[node name="crop" type="Sprite" parent="potatocrop"]
+
+transform/pos = Vector2( 87.1794, 1.84766 )
+texture = ExtResource( 7 )
+
+[node name="crop6" type="Sprite" parent="potatocrop"]
+
+transform/pos = Vector2( -45.8195, -17.0017 )
+texture = ExtResource( 7 )
+
+[node name="youngcrop1" type="Sprite" parent="potatocrop"]
+
+transform/pos = Vector2( 37.0741, 22.2976 )
+texture = ExtResource( 9 )
+
+[node name="youngcrop4" type="Sprite" parent="potatocrop"]
+
+transform/pos = Vector2( 65.4045, 72.3534 )
+texture = ExtResource( 9 )
+
+[node name="youngcrop3" type="Sprite" parent="potatocrop"]
+
+transform/pos = Vector2( -29.5895, 20.714 )
+texture = ExtResource( 9 )
+
+[node name="youngcrop5" type="Sprite" parent="potatocrop"]
+
+transform/pos = Vector2( 181.859, 64.2629 )
+texture = ExtResource( 9 )
+
+[node name="crop2" type="Sprite" parent="potatocrop"]
+
+transform/pos = Vector2( 247.037, 56.3558 )
+texture = ExtResource( 7 )
+
+[node name="crop5" type="Sprite" parent="potatocrop"]
+
+transform/pos = Vector2( 354.324, 8.8479 )
+texture = ExtResource( 7 )
+
+[node name="crop4" type="Sprite" parent="potatocrop"]
+
+transform/pos = Vector2( 303.007, 59.6174 )
+texture = ExtResource( 7 )
+
+[node name="crop3" type="Sprite" parent="potatocrop"]
+
+transform/pos = Vector2( 143.307, 58.902 )
+texture = ExtResource( 7 )
+
+[node name="mediumcrop" type="Sprite" parent="potatocrop"]
+
+transform/pos = Vector2( -91.6625, 11.877 )
+texture = ExtResource( 8 )
+
+[node name="mediumcrop1" type="Sprite" parent="potatocrop"]
+
+transform/pos = Vector2( 219.782, 64.9276 )
+texture = ExtResource( 8 )
+
+[node name="mediumcrop6" type="Sprite" parent="potatocrop"]
+
+transform/pos = Vector2( 321.86, -1.5835 )
+texture = ExtResource( 8 )
+
+[node name="mediumcrop5" type="Sprite" parent="potatocrop"]
+
+transform/pos = Vector2( 284.9, 7.63019 )
+texture = ExtResource( 8 )
+
+[node name="juliette" parent="." instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 970, 826.742 )
+
+[node name="character" parent="." instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 1230, 820 )
+
+

@@ -1,0 +1,438 @@
+[gd_scene load_steps=21 format=1]
+
+[ext_resource path="res://scripts/game/source/3/shop/shop.gd" type="Script" id=1]
+[ext_resource path="res://scenes/gui.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/game/source/3/shop/background.jpg" type="Texture" id=3]
+[ext_resource path="res://scenes/game/character.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/game/juliette.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/game/source/3/shop/toilet_sign.png" type="Texture" id=6]
+[ext_resource path="res://assets/game/source/3/shop/refrigerated_cabinet.png" type="Texture" id=7]
+[ext_resource path="res://assets/game/source/3/shop/bottle.png" type="Texture" id=8]
+[ext_resource path="res://assets/game/source/3/shop/chocolate_bar.png" type="Texture" id=9]
+[ext_resource path="res://assets/game/source/3/shop/noodles.png" type="Texture" id=10]
+[ext_resource path="res://assets/game/source/3/shop/mahjong_box.png" type="Texture" id=11]
+[ext_resource path="res://assets/game/source/3/shop/storage_sign.png" type="Texture" id=12]
+[ext_resource path="res://scenes/game/cinematic.tscn" type="PackedScene" id=13]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 21.7346, 200.869 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 72.9907 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 26.5402, 194.998 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 59.8394, 187.764 )
+
+[sub_resource type="RectangleShape2D" id=5]
+
+custom_solver_bias = 0.0
+extents = Vector2( 11.3665, 78.0591 )
+
+[sub_resource type="RectangleShape2D" id=6]
+
+custom_solver_bias = 0.0
+extents = Vector2( 11.7034, 186.619 )
+
+[sub_resource type="RectangleShape2D" id=7]
+
+custom_solver_bias = 0.0
+extents = Vector2( 5.33069, 197.534 )
+
+[node name="Node2D" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="gui" parent="." instance=ExtResource( 2 )]
+
+[node name="background" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1263.78, 499.632 )
+texture = ExtResource( 3 )
+
+[node name="character" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 500, 850 )
+
+[node name="juliette" parent="." groups=[
+"canInteractObjects",
+] instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 340, 860 )
+
+[node name="rightLimit" type="StaticBody2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 2610.93, 747.83 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rightLimit"]
+
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="leftLimit" type="StaticBody2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( -89.6642, 793.108 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="leftLimit"]
+
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="doorToOutside" type="Node2D" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 17.9661, 808.287 )
+transform/scale = Vector2( 3, 3 )
+
+[node name="hitbox" type="Area2D" parent="doorToOutside"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="doorToOutside/hitbox"]
+
+shape = SubResource( 2 )
+trigger = false
+_update_shape_index = 0
+
+[node name="doorToToilets" type="Node2D" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 1780.34, 808.287 )
+
+[node name="hitbox" type="Area2D" parent="doorToToilets"]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 3 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="doorToToilets/hitbox"]
+
+shape = SubResource( 3 )
+trigger = false
+_update_shape_index = 0
+
+[node name="sign" type="Sprite" parent="doorToToilets"]
+
+transform/pos = Vector2( 0, -350 )
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 6 )
+
+[node name="cabinetBottles" type="Node2D" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 1160, 790 )
+transform/scale = Vector2( 0.9, 0.9 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="cabinet" type="Sprite" parent="cabinetBottles"]
+
+transform/scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 7 )
+
+[node name="bottles" type="Node2D" parent="cabinetBottles"]
+
+editor/display_folded = true
+
+[node name="bottle1" type="Sprite" parent="cabinetBottles/bottles"]
+
+transform/pos = Vector2( -135.753, -13.8668 )
+transform/scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 8 )
+
+[node name="bottle2" type="Sprite" parent="cabinetBottles/bottles"]
+
+transform/pos = Vector2( -83.1455, -8.02749 )
+transform/scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 8 )
+
+[node name="bottle3" type="Sprite" parent="cabinetBottles/bottles"]
+
+transform/pos = Vector2( -16.5998, -10.3106 )
+transform/scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 8 )
+
+[node name="bottle4" type="Sprite" parent="cabinetBottles/bottles"]
+
+transform/pos = Vector2( 78.3479, -16.0422 )
+transform/scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 8 )
+
+[node name="hitbox" type="Area2D" parent="cabinetBottles"]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cabinetBottles/hitbox"]
+
+shape = SubResource( 4 )
+trigger = false
+_update_shape_index = 0
+
+[node name="cabinetChocolate" type="Node2D" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 1511, 791 )
+transform/scale = Vector2( 0.9, 0.9 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="cabinet" type="Sprite" parent="cabinetChocolate"]
+
+transform/scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 7 )
+
+[node name="chocolate" type="Node2D" parent="cabinetChocolate"]
+
+editor/display_folded = true
+
+[node name="choco1" type="Sprite" parent="cabinetChocolate/chocolate"]
+
+transform/pos = Vector2( -98.2188, -11.0497 )
+transform/scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 9 )
+
+[node name="choco2" type="Sprite" parent="cabinetChocolate/chocolate"]
+
+transform/pos = Vector2( 1.22773, -8.59419 )
+transform/scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 9 )
+
+[node name="choco3" type="Sprite" parent="cabinetChocolate/chocolate"]
+
+transform/pos = Vector2( 99.4469, -8.59419 )
+transform/scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 9 )
+
+[node name="choco4" type="Sprite" parent="cabinetChocolate/chocolate"]
+
+transform/pos = Vector2( -69.9809, -60.1591 )
+transform/scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 9 )
+
+[node name="hitbox" type="Area2D" parent="cabinetChocolate"]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cabinetChocolate/hitbox"]
+
+shape = SubResource( 4 )
+trigger = false
+_update_shape_index = 0
+
+[node name="cabinetNoodles" type="Node2D" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 2160, 810 )
+transform/scale = Vector2( 0.9, 0.9 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="cabinet" type="Sprite" parent="cabinetNoodles"]
+
+transform/scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 7 )
+
+[node name="hitbox" type="Area2D" parent="cabinetNoodles"]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cabinetNoodles/hitbox"]
+
+shape = SubResource( 4 )
+trigger = false
+_update_shape_index = 0
+
+[node name="noodles" type="Node2D" parent="cabinetNoodles"]
+
+[node name="Sprite" type="Sprite" parent="cabinetNoodles/noodles"]
+
+transform/pos = Vector2( -64.5286, -11.6152 )
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 10 )
+
+[node name="Sprite1" type="Sprite" parent="cabinetNoodles/noodles"]
+
+transform/pos = Vector2( -12.9058, -9.03406 )
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 10 )
+
+[node name="Sprite2" type="Sprite" parent="cabinetNoodles/noodles"]
+
+transform/pos = Vector2( -40.1475, -77.8529 )
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 10 )
+
+[node name="mahjongBox" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 927.997, 729.66 )
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 11 )
+
+[node name="hitbox" type="Area2D" parent="mahjongBox"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 5 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="mahjongBox/hitbox"]
+
+shape = SubResource( 5 )
+trigger = false
+_update_shape_index = 0
+
+[node name="doorToChildren" type="Node2D" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 2507, 780 )
+
+[node name="hitbox" type="Area2D" parent="doorToChildren"]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 6 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="doorToChildren/hitbox"]
+
+shape = SubResource( 6 )
+trigger = false
+_update_shape_index = 0
+
+[node name="doorToStorage" type="Node2D" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 746.399, 742.298 )
+
+[node name="hitbox" type="Area2D" parent="doorToStorage"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="doorToStorage/hitbox"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="storageSign" type="Sprite" parent="."]
+
+transform/pos = Vector2( 745.45, 474.482 )
+transform/scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 12 )
+
+[node name="cinematic" parent="." instance=ExtResource( 13 )]
+
+

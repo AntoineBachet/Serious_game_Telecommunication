@@ -1,0 +1,70 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://scripts/game/source/2/casino/die.gd" type="Script" id=1]
+[ext_resource path="res://assets/game/source/2/casino/dice.png" type="Texture" id=2]
+[ext_resource path="res://themes/text30.tres" type="Theme" id=3]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+
+custom_solver_bias = 0.0
+points = Vector2Array( -49.9158, 54.862, -62.2393, 45.1792, -73.2425, 31.5353, -79.8444, -23.9207, -77.2036, -35.8041, -72.3622, -44.1665, -65.3202, -52.0888, -14.7057, -82.4575, -3.26239, -83.3377, 8.18091, -82.8976, 64.9572, -55.6098, 70.2388, -48.1276, 75.9604, -39.3251, 79.0413, -31.8429, 73.7598, 18.3315, 70.6788, 25.3735, 63.6368, 38.5773, 17.4236, 78.6288, 5.10004, 84.3504, -8.98401, 81.2696 )
+
+[node name="dice" type="RigidBody2D"]
+
+transform/pos = Vector2( 0, 1 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+mode = 0
+mass = 1.0
+friction = 1.0
+bounce = 0.0
+gravity_scale = 1.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+velocity/linear = Vector2( 0, 0 )
+velocity/angular = 0.0
+damp_override/linear = -1.0
+damp_override/angular = -1.0
+script/script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+
+build_mode = 0
+polygon = Vector2Array( -8.98401, 81.2696, 5.10004, 84.3504, 17.4236, 78.6288, 63.6368, 38.5773, 70.6788, 25.3735, 73.7598, 18.3315, 79.0413, -31.8429, 75.9604, -39.3251, 70.2388, -48.1276, 64.9572, -55.6098, 8.18091, -82.8976, -3.26239, -83.3377, -14.7057, -82.4575, -65.3202, -52.0888, -72.3622, -44.1665, -77.2036, -35.8041, -79.8444, -23.9207, -73.2425, 31.5353, -62.2393, 45.1792, -49.9158, 54.862 )
+shape_range = Vector2( 0, 0 )
+trigger = false
+
+[node name="Label" type="RichTextLabel" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+theme/theme = ExtResource( 3 )
+margin/left = -56.0
+margin/top = -41.0
+margin/right = 60.0
+margin/bottom = 38.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode/enabled = false
+bbcode/bbcode = ""
+visible_characters = -1
+percent_visible = 1.0
+
+[connection signal="mouse_enter" from="." to="." method="_on_dice_mouse_enter"]
+
+[connection signal="mouse_exit" from="." to="." method="_on_dice_mouse_exit"]
+
+

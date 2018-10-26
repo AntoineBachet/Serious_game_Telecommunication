@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://scripts/ResizableWindowDialog.gd" type="Script" id=1]
+
+[node name="ResizableWindowDialog" type="WindowDialog"]
+
+anchor/left = 3
+anchor/top = 3
+anchor/right = 3
+anchor/bottom = 3
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 606.0
+margin/top = 313.0
+margin/right = -90.0
+margin/bottom = -87.0
+popup/exclusive = false
+window/title = ""
+script/script = ExtResource( 1 )
+
+

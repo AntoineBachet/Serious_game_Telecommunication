@@ -1,0 +1,101 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://themes/text30.tres" type="Theme" id=1]
+[ext_resource path="res://scripts/game/intro/postApocalypse.gd" type="Script" id=2]
+[ext_resource path="res://assets/game/intro/deer-anim3.ogv" type="VideoStream" id=3]
+
+[node name="Node2D" type="Control"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+theme/theme = ExtResource( 1 )
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+script/script = ExtResource( 2 )
+
+[node name="AnimationPlayer" type="VideoPlayer" parent="."]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = -1920.0
+margin/bottom = -1080.0
+stream/audio_track = 0
+stream/stream = ExtResource( 3 )
+stream/volume_db = 0.0
+stream/autoplay = true
+stream/paused = false
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="text" type="RichTextLabel" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 400.0
+margin/top = 42.0
+margin/right = 1580.0
+margin/bottom = 627.0
+bbcode/enabled = true
+bbcode/bbcode = ""
+visible_characters = -1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="nextButton" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 1258.0
+margin/top = 1030.0
+margin/right = 1919.0
+margin/bottom = 1080.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Suivant"
+flat = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="skipButton" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 1093.0
+margin/top = 990.0
+margin/right = 1211.0
+margin/bottom = 1052.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Skip"
+flat = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="pressed" from="nextButton" to="." method="_on_nextButton_pressed"]
+
+[connection signal="pressed" from="skipButton" to="." method="_on_skipButton_pressed"]
+
+

@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://scripts/game/quiz.gd" type="Script" id=1]
+[ext_resource path="res://themes/text30.tres" type="Theme" id=2]
+
+[node name="quiz" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = false
+autostart = false
+
+[node name="pass" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+theme/theme = ExtResource( 2 )
+margin/left = 1394.0
+margin/top = 971.0
+margin/right = 1521.0
+margin/bottom = 1032.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Pass"
+flat = false
+
+[node name="Validate" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+theme/theme = ExtResource( 2 )
+margin/left = 1394.0
+margin/top = 893.0
+margin/right = 1521.0
+margin/bottom = 954.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Validate"
+flat = false
+
+

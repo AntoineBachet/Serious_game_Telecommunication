@@ -1,0 +1,121 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://themes/menu.tres" type="Theme" id=1]
+[ext_resource path="res://scripts/menu/about.gd" type="Script" id=2]
+[ext_resource path="res://assets/menu/bg2.png" type="Texture" id=3]
+
+[node name="Control" type="Control"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+theme/theme = ExtResource( 1 )
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+script/script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="background" type="TextureFrame" parent="."]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -200.0
+margin/top = 0.0
+margin/right = -200.0
+margin/bottom = 0.0
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 400.0
+margin/top = 20.0
+margin/right = 400.0
+margin/bottom = 20.0
+custom_constants/separation = 20
+alignment = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="menuTitle" type="Label" parent="VBoxContainer"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 0
+size_flags/vertical = 0
+margin/left = 481.0
+margin/top = 0.0
+margin/right = 638.0
+margin/bottom = 40.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "A propos"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="aboutText" type="RichTextLabel" parent="VBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 3
+margin/left = 0.0
+margin/top = 60.0
+margin/right = 1120.0
+margin/bottom = 980.0
+bbcode/enabled = false
+bbcode/bbcode = ""
+visible_characters = -1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="returnButton" type="Button" parent="VBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 0
+margin/left = 502.0
+margin/top = 1000.0
+margin/right = 617.0
+margin/bottom = 1040.0
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+text = "Retour"
+flat = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="pressed" from="VBoxContainer/returnButton" to="." method="_on_returnButton_pressed"]
+
+

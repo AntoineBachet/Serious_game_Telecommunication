@@ -1,0 +1,637 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://themes/menu.tres" type="Theme" id=1]
+[ext_resource path="res://scripts/menu/settings.gd" type="Script" id=2]
+[ext_resource path="res://assets/menu/bg2.png" type="Texture" id=3]
+
+[sub_resource type="Theme" id=1]
+
+LineEdit/colors/cursor_color = Color( 0.941176, 0.941176, 0.941176, 1 )
+LineEdit/colors/font_color = Color( 0.878431, 0.878431, 0.878431, 1 )
+LineEdit/colors/font_color_selected = Color( 1, 1, 1, 1 )
+LineEdit/colors/selection_color = Color( 0.490196, 0.490196, 0.490196, 1 )
+LineEdit/constants/minimum_spaces = 12
+LineEdit/fonts/font = null
+LineEdit/styles/focus = null
+LineEdit/styles/normal = null
+LineEdit/styles/read_only = null
+
+[node name="Control" type="Control"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+theme/theme = ExtResource( 1 )
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+script/script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="background" type="TextureFrame" parent="."]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -200.0
+margin/top = 0.0
+margin/right = -200.0
+margin/bottom = 0.0
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 3
+size_flags/vertical = 3
+margin/left = 300.0
+margin/top = 20.0
+margin/right = 300.0
+margin/bottom = 20.0
+alignment = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="menuTitle" type="Label" parent="VBoxContainer"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 1320.0
+margin/bottom = 40.0
+text = "Options"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 3
+margin/left = 0.0
+margin/top = 40.0
+margin/right = 1320.0
+margin/bottom = 960.0
+alignment = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="languageBox" type="HBoxContainer" parent="VBoxContainer/VBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 300.0
+margin/right = 1320.0
+margin/bottom = 346.0
+alignment = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="languageButton" type="OptionButton" parent="VBoxContainer/VBoxContainer/languageBox"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 660.0
+margin/bottom = 46.0
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+flat = false
+align = 0
+selected = -1
+items = [  ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="languageLabel" type="Label" parent="VBoxContainer/VBoxContainer/languageBox"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 660.0
+margin/top = 3.0
+margin/right = 1320.0
+margin/bottom = 43.0
+text = "Langue"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="fullscreenBox" type="HBoxContainer" parent="VBoxContainer/VBoxContainer"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 346.0
+margin/right = 1320.0
+margin/bottom = 394.0
+alignment = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="fullscreenButton" type="CheckButton" parent="VBoxContainer/VBoxContainer/fullscreenBox"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 2
+margin/left = 292.0
+margin/top = 0.0
+margin/right = 368.0
+margin/bottom = 48.0
+toggle_mode = true
+enabled_focus_mode = 0
+shortcut = null
+flat = false
+align = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="fullscreenLabel" type="Label" parent="VBoxContainer/VBoxContainer/fullscreenBox"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 660.0
+margin/top = 4.0
+margin/right = 1320.0
+margin/bottom = 44.0
+text = "Mode plein écran"
+align = 1
+valign = 3
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="musicBox" type="HBoxContainer" parent="VBoxContainer/VBoxContainer"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 394.0
+margin/right = 1320.0
+margin/bottom = 482.0
+alignment = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="musicBox" type="VBoxContainer" parent="VBoxContainer/VBoxContainer/musicBox"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 660.0
+margin/bottom = 88.0
+alignment = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="musicBox" type="HBoxContainer" parent="VBoxContainer/VBoxContainer/musicBox/musicBox"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 660.0
+margin/bottom = 48.0
+alignment = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="musicSlider" type="HSlider" parent="VBoxContainer/VBoxContainer/musicBox/musicBox/musicBox"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 16.0
+margin/right = 584.0
+margin/bottom = 32.0
+range/min = 0.0
+range/max = 100.0
+range/step = 1.0
+range/page = 0.0
+range/value = 1.0
+range/exp_edit = false
+range/rounded = false
+tick_count = 0
+ticks_on_borders = false
+focus_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="musicButton" type="CheckButton" parent="VBoxContainer/VBoxContainer/musicBox/musicBox/musicBox"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 0
+size_flags/vertical = 2
+margin/left = 584.0
+margin/top = 0.0
+margin/right = 660.0
+margin/bottom = 48.0
+toggle_mode = true
+enabled_focus_mode = 0
+shortcut = null
+flat = false
+align = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="musicSliderLevel" type="Label" parent="VBoxContainer/VBoxContainer/musicBox/musicBox"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 48.0
+margin/right = 660.0
+margin/bottom = 88.0
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="musicLabel" type="Label" parent="VBoxContainer/VBoxContainer/musicBox"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 660.0
+margin/top = 24.0
+margin/right = 1320.0
+margin/bottom = 64.0
+text = "Musique"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="soundBox" type="HBoxContainer" parent="VBoxContainer/VBoxContainer"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 482.0
+margin/right = 1320.0
+margin/bottom = 570.0
+alignment = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="soundBox" type="VBoxContainer" parent="VBoxContainer/VBoxContainer/soundBox"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 660.0
+margin/bottom = 88.0
+alignment = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="soundBox" type="HBoxContainer" parent="VBoxContainer/VBoxContainer/soundBox/soundBox"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 660.0
+margin/bottom = 48.0
+alignment = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="soundSlider" type="HSlider" parent="VBoxContainer/VBoxContainer/soundBox/soundBox/soundBox"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 16.0
+margin/right = 584.0
+margin/bottom = 32.0
+range/min = 0.0
+range/max = 100.0
+range/step = 1.0
+range/page = 0.0
+range/value = 1.0
+range/exp_edit = false
+range/rounded = false
+tick_count = 0
+ticks_on_borders = true
+focus_mode = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="soundButton" type="CheckButton" parent="VBoxContainer/VBoxContainer/soundBox/soundBox/soundBox"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 0
+size_flags/vertical = 2
+margin/left = 584.0
+margin/top = 0.0
+margin/right = 660.0
+margin/bottom = 48.0
+toggle_mode = true
+enabled_focus_mode = 0
+shortcut = null
+flat = false
+align = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="soundSliderLevel" type="Label" parent="VBoxContainer/VBoxContainer/soundBox/soundBox"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 48.0
+margin/right = 660.0
+margin/bottom = 88.0
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="soundLabel" type="Label" parent="VBoxContainer/VBoxContainer/soundBox"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 660.0
+margin/top = 24.0
+margin/right = 1320.0
+margin/bottom = 64.0
+text = "Son"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="debugBox" type="HBoxContainer" parent="VBoxContainer/VBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 570.0
+margin/right = 1320.0
+margin/bottom = 620.0
+alignment = 0
+
+[node name="debugButton" type="CheckButton" parent="VBoxContainer/VBoxContainer/debugBox"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 2
+margin/left = 182.0
+margin/top = 0.0
+margin/right = 258.0
+margin/bottom = 50.0
+toggle_mode = true
+enabled_focus_mode = 0
+shortcut = null
+flat = false
+align = 0
+
+[node name="debugField" type="HBoxContainer" parent="VBoxContainer/VBoxContainer/debugBox"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 2
+margin/left = 474.0
+margin/top = 0.0
+margin/right = 846.0
+margin/bottom = 50.0
+custom_constants/separation = 20
+alignment = 0
+
+[node name="debugLineEdit" type="LineEdit" parent="VBoxContainer/VBoxContainer/debugBox/debugField"]
+
+rect/min_size = Vector2( 300, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 3
+theme/theme = SubResource( 1 )
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 300.0
+margin/bottom = 50.0
+placeholder/alpha = 0.2
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="debugFieldButton" type="Button" parent="VBoxContainer/VBoxContainer/debugBox/debugField"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 320.0
+margin/top = 0.0
+margin/right = 372.0
+margin/bottom = 50.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "OK"
+flat = false
+
+[node name="debugLabel" type="Label" parent="VBoxContainer/VBoxContainer/debugBox"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 880.0
+margin/top = 5.0
+margin/right = 1320.0
+margin/bottom = 45.0
+text = "Debug mode"
+align = 1
+valign = 3
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="resetButton" type="Button" parent="VBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 0
+size_flags/vertical = 2
+margin/left = 374.0
+margin/top = 960.0
+margin/right = 945.0
+margin/bottom = 1000.0
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+text = "Réinitialiser les valeurs par défaut"
+flat = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="buttonsBox" type="HBoxContainer" parent="VBoxContainer"]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 1000.0
+margin/right = 1320.0
+margin/bottom = 1040.0
+alignment = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="applyButton" type="Button" parent="VBoxContainer/buttonsBox"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 2
+margin/left = 245.0
+margin/top = 0.0
+margin/right = 414.0
+margin/bottom = 40.0
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+text = "Appliquer"
+flat = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="returnButton" type="Button" parent="VBoxContainer/buttonsBox"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 1
+size_flags/vertical = 2
+margin/left = 932.0
+margin/top = 0.0
+margin/right = 1047.0
+margin/bottom = 40.0
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+text = "Retour"
+flat = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="pressed" from="VBoxContainer/VBoxContainer/debugBox/debugField/debugFieldButton" to="." method="_on_debugFieldButton_pressed"]
+
+[connection signal="pressed" from="VBoxContainer/buttonsBox/applyButton" to="." method="_on_applyButton_pressed"]
+
+[connection signal="pressed" from="VBoxContainer/buttonsBox/returnButton" to="." method="_on_returnButton_pressed"]
+
+

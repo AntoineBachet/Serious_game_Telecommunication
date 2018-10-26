@@ -1,0 +1,294 @@
+[gd_scene load_steps=15 format=1]
+
+[ext_resource path="res://scripts/game/canal/2/loft.gd" type="Script" id=1]
+[ext_resource path="res://assets/game/canal/2/Loft.jpg" type="Texture" id=2]
+[ext_resource path="res://scenes/gui.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/game/character.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/game/juliette.tscn" type="PackedScene" id=5]
+[ext_resource path="res://themes/bubbles.tres" type="Theme" id=6]
+[ext_resource path="res://assets/game/bubble_medium.png" type="Texture" id=7]
+[ext_resource path="res://assets/game/dialogue_next.png" type="Texture" id=8]
+[ext_resource path="res://scenes/game/cinematic.tscn" type="PackedScene" id=9]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=5]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[node name="Node2D" type="Node2D"]
+
+transform/pos = Vector2( 5, 0 )
+script/script = ExtResource( 1 )
+
+[node name="bg" type="Sprite" parent="."]
+
+transform/pos = Vector2( 2662.93, 545.96 )
+transform/scale = Vector2( 1, 1.02812 )
+z/z = -1
+texture = ExtResource( 2 )
+
+[node name="gui" parent="." instance=ExtResource( 3 )]
+
+[node name="character" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 218.283, 859.631 )
+
+[node name="juliette" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 85.1016, 903.655 )
+
+[node name="door" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+transform/pos = Vector2( 298.849, 777.485 )
+transform/scale = Vector2( 3.29198, 4.09717 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="hitbox" type="Area2D" parent="door"]
+
+transform/pos = Vector2( 12.4454, -2.41082 )
+transform/scale = Vector2( 1.20824, 1.13602 )
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="door/hitbox"]
+
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="leftLimit" type="StaticBody2D" parent="."]
+
+transform/pos = Vector2( -32.1658, 785.286 )
+transform/scale = Vector2( 2.92497, 11.4806 )
+input/pickable = false
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="leftLimit"]
+
+shape = SubResource( 2 )
+trigger = false
+_update_shape_index = 0
+
+[node name="rightLimit" type="StaticBody2D" parent="."]
+
+transform/pos = Vector2( 5346.94, 784.911 )
+transform/scale = Vector2( 2.92497, 11.4806 )
+input/pickable = false
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rightLimit"]
+
+shape = SubResource( 2 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Nikola" type="Node2D" parent="." groups=[
+"character",
+"canInteractObjects",
+]]
+
+[node name="Nikola" type="Sprite" parent="Nikola"]
+
+transform/pos = Vector2( 4186.01, 776.299 )
+transform/scale = Vector2( 2, 2 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Nikola"]
+
+transform/pos = Vector2( 4174.7, 767.13 )
+transform/scale = Vector2( 2.29946, 4.99312 )
+input/pickable = false
+shapes/0/shape = SubResource( 3 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Nikola/StaticBody2D"]
+
+shape = SubResource( 3 )
+trigger = false
+_update_shape_index = 0
+
+[node name="hitbox" type="Area2D" parent="Nikola"]
+
+transform/pos = Vector2( 4170.49, 808.306 )
+transform/scale = Vector2( 1.98875, 3.12093 )
+input/pickable = true
+shapes/0/shape = SubResource( 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Nikola/hitbox"]
+
+shape = SubResource( 4 )
+trigger = false
+_update_shape_index = 0
+
+[node name="text" type="Label" parent="Nikola"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+theme/theme = ExtResource( 6 )
+margin/left = 3917.0
+margin/top = 512.0
+margin/right = 4147.0
+margin/bottom = 661.0
+align = 1
+valign = 1
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="bubble" type="Sprite" parent="Nikola"]
+
+transform/pos = Vector2( 4048.02, 625.995 )
+z/z = -1
+texture = ExtResource( 7 )
+
+[node name="next" type="Sprite" parent="Nikola"]
+
+transform/pos = Vector2( 4170.75, 585.121 )
+texture = ExtResource( 8 )
+
+[node name="ArcardeGames" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+transform/pos = Vector2( 5059.23, 713.616 )
+
+[node name="hitbox" type="Area2D" parent="ArcardeGames"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 5 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ArcardeGames/hitbox"]
+
+shape = SubResource( 5 )
+trigger = false
+_update_shape_index = 0
+
+[node name="docs" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+transform/pos = Vector2( 3244.71, 629.935 )
+transform/scale = Vector2( 1.47921, 1.45243 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="hitbox" type="Area2D" parent="docs"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="docs/hitbox"]
+
+shape = SubResource( 4 )
+trigger = false
+_update_shape_index = 0
+
+[node name="piano" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+transform/pos = Vector2( 1084.48, 801.404 )
+transform/scale = Vector2( 1.35918, 1.88081 )
+
+[node name="hitbox" type="Area2D" parent="piano"]
+
+transform/pos = Vector2( -35.2764, 16.3882 )
+transform/scale = Vector2( 4.15416, 1.71545 )
+input/pickable = true
+shapes/0/shape = SubResource( 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="piano/hitbox"]
+
+shape = SubResource( 4 )
+trigger = false
+_update_shape_index = 0
+
+[node name="cinematic" parent="." instance=ExtResource( 9 )]
+
+

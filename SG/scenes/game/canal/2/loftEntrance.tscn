@@ -1,0 +1,255 @@
+[gd_scene load_steps=14 format=1]
+
+[ext_resource path="res://scripts/game/canal/2/loftEntrance.gd" type="Script" id=1]
+[ext_resource path="res://assets/game/canal/2/B2N2_EntreeLoft.jpg" type="Texture" id=2]
+[ext_resource path="res://scenes/game/juliette.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/game/character.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/gui.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/game/canal/2/Digicode_SansQuadrillage.png" type="Texture" id=6]
+[ext_resource path="res://assets/game/canal/GrillePorteToit.png" type="Texture" id=7]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 15.4029 )
+
+[sub_resource type="RectangleShape2D" id=5]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=6]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[node name="Node2D" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="bg" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1431.14, 543.481 )
+transform/scale = Vector2( 1.01905, 1.02178 )
+texture = ExtResource( 2 )
+
+[node name="elevator" type="Sprite" parent="."]
+
+transform/pos = Vector2( 305.216, 754.559 )
+transform/scale = Vector2( 4.61607, 5.72191 )
+
+[node name="hitbox" type="Area2D" parent="elevator" groups=[
+"canInteractObjects",
+]]
+
+transform/pos = Vector2( -0.45543, 8.86742 )
+transform/scale = Vector2( 1.22401, 1.27711 )
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="elevator/hitbox"]
+
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="juliette" parent="." instance=ExtResource( 3 )]
+
+transform/pos = Vector2( 94.8188, 903.67 )
+
+[node name="character" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 268.822, 864.607 )
+
+[node name="gui" parent="." instance=ExtResource( 5 )]
+
+[node name="door" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+transform/pos = Vector2( 2165.5, 766.524 )
+transform/scale = Vector2( 5.02061, 4.70543 )
+
+[node name="hitbox" type="Area2D" parent="door"]
+
+transform/pos = Vector2( -5.74374, 10.734 )
+transform/scale = Vector2( 1.17949, 1.33544 )
+input/pickable = true
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="door/hitbox"]
+
+shape = SubResource( 2 )
+trigger = false
+_update_shape_index = 0
+
+[node name="leftLimit" type="StaticBody2D" parent="."]
+
+transform/pos = Vector2( -19.5537, 818.924 )
+transform/scale = Vector2( 3.45062, 18.3133 )
+input/pickable = false
+shapes/0/shape = SubResource( 3 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="leftLimit"]
+
+shape = SubResource( 3 )
+trigger = false
+_update_shape_index = 0
+
+[node name="rightLimit" type="StaticBody2D" parent="."]
+
+transform/pos = Vector2( 2783.68, 757.019 )
+transform/scale = Vector2( 3.45062, 18.3133 )
+input/pickable = false
+shapes/0/shape = SubResource( 3 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rightLimit"]
+
+shape = SubResource( 3 )
+trigger = false
+_update_shape_index = 0
+
+[node name="wall" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+transform/pos = Vector2( 2400, 792.197 )
+transform/scale = Vector2( 0.6, 0.6 )
+
+[node name="hitbox" type="Area2D" parent="wall"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 4 )
+shapes/0/transform = Matrix32( 8.60387, 0, 0, 6.86841, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wall/hitbox"]
+
+transform/scale = Vector2( 8.60387, 6.86841 )
+shape = SubResource( 4 )
+trigger = false
+_update_shape_index = 0
+
+[node name="digicode" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+transform/pos = Vector2( 1934.4, 767.28 )
+transform/scale = Vector2( 0.129889, 0.13646 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="hitbox" type="Area2D" parent="digicode"]
+
+transform/scale = Vector2( 10, 5 )
+input/pickable = true
+shapes/0/shape = SubResource( 5 )
+shapes/0/transform = Matrix32( 3, 0, 0, 5, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="digicode/hitbox"]
+
+transform/scale = Vector2( 3, 5 )
+shape = SubResource( 5 )
+trigger = false
+_update_shape_index = 0
+
+[node name="staircase" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+transform/pos = Vector2( 1021.1, 754.988 )
+transform/scale = Vector2( 13.5886, 9.19233 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="hitbox" type="Area2D" parent="staircase"]
+
+transform/scale = Vector2( 0.488498, 0.832046 )
+input/pickable = true
+shapes/0/shape = SubResource( 6 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="staircase/hitbox"]
+
+shape = SubResource( 6 )
+trigger = false
+_update_shape_index = 0
+
+[node name="grille" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1012.05, 687.287 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+

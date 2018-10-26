@@ -1,0 +1,164 @@
+[gd_scene load_steps=14 format=1]
+
+[ext_resource path="res://scripts/game/source/2/controlRoom/controlRoom.gd" type="Script" id=1]
+[ext_resource path="res://assets/game/source/2/casino/background.jpg" type="Texture" id=2]
+[ext_resource path="res://scenes/gui.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/game/character.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/game/juliette.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/game/source/2/casino/door.jpg" type="Texture" id=6]
+[ext_resource path="res://assets/game/tutorial/1/house/desk.png" type="Texture" id=7]
+[ext_resource path="res://assets/game/source/2/controlRoom/computer.png" type="Texture" id=8]
+[ext_resource path="res://scenes/game/cinematic.tscn" type="PackedScene" id=9]
+[ext_resource path="res://assets/game/source/2/controlRoom/controlRoomScreen.png" type="Texture" id=10]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 28.5274, 172.452 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 28.5273, 147.276 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 74.1824, 278.393 )
+
+[node name="Node2D" type="Node2D"]
+
+transform/pos = Vector2( 0, 384 )
+script/script = ExtResource( 1 )
+
+[node name="background" type="Sprite" parent="."]
+
+transform/pos = Vector2( 0, 69.9999 )
+transform/scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 2 )
+
+[node name="gui" parent="." instance=ExtResource( 3 )]
+
+[node name="character" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 410, 477.771 )
+
+[node name="juliette" parent="." groups=[
+"canInteractObjects",
+] instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 158, 490 )
+
+[node name="leftLimit" type="StaticBody2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( -17.6227, 470.777 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="leftLimit"]
+
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="rightLimit" type="StaticBody2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 1873.04, 475.812 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rightLimit"]
+
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="backToCasino" type="Node2D" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 416.998, 412.812 )
+
+[node name="hitbox" type="Area2D" parent="backToCasino"]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="backToCasino/hitbox"]
+
+shape = SubResource( 2 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Sprite" type="Sprite" parent="backToCasino"]
+
+transform/scale = Vector2( 1.4, 1.4 )
+texture = ExtResource( 6 )
+
+[node name="desk" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1185, 466.318 )
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 7 )
+
+[node name="computer" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 1185, 398.29 )
+transform/scale = Vector2( 0.32, 0.25 )
+texture = ExtResource( 8 )
+
+[node name="hitbox" type="Area2D" parent="computer"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 3 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="computer/hitbox"]
+
+shape = SubResource( 3 )
+trigger = false
+_update_shape_index = 0
+
+[node name="cinematic" parent="." instance=ExtResource( 9 )]
+
+[node name="Screen" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1184.75, 128.155 )
+transform/scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 10 )
+
+

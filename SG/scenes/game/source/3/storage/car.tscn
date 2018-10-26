@@ -1,0 +1,388 @@
+[gd_scene load_steps=23 format=1]
+
+[ext_resource path="res://themes/text24.tres" type="Theme" id=1]
+[ext_resource path="res://scripts/game/source/3/storage/car.gd" type="Script" id=2]
+[ext_resource path="res://scenes/game/riddleOverlay.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/game/white.jpg" type="Texture" id=4]
+[ext_resource path="res://assets/game/source/3/storage/carRiddle1_fr.png" type="Texture" id=5]
+[ext_resource path="res://assets/game/source/3/storage/carRiddle2.png" type="Texture" id=6]
+[ext_resource path="res://assets/game/source/3/storage/glovebox.jpg" type="Texture" id=7]
+[ext_resource path="res://assets/game/source/3/storage/glovebox_button.jpg" type="Texture" id=8]
+[ext_resource path="res://assets/game/source/3/storage/glovebox_button_hover.jpg" type="Texture" id=9]
+[ext_resource path="res://assets/game/source/3/storage/cardboardBoxes.png" type="Texture" id=10]
+[ext_resource path="res://assets/game/source/3/storage/glovebox_open.jpg" type="Texture" id=11]
+[ext_resource path="res://assets/game/source/3/storage/glovebox_open_button_top.jpg" type="Texture" id=12]
+[ext_resource path="res://assets/game/source/3/storage/glovebox_open_button_top_hover.jpg" type="Texture" id=13]
+[ext_resource path="res://assets/game/source/3/storage/glovebox_open_button_bottom.jpg" type="Texture" id=14]
+[ext_resource path="res://assets/game/source/3/storage/glovebox_open_button_bottom_hover.jpg" type="Texture" id=15]
+[ext_resource path="res://assets/game/source/3/storage/carHat.png" type="Texture" id=16]
+[ext_resource path="res://assets/game/source/3/storage/carHat_hover.png" type="Texture" id=17]
+[ext_resource path="res://assets/game/source/3/storage/steering_wheel.png" type="Texture" id=18]
+[ext_resource path="res://assets/game/source/3/storage/walrus.png" type="Texture" id=19]
+[ext_resource path="res://assets/game/source/3/storage/walrus_hover.png" type="Texture" id=20]
+[ext_resource path="res://scenes/game/oscilloscope.tscn" type="PackedScene" id=21]
+[ext_resource path="res://scenes/game/codepad.tscn" type="PackedScene" id=22]
+
+[node name="Control" type="Control"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+theme/theme = ExtResource( 1 )
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+script/script = ExtResource( 2 )
+
+[node name="riddleOverlay" parent="." instance=ExtResource( 3 )]
+
+[node name="background" type="TextureFrame" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 1920.0
+margin/bottom = 1080.0
+texture = ExtResource( 4 )
+modulate = Color( 0.289063, 0.162589, 0.014679, 1 )
+expand = true
+stretch_mode = 0
+
+[node name="Panel" type="Panel" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 809.0
+margin/top = 509.0
+margin/right = 1254.0
+margin/bottom = 772.0
+
+[node name="frequencySlider" type="HSlider" parent="."]
+
+editor/display_folded = true
+rect/min_size = Vector2( 400, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 830.0
+margin/top = 561.0
+margin/right = 1230.0
+margin/bottom = 577.0
+range/min = 800.0
+range/max = 900.0
+range/step = 1.0
+range/page = 0.0
+range/value = 800.0
+range/exp_edit = false
+range/rounded = false
+tick_count = 0
+ticks_on_borders = false
+focus_mode = 2
+
+[node name="frequencySliderLabel" type="Label" parent="frequencySlider"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 150.0
+margin/top = -25.0
+margin/right = 256.0
+margin/bottom = 0.0
+text = "Fréquence"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="frequencySliderValue" type="Label" parent="frequencySlider"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 190.0
+margin/top = 25.0
+margin/right = 230.0
+margin/bottom = 50.0
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="canalSlider" type="HSlider" parent="."]
+
+editor/display_folded = true
+rect/min_size = Vector2( 200, 0 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 928.0
+margin/top = 651.0
+margin/right = 1128.0
+margin/bottom = 667.0
+range/min = 1.0
+range/max = 30.0
+range/step = 1.0
+range/page = 0.0
+range/value = 1.0
+range/exp_edit = false
+range/rounded = false
+tick_count = 0
+ticks_on_borders = true
+focus_mode = 2
+
+[node name="canalSliderLabel" type="Label" parent="canalSlider"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 75.0
+margin/top = -25.0
+margin/right = 132.0
+margin/bottom = 0.0
+text = "Canal"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="canalSliderValue" type="Label" parent="canalSlider"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 85.0
+margin/top = 25.0
+margin/right = 125.0
+margin/bottom = 50.0
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="scanButton" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 1002.0
+margin/top = 721.0
+margin/right = 1062.0
+margin/bottom = 752.0
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+text = "Scan"
+flat = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+
+editor/display_folded = true
+rect/scale = Vector2( 0.7, 0.7 )
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 793.0
+margin/top = 338.0
+margin/right = 2343.0
+margin/bottom = 542.0
+alignment = 0
+
+[node name="carRiddle1" type="TextureFrame" parent="VBoxContainer"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 1550.0
+margin/bottom = 100.0
+texture = ExtResource( 5 )
+stretch_mode = 0
+
+[node name="carRiddle2" type="TextureFrame" parent="VBoxContainer"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 104.0
+margin/right = 1550.0
+margin/bottom = 204.0
+texture = ExtResource( 6 )
+stretch_mode = 0
+
+[node name="instructions" type="RichTextLabel" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 783.0
+margin/top = 139.0
+margin/right = 1863.0
+margin/bottom = 288.0
+bbcode/enabled = false
+bbcode/bbcode = ""
+visible_characters = -1
+
+[node name="glovebox" type="TextureFrame" parent="."]
+
+editor/display_folded = true
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 1471.0
+margin/top = 813.0
+margin/right = 1871.0
+margin/bottom = 989.0
+texture = ExtResource( 7 )
+stretch_mode = 0
+
+[node name="TextureButton" type="TextureButton" parent="glovebox"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 160.0
+margin/top = 61.0
+margin/right = 239.0
+margin/bottom = 109.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 8 )
+textures/hover = ExtResource( 9 )
+textures/disabled = ExtResource( 10 )
+params/resize_mode = 0
+params/stretch_mode = 0
+
+[node name="glovebox_open" type="TextureFrame" parent="."]
+
+editor/display_folded = true
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 1471.0
+margin/top = 813.0
+margin/right = 1871.0
+margin/bottom = 989.0
+texture = ExtResource( 11 )
+stretch_mode = 0
+
+[node name="TextureButtonTop" type="TextureButton" parent="glovebox_open"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 160.0
+margin/top = 0.0
+margin/right = 239.0
+margin/bottom = 40.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 12 )
+textures/hover = ExtResource( 13 )
+params/resize_mode = 0
+params/stretch_mode = 0
+
+[node name="TextureButtonBottom" type="TextureButton" parent="glovebox_open"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 160.0
+margin/top = 167.0
+margin/right = 239.0
+margin/bottom = 207.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 14 )
+textures/hover = ExtResource( 15 )
+params/resize_mode = 0
+params/stretch_mode = 0
+
+[node name="hat" type="TextureButton" parent="glovebox_open"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 16.0
+margin/top = 22.0
+margin/right = 166.0
+margin/bottom = 155.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 16 )
+textures/hover = ExtResource( 17 )
+params/resize_mode = 0
+params/stretch_mode = 0
+
+[node name="steeringWheel" type="TextureFrame" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 29.0
+margin/top = 139.0
+margin/right = 779.0
+margin/bottom = 889.0
+texture = ExtResource( 18 )
+stretch_mode = 0
+
+[node name="horn" type="TextureButton" parent="steeringWheel"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 321.0
+margin/top = 304.0
+margin/right = 448.0
+margin/bottom = 457.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 19 )
+textures/hover = ExtResource( 20 )
+params/resize_mode = 0
+params/stretch_mode = 0
+
+[node name="oscilloscope" parent="." instance=ExtResource( 21 )]
+
+[node name="codepad" parent="." instance=ExtResource( 22 )]
+
+margin/left = 1267.0
+margin/top = 742.0
+margin/right = 1307.0
+margin/bottom = 782.0
+
+[connection signal="value_changed" from="frequencySlider" to="." method="_on_frequencySlider_value_changed"]
+
+[connection signal="value_changed" from="canalSlider" to="." method="_on_canalSlider_value_changed"]
+
+[connection signal="pressed" from="scanButton" to="." method="_on_scanButton_pressed"]
+
+

@@ -1,0 +1,601 @@
+[gd_scene load_steps=34 format=1]
+
+[ext_resource path="res://scripts/game/tutorial/1/village/village.gd" type="Script" id=1]
+[ext_resource path="res://assets/game/tutorial/1/village/bg_small.jpg" type="Texture" id=2]
+[ext_resource path="res://assets/game/tutorial/1/village/ruins.png" type="Texture" id=3]
+[ext_resource path="res://scenes/game/juliette.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/game/tutorial/1/village/shovel.png" type="Texture" id=5]
+[ext_resource path="res://assets/game/tutorial/1/village/rubble.png" type="Texture" id=6]
+[ext_resource path="res://assets/game/tutorial/1/village/rubble2.png" type="Texture" id=7]
+[ext_resource path="res://assets/game/tutorial/1/village/rubble3.png" type="Texture" id=8]
+[ext_resource path="res://assets/game/tutorial/1/village/streetsign.png" type="Texture" id=9]
+[ext_resource path="res://assets/game/tutorial/1/village/bike.png" type="Texture" id=10]
+[ext_resource path="res://assets/game/tutorial/1/village/key.png" type="Texture" id=11]
+[ext_resource path="res://assets/game/tutorial/1/village/house.png" type="Texture" id=12]
+[ext_resource path="res://assets/game/tutorial/1/village/lock.png" type="Texture" id=13]
+[ext_resource path="res://assets/game/tutorial/1/village/useless.png" type="Texture" id=14]
+[ext_resource path="res://scenes/game/character.tscn" type="PackedScene" id=15]
+[ext_resource path="res://scenes/game/cinematic.tscn" type="PackedScene" id=16]
+[ext_resource path="res://scenes/gui.tscn" type="PackedScene" id=17]
+[ext_resource path="res://assets/game/tutorial/1/village/juliettedead.png" type="Texture" id=18]
+
+[sub_resource type="CircleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 121.545
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 137.361, 76.7943 )
+
+[sub_resource type="SpriteFrames" id=3]
+
+animations = [ {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 157.485, 146.126 )
+
+[sub_resource type="Animation" id=5]
+
+resource/name = "dig"
+length = 1.4
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:frame")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 0.5, 1 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2 ]
+}
+
+[sub_resource type="RectangleShape2D" id=6]
+
+custom_solver_bias = 0.0
+extents = Vector2( 77.2218, 117.569 )
+
+[sub_resource type="RectangleShape2D" id=7]
+
+custom_solver_bias = 0.0
+extents = Vector2( 259.443, 156.998 )
+
+[sub_resource type="RectangleShape2D" id=8]
+
+custom_solver_bias = 0.0
+extents = Vector2( 143.837, 98.5737 )
+
+[sub_resource type="SpriteFrames" id=9]
+
+animations = [ {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=10]
+
+custom_solver_bias = 0.0
+extents = Vector2( 177.517, 144.561 )
+
+[sub_resource type="RectangleShape2D" id=11]
+
+custom_solver_bias = 0.0
+extents = Vector2( 19.6423, 10 )
+
+[sub_resource type="RectangleShape2D" id=12]
+
+custom_solver_bias = 0.0
+extents = Vector2( 455.188, 580 )
+
+[sub_resource type="RectangleShape2D" id=13]
+
+custom_solver_bias = 0.0
+extents = Vector2( 14.5005, 27.3138 )
+
+[sub_resource type="RectangleShape2D" id=14]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 315.164 )
+
+[sub_resource type="Animation" id=15]
+
+length = 1.5
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("character/AnimatedSprite/AnimationPlayer:playback/play")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 1.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 2,
+"values": [ "walking_right", "idle_right" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("character:transform/pos")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = {
+"times": FloatArray( 0, 1.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -100, 510.771 ), Vector2( 210, 510.771 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("juliette:transform/pos")
+tracks/2/interp = 1
+tracks/2/imported = false
+tracks/2/keys = {
+"times": FloatArray( 0, 1.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -260, 529.449 ), Vector2( 55.1161, 529.449 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("juliette/Sprite/AnimationPlayer:playback/play")
+tracks/3/interp = 1
+tracks/3/imported = false
+tracks/3/keys = {
+"times": FloatArray( 0, 1.5 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 1,
+"values": [ "walking_right", "idle_right" ]
+}
+
+[node name="Node2D" type="Node2D"]
+
+transform/pos = Vector2( 14, 328 )
+script/script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="bg" type="Sprite" parent="."]
+
+visibility/opacity = 0.9
+visibility/behind_parent = true
+transform/pos = Vector2( 2337.81, 166.21 )
+transform/scale = Vector2( 1.63186, 2.03517 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ruins" type="Sprite" parent="."]
+
+transform/pos = Vector2( 851.139, 259.844 )
+transform/scale = Vector2( 1.96863, 1.81554 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="juliette" parent="." groups=[
+"canInteractObjects",
+] instance=ExtResource( 4 )]
+
+transform/pos = Vector2( -260, 529.449 )
+
+[node name="shovel" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+transform/pos = Vector2( 572.564, 539.703 )
+transform/rot = -14.6196
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="hitbox" type="Area2D" parent="shovel"]
+
+transform/rot = -8.53774e-07
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, -1.49012e-08, 1.49012e-08, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="shovel/hitbox"]
+
+transform/rot = 8.53774e-07
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="rubble1" type="StaticBody2D" parent="." groups=[
+"canInteractObjects",
+]]
+
+transform/pos = Vector2( 997.058, 535.632 )
+input/pickable = false
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 0.998938, 0, 0, 1, -0.149048, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="rubble1"]
+
+transform/pos = Vector2( 0, -4 )
+frames = SubResource( 3 )
+animation = "default"
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rubble1"]
+
+transform/pos = Vector2( -0.149048, 0 )
+transform/scale = Vector2( 0.998938, 1 )
+shape = SubResource( 2 )
+trigger = false
+_update_shape_index = 0
+
+[node name="hitbox" type="Area2D" parent="rubble1"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 4 )
+shapes/0/transform = Matrix32( 1.01437, 0, 0, 1, -3.44128, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rubble1/hitbox"]
+
+transform/pos = Vector2( -3.44128, 0 )
+transform/scale = Vector2( 1.01437, 1 )
+shape = SubResource( 4 )
+trigger = false
+_update_shape_index = 0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="rubble1"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/dig = SubResource( 5 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="streetsign" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 1429.84, 423.183 )
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="hitbox" type="Area2D" parent="streetsign"]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 6 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="streetsign/hitbox"]
+
+shape = SubResource( 6 )
+trigger = false
+_update_shape_index = 0
+
+[node name="bike" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1480.01, 526.311 )
+transform/rot = 7.06123
+transform/scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 10 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="key" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 1823.89, 589.623 )
+transform/scale = Vector2( 0.27076, 0.338835 )
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="hitbox" type="Area2D" parent="key"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="key/hitbox"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="rubble2" type="StaticBody2D" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 1826.11, 550.392 )
+input/pickable = false
+shapes/0/shape = SubResource( 8 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="rubble2"]
+
+frames = SubResource( 9 )
+animation = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rubble2"]
+
+shape = SubResource( 8 )
+trigger = false
+_update_shape_index = 0
+
+[node name="hitbox" type="Area2D" parent="rubble2"]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 10 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rubble2/hitbox"]
+
+shape = SubResource( 10 )
+trigger = false
+_update_shape_index = 0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="rubble2"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/dig = SubResource( 5 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="uselesshouseDoor" type="Node2D" parent="."]
+
+transform/pos = Vector2( 3983.68, 510.77 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="houseDoor" type="Node2D" parent="."]
+
+transform/pos = Vector2( 2797.43, 510.771 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="house" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 2790.85, 237.345 )
+transform/scale = Vector2( 4.39298, 4.58496 )
+texture = ExtResource( 12 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="hitbox" type="Area2D" parent="house"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 11 )
+shapes/0/transform = Matrix32( 1, 0, 0, 3.30559, 0, 29.9726 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="house/hitbox"]
+
+transform/pos = Vector2( 0, 29.9726 )
+transform/scale = Vector2( 1, 3.30559 )
+shape = SubResource( 11 )
+trigger = false
+_update_shape_index = 0
+
+[node name="lock" type="Sprite" parent="." groups=[
+"mustInteractObjectsInventory",
+]]
+
+editor/display_folded = true
+visibility/opacity = 0.7
+transform/pos = Vector2( 2818.78, 418.993 )
+transform/scale = Vector2( 0.0520703, 0.0543459 )
+texture = ExtResource( 13 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="hitbox" type="Area2D" parent="lock"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 12 )
+shapes/0/transform = Matrix32( 3.70716, 0, 0, 4.81394, -564.19, -827.529 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="lock/hitbox"]
+
+transform/pos = Vector2( -564.19, -827.529 )
+transform/scale = Vector2( 3.70716, 4.81394 )
+shape = SubResource( 12 )
+trigger = false
+_update_shape_index = 0
+
+[node name="uselesshouse" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 3943.34, 280.182 )
+transform/scale = Vector2( 3.78023, 4.11576 )
+texture = ExtResource( 14 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="hitbox" type="Area2D" parent="uselesshouse"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 13 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 9.71643, 29.7475 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="uselesshouse/hitbox"]
+
+transform/pos = Vector2( 9.71643, 29.7475 )
+shape = SubResource( 13 )
+trigger = false
+_update_shape_index = 0
+
+[node name="character" parent="." instance=ExtResource( 15 )]
+
+transform/pos = Vector2( -100, 510.771 )
+
+[node name="rightLimit" type="StaticBody2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 4674.77, 293.693 )
+input/pickable = false
+shapes/0/shape = SubResource( 14 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 10 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rightLimit"]
+
+transform/pos = Vector2( 0, 10 )
+shape = SubResource( 14 )
+trigger = false
+_update_shape_index = 0
+
+[node name="leftLimit" type="StaticBody2D" parent="."]
+
+transform/pos = Vector2( 6.77002, 293.693 )
+input/pickable = false
+shapes/0/shape = SubResource( 14 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 10 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="leftLimit"]
+
+transform/pos = Vector2( 0, 10 )
+shape = SubResource( 14 )
+trigger = false
+_update_shape_index = 0
+
+[node name="cinematic" parent="." instance=ExtResource( 16 )]
+
+[node name="cinematicAnimation" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/enter_village = SubResource( 15 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="gui" parent="." instance=ExtResource( 17 )]
+
+[node name="corpse" type="Sprite" parent="."]
+
+visibility/visible = false
+transform/pos = Vector2( 83.0315, 659.306 )
+texture = ExtResource( 18 )
+
+

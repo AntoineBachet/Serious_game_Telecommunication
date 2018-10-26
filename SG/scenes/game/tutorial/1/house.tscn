@@ -1,0 +1,356 @@
+[gd_scene load_steps=24 format=1]
+
+[ext_resource path="res://scripts/game/tutorial/1/house/house.gd" type="Script" id=1]
+[ext_resource path="res://assets/game/tutorial/1/bg_house.jpg" type="Texture" id=2]
+[ext_resource path="res://assets/game/tutorial/1/house/bookshelf.jpg" type="Texture" id=3]
+[ext_resource path="res://assets/game/tutorial/1/house/desk_house.png" type="Texture" id=4]
+[ext_resource path="res://assets/game/tutorial/1/house/chest_closed.png" type="Texture" id=5]
+[ext_resource path="res://assets/game/tutorial/1/house/apples.jpg" type="Texture" id=6]
+[ext_resource path="res://assets/game/tutorial/1/door.png" type="Texture" id=7]
+[ext_resource path="res://assets/game/tutorial/1/house/piano.png" type="Texture" id=8]
+[ext_resource path="res://assets/game/tutorial/1/house/poster_inutiles.png" type="Texture" id=9]
+[ext_resource path="res://scenes/gui.tscn" type="PackedScene" id=10]
+[ext_resource path="res://assets/game/tutorial/1/house/tableau_blanc.png" type="Texture" id=11]
+[ext_resource path="res://scenes/game/character.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/game/juliette.tscn" type="PackedScene" id=13]
+[ext_resource path="res://scenes/game/cinematic.tscn" type="PackedScene" id=14]
+
+[sub_resource type="Animation" id=1]
+
+resource/name = "bookshelfOpening"
+length = 3.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:transform/pos")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 3 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1188.49, 415.568 ), Vector2( 1417.49, 415.568 ) ]
+}
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 62.5085, 432.514 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 20.3543, 51.3196 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 29.8464, 152.511 )
+
+[sub_resource type="RectangleShape2D" id=5]
+
+custom_solver_bias = 0.0
+extents = Vector2( 16.4996, 49.2133 )
+
+[sub_resource type="RectangleShape2D" id=6]
+
+custom_solver_bias = 0.0
+extents = Vector2( 15.3967, 38.1605 )
+
+[sub_resource type="RectangleShape2D" id=7]
+
+custom_solver_bias = 0.0
+extents = Vector2( 105.612, 69.2766 )
+
+[sub_resource type="RectangleShape2D" id=8]
+
+custom_solver_bias = 0.0
+extents = Vector2( 71.1797, 584.032 )
+
+[sub_resource type="RectangleShape2D" id=9]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 354.732 )
+
+[node name="Node2D" type="Node2D"]
+
+transform/pos = Vector2( 0, 476 )
+script/script = ExtResource( 1 )
+
+[node name="background" type="Sprite" parent="."]
+
+transform/pos = Vector2( 776.541, 138.216 )
+transform/scale = Vector2( 1, 2.79328 )
+z/z = -2
+texture = ExtResource( 2 )
+
+[node name="bookshelf" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+transform/pos = Vector2( 1188.49, 415.568 )
+transform/scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 3 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="bookshelf"]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/bookshelfOpening = SubResource( 1 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="hitbox" type="Area2D" parent="bookshelf"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bookshelf/hitbox"]
+
+shape = SubResource( 2 )
+trigger = false
+_update_shape_index = 0
+
+[node name="desk" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+transform/pos = Vector2( 557.77, 485.053 )
+transform/rot = 0.155088
+transform/scale = Vector2( 1.14258, 1.0857 )
+texture = ExtResource( 4 )
+
+[node name="hitbox" type="Area2D" parent="desk"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 3 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="desk/hitbox"]
+
+shape = SubResource( 3 )
+trigger = false
+_update_shape_index = 0
+
+[node name="chest" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 974.282, 515.567 )
+transform/scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 5 )
+
+[node name="hitbox" type="Area2D" parent="chest"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="chest/hitbox"]
+
+shape = SubResource( 4 )
+trigger = false
+_update_shape_index = 0
+
+[node name="painting" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1787.01, 286.164 )
+transform/scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 6 )
+
+[node name="entranceDoor" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 249.992, 457.086 )
+transform/scale = Vector2( 3, 3 )
+texture = ExtResource( 7 )
+
+[node name="hitbox" type="Area2D" parent="entranceDoor"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 5 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="entranceDoor/hitbox"]
+
+shape = SubResource( 5 )
+trigger = false
+_update_shape_index = 0
+
+[node name="secretDoor" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 1207.7, 482.933 )
+transform/scale = Vector2( 2, 2 )
+z/z = -1
+texture = ExtResource( 7 )
+
+[node name="hitbox" type="Area2D" parent="secretDoor"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 6 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="secretDoor/hitbox"]
+
+shape = SubResource( 6 )
+trigger = false
+_update_shape_index = 0
+
+[node name="piano" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 1782.85, 502.221 )
+transform/scale = Vector2( 1.2, 1.2 )
+texture = ExtResource( 8 )
+
+[node name="hitbox" type="Area2D" parent="piano"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="piano/hitbox"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="useless" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 816.687, 404.146 )
+transform/scale = Vector2( 0.100166, 0.0866757 )
+texture = ExtResource( 9 )
+
+[node name="hitbox" type="Area2D" parent="useless"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 8 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="useless/hitbox"]
+
+shape = SubResource( 8 )
+trigger = false
+_update_shape_index = 0
+
+[node name="gui" parent="." instance=ExtResource( 10 )]
+
+[node name="rightLimit" type="StaticBody2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 2038.7, 349.922 )
+input/pickable = false
+shapes/0/shape = SubResource( 9 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rightLimit"]
+
+shape = SubResource( 9 )
+trigger = false
+_update_shape_index = 0
+
+[node name="leftLimit" type="StaticBody2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( -118.66, 366.672 )
+input/pickable = false
+shapes/0/shape = SubResource( 9 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="leftLimit"]
+
+shape = SubResource( 9 )
+trigger = false
+_update_shape_index = 0
+
+[node name="poster" type="Sprite" parent="."]
+
+transform/pos = Vector2( 639.413, 361.61 )
+transform/scale = Vector2( 0.185371, 0.160856 )
+texture = ExtResource( 11 )
+
+[node name="character" parent="." instance=ExtResource( 12 )]
+
+transform/pos = Vector2( 204.2, 510 )
+
+[node name="juliette" parent="." groups=[
+"canInteractObjects",
+] instance=ExtResource( 13 )]
+
+transform/pos = Vector2( -10, 525 )
+
+[node name="cinematic" parent="." instance=ExtResource( 14 )]
+
+[connection signal="finished" from="bookshelf/AnimationPlayer" to="." method="_on_AnimationPlayer_finished"]
+
+

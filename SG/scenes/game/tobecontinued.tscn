@@ -1,0 +1,61 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://scripts/game/tobecontinued.gd" type="Script" id=1]
+[ext_resource path="res://scenes/game/riddleOverlay.tscn" type="PackedScene" id=2]
+[ext_resource path="res://fonts/segoeuisl40.fnt" type="BitmapFont" id=3]
+[ext_resource path="res://themes/text30.tres" type="Theme" id=4]
+
+[node name="Control" type="Control"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+script/script = ExtResource( 1 )
+
+[node name="riddleOverlay" parent="." instance=ExtResource( 2 )]
+
+[node name="tobecontinued" type="Label" parent="."]
+
+anchor/left = 3
+anchor/top = 3
+anchor/right = 3
+anchor/bottom = 3
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = -785.0
+margin/top = -519.0
+margin/right = -1138.0
+margin/bottom = -579.0
+custom_fonts/font = ExtResource( 3 )
+text = "To be continued"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="reportButton" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+theme/theme = ExtResource( 4 )
+margin/left = 725.0
+margin/top = 628.0
+margin/right = 1174.0
+margin/bottom = 701.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Cliquez-moi"
+flat = false
+
+[connection signal="pressed" from="reportButton" to="." method="_on_reportButton_pressed"]
+
+

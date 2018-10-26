@@ -1,0 +1,331 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://themes/gui.tres" type="Theme" id=1]
+[ext_resource path="res://scripts/gui/log.gd" type="Script" id=2]
+[ext_resource path="res://assets/game/tutorial/1/quiz/forest.jpg" type="Texture" id=3]
+[ext_resource path="res://themes/text30.tres" type="Theme" id=4]
+
+[node name="Control" type="Control"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+theme/theme = ExtResource( 1 )
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+script/script = ExtResource( 2 )
+
+[node name="Control" type="Control" parent="."]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 0.0
+alignment = 0
+
+[node name="tabs" type="HBoxContainer" parent="Control/VBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 1920.0
+margin/bottom = 46.0
+alignment = 0
+
+[node name="buttonToInventory" type="Button" parent="Control/VBoxContainer/tabs"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 1
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 477.0
+margin/bottom = 46.0
+disabled = true
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Inventaire"
+flat = false
+
+[node name="menuTitle" type="Label" parent="Control/VBoxContainer/tabs"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 1
+margin/left = 481.0
+margin/top = 3.0
+margin/right = 958.0
+margin/bottom = 43.0
+text = "Journal"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="buttonToEncyclopedia" type="Button" parent="Control/VBoxContainer/tabs"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 1
+margin/left = 962.0
+margin/top = 0.0
+margin/right = 1439.0
+margin/bottom = 46.0
+disabled = true
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Encyclopédie"
+flat = false
+
+[node name="buttonToMap" type="Button" parent="Control/VBoxContainer/tabs"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 1
+margin/left = 1443.0
+margin/top = 0.0
+margin/right = 1920.0
+margin/bottom = 46.0
+disabled = true
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Carte"
+flat = false
+
+[node name="contentContainer" type="HBoxContainer" parent="Control/VBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 3
+margin/left = 0.0
+margin/top = 50.0
+margin/right = 1920.0
+margin/bottom = 1039.0
+alignment = 0
+
+[node name="leftButton" type="Button" parent="Control/VBoxContainer/contentContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 39.0
+margin/bottom = 989.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "<"
+flat = false
+
+[node name="leftPage" type="VBoxContainer" parent="Control/VBoxContainer/contentContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 43.0
+margin/top = 0.0
+margin/right = 954.0
+margin/bottom = 989.0
+alignment = 0
+
+[node name="quizTitle" type="RichTextLabel" parent="Control/VBoxContainer/contentContainer/leftPage"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 3
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 911.0
+margin/bottom = 327.0
+bbcode/enabled = false
+bbcode/bbcode = ""
+visible_characters = -1
+
+[node name="quizImage" type="TextureFrame" parent="Control/VBoxContainer/contentContainer/leftPage"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 3
+margin/left = 0.0
+margin/top = 331.0
+margin/right = 911.0
+margin/bottom = 658.0
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 6
+
+[node name="quizDescription" type="RichTextLabel" parent="Control/VBoxContainer/contentContainer/leftPage"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 3
+margin/left = 0.0
+margin/top = 662.0
+margin/right = 911.0
+margin/bottom = 989.0
+bbcode/enabled = false
+bbcode/bbcode = ""
+visible_characters = -1
+
+[node name="VSeparator" type="VSeparator" parent="Control/VBoxContainer/contentContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 958.0
+margin/top = 0.0
+margin/right = 961.0
+margin/bottom = 989.0
+
+[node name="rightPage" type="VBoxContainer" parent="Control/VBoxContainer/contentContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 2
+margin/left = 965.0
+margin/top = 0.0
+margin/right = 1876.0
+margin/bottom = 989.0
+alignment = 0
+
+[node name="quizResults" type="RichTextLabel" parent="Control/VBoxContainer/contentContainer/rightPage"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 3
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 911.0
+margin/bottom = 472.0
+bbcode/enabled = false
+bbcode/bbcode = ""
+visible_characters = -1
+
+[node name="quizQuestions" type="RichTextLabel" parent="Control/VBoxContainer/contentContainer/rightPage"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 3
+margin/left = 0.0
+margin/top = 476.0
+margin/right = 911.0
+margin/bottom = 948.0
+bbcode/enabled = false
+bbcode/bbcode = ""
+visible_characters = -1
+
+[node name="quizReplayButton" type="Button" parent="Control/VBoxContainer/contentContainer/rightPage"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+theme/theme = ExtResource( 4 )
+margin/left = 0.0
+margin/top = 952.0
+margin/right = 911.0
+margin/bottom = 989.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+flat = false
+
+[node name="rightButton" type="Button" parent="Control/VBoxContainer/contentContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 1880.0
+margin/top = 0.0
+margin/right = 1919.0
+margin/bottom = 989.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = ">"
+flat = false
+
+[node name="buttonContainer" type="HBoxContainer" parent="Control/VBoxContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 1043.0
+margin/right = 1920.0
+margin/bottom = 1080.0
+alignment = 0
+
+[node name="returnButton" type="Button" parent="Control/VBoxContainer/buttonContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 3
+size_flags/vertical = 2
+theme/theme = ExtResource( 4 )
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 1920.0
+margin/bottom = 37.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Retour"
+flat = false
+
+[connection signal="pressed" from="Control/VBoxContainer/tabs/buttonToInventory" to="." method="_on_buttonToInventory_pressed"]
+
+[connection signal="pressed" from="Control/VBoxContainer/tabs/buttonToEncyclopedia" to="." method="_on_buttonToEncyclopedia_pressed"]
+
+[connection signal="pressed" from="Control/VBoxContainer/tabs/buttonToMap" to="." method="_on_buttonToMap_pressed"]
+
+[connection signal="pressed" from="Control/VBoxContainer/buttonContainer/returnButton" to="." method="_on_returnButton_pressed"]
+
+

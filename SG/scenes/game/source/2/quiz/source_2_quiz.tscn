@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://scripts/game/source/2/quiz/source_2_quiz.gd" type="Script" id=1]
+[ext_resource path="res://assets/game/tutorial/1/quiz/new_forest.jpg" type="Texture" id=2]
+[ext_resource path="res://scenes/game/base_quiz.tscn" type="PackedScene" id=3]
+
+[sub_resource type="Animation" id=1]
+
+resource/name = "bg"
+length = 15.0
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("bg:transform/pos")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 15 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 2200, 337.735 ), Vector2( -200, 337.735 ) ]
+}
+
+[node name="Node2D" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="bg" type="Sprite" parent="."]
+
+transform/pos = Vector2( 2008, 337.735 )
+transform/scale = Vector2( 1.5, 1.5 )
+z/z = -5
+texture = ExtResource( 2 )
+
+[node name="bg_animation" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/bg = SubResource( 1 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[node name="base_quiz" parent="." instance=ExtResource( 3 )]
+
+

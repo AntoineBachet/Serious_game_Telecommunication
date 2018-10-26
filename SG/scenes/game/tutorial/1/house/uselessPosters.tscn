@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://scripts/game/tutorial/1/house/uselessPosters.gd" type="Script" id=1]
+[ext_resource path="res://assets/game/tutorial/1/bg_house_zoom.jpg" type="Texture" id=2]
+[ext_resource path="res://assets/game/tutorial/1/house/poster_inutiles.png" type="Texture" id=3]
+[ext_resource path="res://themes/text30.tres" type="Theme" id=4]
+
+[node name="Node2D" type="Node2D"]
+
+script/script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="background" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1020, 550 )
+transform/scale = Vector2( 1.8, 1.8 )
+z/z = -2
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="posters" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1020.92, 514.577 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="retour" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+theme/theme = ExtResource( 4 )
+margin/left = 1450.0
+margin/top = 945.0
+margin/right = 1607.0
+margin/bottom = 998.0
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+text = "Retour"
+flat = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[connection signal="pressed" from="retour" to="." method="_on_retour_pressed"]
+
+

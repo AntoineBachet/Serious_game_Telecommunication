@@ -1,0 +1,78 @@
+[gd_scene load_steps=7 format=1]
+
+[ext_resource path="res://scripts/game/tutorial/1/secretroom/desk.gd" type="Script" id=1]
+[ext_resource path="res://assets/game/tutorial/1/bg_house_zoom.jpg" type="Texture" id=2]
+[ext_resource path="res://assets/game/tutorial/1/house/desk.png" type="Texture" id=3]
+[ext_resource path="res://assets/game/tutorial/1/secretroom/paper_sheets.png" type="Texture" id=4]
+[ext_resource path="res://assets/game/tutorial/1/secretroom/computer.png" type="Texture" id=5]
+[ext_resource path="res://scenes/game/riddleOverlay.tscn" type="PackedScene" id=6]
+
+[node name="Node" type="Node"]
+
+script/script = ExtResource( 1 )
+
+[node name="bg" type="Sprite" parent="."]
+
+transform/pos = Vector2( 963.873, 543.448 )
+transform/scale = Vector2( 1.5, 1.8 )
+texture = ExtResource( 2 )
+
+[node name="desk" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1026.27, 1229.17 )
+transform/scale = Vector2( 2.7, 5 )
+texture = ExtResource( 3 )
+
+[node name="feuilles" type="TextureButton" parent="."]
+
+rect/rotation = -42.3986
+rect/scale = Vector2( 0.7, 0.7 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 1509.0
+margin/top = 641.0
+margin/right = 2001.0
+margin/bottom = 1127.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 4 )
+params/resize_mode = 0
+params/stretch_mode = 0
+
+[node name="computer" type="TextureButton" parent="."]
+
+rect/rotation = 1.46768
+rect/scale = Vector2( 1.5, 1.5 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 70.0
+margin/top = 167.0
+margin/right = 682.0
+margin/bottom = 715.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 5 )
+params/resize_mode = 0
+params/stretch_mode = 0
+
+[node name="riddleOverlay" parent="." instance=ExtResource( 6 )]
+
+[connection signal="mouse_enter" from="feuilles" to="." method="_on_feuilles_mouse_enter"]
+
+[connection signal="mouse_exit" from="feuilles" to="." method="_on_feuilles_mouse_exit"]
+
+[connection signal="pressed" from="feuilles" to="." method="_on_feuilles_pressed"]
+
+[connection signal="mouse_enter" from="computer" to="." method="_on_computer_mouse_enter"]
+
+[connection signal="mouse_exit" from="computer" to="." method="_on_computer_mouse_exit"]
+
+[connection signal="pressed" from="computer" to="." method="_on_computer_pressed"]
+
+

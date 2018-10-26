@@ -1,0 +1,265 @@
+[gd_scene load_steps=19 format=1]
+
+[ext_resource path="res://scripts/game/tutorial/1/uselesshouse/uselesshouse.gd" type="Script" id=1]
+[ext_resource path="res://assets/game/tutorial/1/uselesshouse/bg.jpg" type="Texture" id=2]
+[ext_resource path="res://assets/game/tutorial/1/desk.png" type="Texture" id=3]
+[ext_resource path="res://assets/game/tutorial/1/door.png" type="Texture" id=4]
+[ext_resource path="res://assets/game/tutorial/1/uselesshouse/cadre_morse.png" type="Texture" id=5]
+[ext_resource path="res://assets/game/tutorial/1/uselesshouse/cadre_loutre.png" type="Texture" id=6]
+[ext_resource path="res://assets/game/tutorial/1/uselesshouse/cadre_samuel_morse.png" type="Texture" id=7]
+[ext_resource path="res://assets/game/tutorial/1/uselesshouse/cute_pika.png" type="Texture" id=8]
+[ext_resource path="res://scenes/gui.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/game/character.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/game/juliette.tscn" type="PackedScene" id=11]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 7.45235, 56.8444 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 25.0879, 387.76 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 50.1891, 333.053 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 108.185, 1443.99 )
+
+[sub_resource type="RectangleShape2D" id=5]
+
+custom_solver_bias = 0.0
+extents = Vector2( 11.8079, 262.633 )
+
+[sub_resource type="RectangleShape2D" id=6]
+
+custom_solver_bias = 0.0
+extents = Vector2( 19.2324, 492.961 )
+
+[sub_resource type="RectangleShape2D" id=7]
+
+custom_solver_bias = 0.0
+extents = Vector2( 16.3367, 30.9148 )
+
+[node name="Node2D" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="bg" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1015.19, 216.755 )
+transform/scale = Vector2( 1, 0.95 )
+texture = ExtResource( 2 )
+
+[node name="desk" type="Sprite" parent="."]
+
+transform/pos = Vector2( 764.739, 392.325 )
+transform/scale = Vector2( 2.30017, 2.38199 )
+texture = ExtResource( 3 )
+
+[node name="door" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+transform/pos = Vector2( 306.083, 311.162 )
+transform/scale = Vector2( 2.8139, 2.84519 )
+texture = ExtResource( 4 )
+
+[node name="hitbox" type="Area2D" parent="door"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="door/hitbox"]
+
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="walrus" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+visibility/opacity = 0.92
+transform/pos = Vector2( 1853.18, 317.287 )
+transform/rot = -7.06605
+transform/scale = Vector2( 0.613048, 0.620957 )
+texture = ExtResource( 5 )
+
+[node name="hitbox" type="Area2D" parent="walrus"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 0.993572, -0.113203, 0.113203, 0.993572, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="walrus/hitbox"]
+
+transform/rot = 6.5
+shape = SubResource( 2 )
+trigger = false
+_update_shape_index = 0
+
+[node name="otter" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+visibility/opacity = 0.95
+transform/pos = Vector2( 1060.19, 252.088 )
+transform/rot = 1.77988
+transform/scale = Vector2( 0.515181, 0.671408 )
+texture = ExtResource( 6 )
+
+[node name="hitbox" type="Area2D" parent="otter"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 3 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="otter/hitbox"]
+
+shape = SubResource( 3 )
+trigger = false
+_update_shape_index = 0
+
+[node name="samuel" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+visibility/opacity = 0.8
+transform/pos = Vector2( 1409.17, 205.964 )
+transform/scale = Vector2( 0.220958, 0.216234 )
+texture = ExtResource( 7 )
+
+[node name="hitbox" type="Area2D" parent="samuel"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="samuel/hitbox"]
+
+shape = SubResource( 4 )
+trigger = false
+_update_shape_index = 0
+
+[node name="pikachu" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+transform/pos = Vector2( 677.601, 317.382 )
+transform/rot = -13.9373
+transform/scale = Vector2( 0.852874, 0.804894 )
+texture = ExtResource( 8 )
+
+[node name="hitbox" type="Area2D" parent="pikachu"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 5 )
+shapes/0/transform = Matrix32( 0.974761, -0.22325, 0.22325, 0.974761, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pikachu/hitbox"]
+
+transform/rot = 12.9
+shape = SubResource( 5 )
+trigger = false
+_update_shape_index = 0
+
+[node name="gui" parent="." instance=ExtResource( 9 )]
+
+[node name="character" parent="." instance=ExtResource( 10 )]
+
+transform/pos = Vector2( 312.882, 490.99 )
+
+[node name="leftLimit" type="StaticBody2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 0, 500 )
+transform/scale = Vector2( 1.25585, 1.22757 )
+input/pickable = false
+shapes/0/shape = SubResource( 6 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, -1.80921, -172.131 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="leftLimit"]
+
+transform/pos = Vector2( -1.80921, -172.131 )
+shape = SubResource( 6 )
+trigger = false
+_update_shape_index = 0
+
+[node name="rightLimit" type="StaticBody2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 1993.14, 432.724 )
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 0.999998, 0, 0, 19.5746, 24.3671, -146.905 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rightLimit"]
+
+transform/pos = Vector2( 24.3671, -146.905 )
+transform/scale = Vector2( 0.999998, 19.5746 )
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="juliette" parent="." groups=[
+"canInteractObjects",
+] instance=ExtResource( 11 )]
+
+transform/pos = Vector2( 45, 509.449 )
+
+

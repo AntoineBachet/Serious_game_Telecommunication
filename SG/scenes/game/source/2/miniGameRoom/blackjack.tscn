@@ -1,0 +1,410 @@
+[gd_scene load_steps=6 format=1]
+
+[ext_resource path="res://themes/text24.tres" type="Theme" id=1]
+[ext_resource path="res://scripts/game/source/2/miniGameRoom/blackjack.gd" type="Script" id=2]
+[ext_resource path="res://assets/game/white.jpg" type="Texture" id=3]
+[ext_resource path="res://scenes/game/riddleOverlay.tscn" type="PackedScene" id=4]
+[ext_resource path="res://themes/popup.tres" type="Theme" id=5]
+
+[node name="Control" type="Control"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+theme/theme = ExtResource( 1 )
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 40.0
+margin/bottom = 40.0
+script/script = ExtResource( 2 )
+
+[node name="bg" type="TextureFrame" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 1920.0
+margin/bottom = 1080.0
+texture = ExtResource( 3 )
+modulate = Color( 0.018332, 0.214844, 0.0167847, 1 )
+expand = true
+stretch_mode = 0
+
+[node name="card" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 600.0
+margin/top = 550.0
+margin/right = 688.0
+margin/bottom = 581.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Piocher"
+flat = false
+
+[node name="stop" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 800.0
+margin/top = 550.0
+margin/right = 860.0
+margin/bottom = 581.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Stop"
+flat = false
+
+[node name="new" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 1000.0
+margin/top = 550.0
+margin/right = 1185.0
+margin/bottom = 581.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "New à verrouiller"
+flat = false
+
+[node name="newGame" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 1200.0
+margin/top = 550.0
+margin/right = 1323.0
+margin/bottom = 581.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "New game"
+flat = false
+
+[node name="dealerCards" type="HBoxContainer" parent="."]
+
+editor/display_folded = true
+rect/min_size = Vector2( 0, 50 )
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 620.0
+margin/top = 406.0
+margin/right = 874.0
+margin/bottom = 506.0
+alignment = 0
+
+[node name="Label" type="Label" parent="dealerCards"]
+
+rect/min_size = Vector2( 200, 0 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 37.0
+margin/right = 200.0
+margin/bottom = 62.0
+text = "Dealer"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="score" type="Label" parent="dealerCards"]
+
+rect/min_size = Vector2( 50, 0 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 204.0
+margin/top = 37.0
+margin/right = 254.0
+margin/bottom = 62.0
+text = "21"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="playerCards" type="HBoxContainer" parent="."]
+
+editor/display_folded = true
+rect/min_size = Vector2( 0, 50 )
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 624.0
+margin/top = 608.0
+margin/right = 878.0
+margin/bottom = 708.0
+alignment = 0
+
+[node name="Label" type="Label" parent="playerCards"]
+
+rect/min_size = Vector2( 200, 0 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 37.0
+margin/right = 200.0
+margin/bottom = 62.0
+text = "Player"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="score" type="Label" parent="playerCards"]
+
+rect/min_size = Vector2( 50, 0 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 204.0
+margin/top = 37.0
+margin/right = 254.0
+margin/bottom = 62.0
+text = "21"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="money" type="HBoxContainer" parent="."]
+
+anchor/left = 1
+anchor/right = 1
+anchor/bottom = 1
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -1634.0
+margin/top = 215.0
+margin/right = -1782.0
+margin/bottom = -229.0
+alignment = 0
+
+[node name="moneyLabel" type="Label" parent="money"]
+
+rect/min_size = Vector2( 100, 0 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 14.0
+margin/right = 100.0
+margin/bottom = 39.0
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="labelBox" type="VBoxContainer" parent="money"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 104.0
+margin/top = 0.0
+margin/right = 104.0
+margin/bottom = 54.0
+alignment = 0
+
+[node name="dealerLabel" type="Label" parent="money/labelBox"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = 25.0
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="playerLabel" type="Label" parent="money/labelBox"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 29.0
+margin/right = 0.0
+margin/bottom = 54.0
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="moneyBox" type="VBoxContainer" parent="money"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 108.0
+margin/top = 0.0
+margin/right = 148.0
+margin/bottom = 54.0
+alignment = 0
+
+[node name="dealerMoney" type="Label" parent="money/moneyBox"]
+
+rect/min_size = Vector2( 40, 0 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 40.0
+margin/bottom = 25.0
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="playerMoney" type="Label" parent="money/moneyBox"]
+
+rect/min_size = Vector2( 40, 0 )
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 29.0
+margin/right = 40.0
+margin/bottom = 54.0
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="roundCounter" type="HBoxContainer" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 894.0
+margin/top = 126.0
+margin/right = 965.0
+margin/bottom = 151.0
+alignment = 0
+
+[node name="roundCounterLabel" type="Label" parent="roundCounter"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 67.0
+margin/bottom = 25.0
+text = "Round"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="roundCounter" type="Label" parent="roundCounter"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 71.0
+margin/top = 0.0
+margin/right = 71.0
+margin/bottom = 25.0
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="gameInfo" type="RichTextLabel" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 206.0
+margin/top = 139.0
+margin/right = 859.0
+margin/bottom = 179.0
+bbcode/enabled = true
+bbcode/bbcode = ""
+visible_characters = -1
+
+[node name="riddleOverlay" parent="." instance=ExtResource( 4 )]
+
+[node name="rulesButton" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 1713.0
+margin/top = 143.0
+margin/right = 1791.0
+margin/bottom = 174.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Règles"
+flat = false
+
+[node name="rulesDialog" type="AcceptDialog" parent="."]
+
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+theme/theme = ExtResource( 5 )
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 91.0
+margin/bottom = 80.0
+popup/exclusive = false
+window/title = "Alerte !"
+dialog/hide_on_ok = true
+
+[connection signal="pressed" from="card" to="." method="_on_card_pressed"]
+
+[connection signal="pressed" from="stop" to="." method="_on_stop_pressed"]
+
+[connection signal="pressed" from="new" to="." method="_on_new_pressed"]
+
+[connection signal="pressed" from="newGame" to="." method="_on_newGame_pressed"]
+
+[connection signal="pressed" from="rulesButton" to="." method="_on_rules_pressed"]
+
+

@@ -1,0 +1,187 @@
+[gd_scene load_steps=11 format=1]
+
+[ext_resource path="res://scripts/game/canal/2/floor.gd" type="Script" id=1]
+[ext_resource path="res://scenes/gui.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/game/canal/2/B2N2-EtageDelabre.jpg" type="Texture" id=3]
+[ext_resource path="res://scenes/game/juliette.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/game/character.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/game/cinematic.tscn" type="PackedScene" id=6]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[node name="Node2D" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="gui" parent="." instance=ExtResource( 2 )]
+
+[node name="bg" type="Sprite" parent="."]
+
+transform/pos = Vector2( 1637.3, 573.389 )
+transform/scale = Vector2( 1, 1.05978 )
+texture = ExtResource( 3 )
+
+[node name="elevator" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+transform/pos = Vector2( 350, 838.617 )
+transform/scale = Vector2( 3, 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="hitbox" type="Area2D" parent="elevator"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="elevator/hitbox"]
+
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="juliette" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 447.664, 886.639 )
+
+[node name="character" parent="." instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 314.743, 868.196 )
+
+[node name="toolBox" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+transform/pos = Vector2( 2424.5, 907.87 )
+transform/scale = Vector2( 0.60848, 0.587414 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="hitbox" type="Area2D" parent="toolBox"]
+
+transform/pos = Vector2( 5.3457, 86.6279 )
+transform/scale = Vector2( 4.62096, 6.35537 )
+input/pickable = true
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="toolBox/hitbox"]
+
+shape = SubResource( 2 )
+trigger = false
+_update_shape_index = 0
+
+[node name="cinematic" parent="." instance=ExtResource( 6 )]
+
+[node name="leftLimit" type="StaticBody2D" parent="."]
+
+transform/pos = Vector2( -42.5209, 786.149 )
+transform/scale = Vector2( 1.70953, 8.95399 )
+input/pickable = false
+shapes/0/shape = SubResource( 3 )
+shapes/0/transform = Matrix32( 1.5, 0, 0, 3, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="leftLimit"]
+
+transform/scale = Vector2( 1.5, 3 )
+shape = SubResource( 3 )
+trigger = false
+_update_shape_index = 0
+
+[node name="rightLimit" type="StaticBody2D" parent="."]
+
+transform/pos = Vector2( 2645.71, 758.195 )
+transform/scale = Vector2( 1.70953, 8.95399 )
+input/pickable = false
+shapes/0/shape = SubResource( 3 )
+shapes/0/transform = Matrix32( 1.5, 0, 0, 3, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rightLimit"]
+
+transform/scale = Vector2( 1.5, 3 )
+shape = SubResource( 3 )
+trigger = false
+_update_shape_index = 0
+
+[node name="door" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+transform/pos = Vector2( 1227.6, 775.185 )
+transform/scale = Vector2( 3, 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="hitbox" type="Area2D" parent="door"]
+
+transform/pos = Vector2( -7.03488, 21.3669 )
+transform/scale = Vector2( 1.41611, 0.947853 )
+input/pickable = true
+shapes/0/shape = SubResource( 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="door/hitbox"]
+
+shape = SubResource( 4 )
+trigger = false
+_update_shape_index = 0
+
+

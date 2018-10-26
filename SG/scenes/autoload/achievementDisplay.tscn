@@ -1,0 +1,194 @@
+[gd_scene load_steps=6 format=1]
+
+[ext_resource path="res://scripts/autoload/achievementDisplay.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://themes/text24.tres" type="Theme" id=3]
+
+[sub_resource type="Animation" id=1]
+
+resource/name = "achievement_pop_out"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("achievementContainer:margin/top")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 1 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 150.0, 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("achievementContainer:margin/bottom")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = {
+"times": FloatArray( 0, 1 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, -150.0 ]
+}
+
+[sub_resource type="Animation" id=2]
+
+resource/name = "achievement_pop_up"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("achievementContainer:margin/bottom")
+tracks/0/interp = 2
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 1 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ -150.0, 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("achievementContainer:margin/top")
+tracks/1/interp = 1
+tracks/1/imported = false
+tracks/1/keys = {
+"times": FloatArray( 0, 1 ),
+"transitions": FloatArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 150.0 ]
+}
+
+[node name="achievementDisplay" type="CanvasLayer"]
+
+layer = 1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+script/script = ExtResource( 1 )
+
+[node name="achievementContainer" type="PanelContainer" parent="."]
+
+visibility/opacity = 0.8
+anchor/left = 1
+anchor/top = 1
+anchor/right = 1
+anchor/bottom = 1
+rect/min_size = Vector2( 600, 150 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 600.0
+margin/top = 0.0
+margin/right = 0.0
+margin/bottom = -150.0
+
+[node name="achievementContainer" type="HBoxContainer" parent="achievementContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 7.0
+margin/top = 7.0
+margin/right = 593.0
+margin/bottom = 143.0
+custom_constants/separation = 15
+alignment = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="achievementIcon" type="TextureFrame" parent="achievementContainer/achievementContainer"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 36.0
+margin/right = 64.0
+margin/bottom = 100.0
+texture = ExtResource( 2 )
+stretch_mode = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="achievementTextContainer" type="VBoxContainer" parent="achievementContainer/achievementContainer"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = false
+size_flags/horizontal = 3
+size_flags/vertical = 0
+margin/left = 79.0
+margin/top = 23.0
+margin/right = 586.0
+margin/bottom = 112.0
+alignment = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="achievementTitle" type="RichTextLabel" parent="achievementContainer/achievementContainer/achievementTextContainer"]
+
+rect/min_size = Vector2( 0, 55 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+theme/theme = ExtResource( 3 )
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 507.0
+margin/bottom = 55.0
+bbcode/enabled = true
+bbcode/bbcode = ""
+visible_characters = -1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="achievementDescription" type="RichTextLabel" parent="achievementContainer/achievementContainer/achievementTextContainer"]
+
+rect/min_size = Vector2( 0, 30 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+theme/theme = ExtResource( 3 )
+margin/left = 0.0
+margin/top = 59.0
+margin/right = 507.0
+margin/bottom = 89.0
+bbcode/enabled = true
+bbcode/bbcode = ""
+visible_characters = -1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="achievementDisplayTimer" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = false
+autostart = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/achievement_pop_out = SubResource( 1 )
+anims/achievement_pop_up = SubResource( 2 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+[connection signal="timeout" from="achievementDisplayTimer" to="." method="_on_achievementDisplayTimer_timeout"]
+
+[connection signal="finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_finished"]
+
+

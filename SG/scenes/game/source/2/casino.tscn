@@ -1,0 +1,781 @@
+[gd_scene load_steps=39 format=1]
+
+[ext_resource path="res://scripts/game/source/2/casino/casino.gd" type="Script" id=1]
+[ext_resource path="res://assets/game/source/2/casino/background.jpg" type="Texture" id=2]
+[ext_resource path="res://scenes/gui.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/game/character.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/game/juliette.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/game/source/2/village/door.png" type="Texture" id=6]
+[ext_resource path="res://assets/game/tutorial/1/door.png" type="Texture" id=7]
+[ext_resource path="res://assets/game/source/2/casino/door.jpg" type="Texture" id=8]
+[ext_resource path="res://fonts/segoeuisl30.fnt" type="BitmapFont" id=9]
+[ext_resource path="res://assets/game/source/2/casino/robotFO.png" type="Texture" id=10]
+[ext_resource path="res://assets/game/bubble_medium.png" type="Texture" id=11]
+[ext_resource path="res://themes/bubbles.tres" type="Theme" id=12]
+[ext_resource path="res://assets/game/dialogue_next.png" type="Texture" id=13]
+[ext_resource path="res://assets/game/source/2/casino/victorFO.png" type="Texture" id=14]
+[ext_resource path="res://scenes/game/cinematic.tscn" type="PackedScene" id=15]
+[ext_resource path="res://assets/game/source/2/casino/slotmachine.png" type="Texture" id=16]
+[ext_resource path="res://assets/game/source/2/paper_sheets_blank.png" type="Texture" id=17]
+[ext_resource path="res://assets/game/source/2/casino/reception_office_2.png" type="Texture" id=18]
+[ext_resource path="res://assets/game/source/2/casino/janeFO.png" type="Texture" id=19]
+[ext_resource path="res://assets/game/source/2/casino/reception_office_1.png" type="Texture" id=20]
+[ext_resource path="res://assets/game/bubble_small.png" type="Texture" id=21]
+[ext_resource path="res://assets/game/source/2/casino/protectronFO.png" type="Texture" id=22]
+[ext_resource path="res://assets/game/source/2/casino/caution_sign.png" type="Texture" id=23]
+[ext_resource path="res://assets/game/source/2/casino/vent.jpg" type="Texture" id=24]
+[ext_resource path="res://assets/game/source/2/casino/rubble.png" type="Texture" id=25]
+[ext_resource path="res://assets/game/source/2/casino/rubble2.png" type="Texture" id=26]
+[ext_resource path="res://assets/game/source/2/casino/rubble3.png" type="Texture" id=27]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 28.5274, 172.452 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10.0244, 78.5443 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 98.7721, 154.137 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 333.878, 376.161 )
+
+[sub_resource type="RectangleShape2D" id=5]
+
+custom_solver_bias = 0.0
+extents = Vector2( 56.9518, 138.618 )
+
+[sub_resource type="RectangleShape2D" id=6]
+
+custom_solver_bias = 0.0
+extents = Vector2( 159.065, 374.33 )
+
+[sub_resource type="RectangleShape2D" id=7]
+
+custom_solver_bias = 0.0
+extents = Vector2( 7.23804, 59.8418 )
+
+[sub_resource type="RectangleShape2D" id=8]
+
+custom_solver_bias = 0.0
+extents = Vector2( 14.2627, 63.477 )
+
+[sub_resource type="SpriteFrames" id=9]
+
+animations = [ {
+"frames": [ ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=10]
+
+custom_solver_bias = 0.0
+extents = Vector2( 36.7649, 166.007 )
+
+[sub_resource type="Animation" id=11]
+
+resource/name = "rubble"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("rubble:frame")
+tracks/0/interp = 1
+tracks/0/imported = false
+tracks/0/keys = {
+"times": FloatArray( 0, 0.5, 1 ),
+"transitions": FloatArray( 1, 1, 1 ),
+"update": 1,
+"values": [ 2, 1, 0 ]
+}
+
+[node name="Node2D" type="Node2D"]
+
+transform/pos = Vector2( 0, 384 )
+script/script = ExtResource( 1 )
+
+[node name="background" type="Sprite" parent="."]
+
+transform/pos = Vector2( -71.0596, -704.989 )
+transform/scale = Vector2( 1.5, 1.5 )
+z/z = -2
+texture = ExtResource( 2 )
+centered = false
+
+[node name="gui" parent="." instance=ExtResource( 3 )]
+
+[node name="character" parent="." instance=ExtResource( 4 )]
+
+transform/pos = Vector2( 301.2, 477.771 )
+
+[node name="juliette" parent="." groups=[
+"canInteractObjects",
+] instance=ExtResource( 5 )]
+
+transform/pos = Vector2( 58, 490 )
+
+[node name="leftLimit" type="StaticBody2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( -17.6227, 470.777 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="leftLimit"]
+
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="rightLimit" type="StaticBody2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 4480, 455.812 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rightLimit"]
+
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="backToVillage" type="Node2D" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 286.998, 396.812 )
+transform/scale = Vector2( 0.9, 0.9 )
+z/z = -1
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="hitbox" type="Area2D" parent="backToVillage"]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="backToVillage/hitbox"]
+
+shape = SubResource( 2 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Sprite" type="Sprite" parent="backToVillage"]
+
+transform/scale = Vector2( 2.5, 2.5 )
+texture = ExtResource( 6 )
+
+[node name="miniGameRoom" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 2260, 408.812 )
+transform/scale = Vector2( 2, 2 )
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="hitbox" type="Area2D" parent="miniGameRoom"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="miniGameRoom/hitbox"]
+
+shape = SubResource( 2 )
+trigger = false
+_update_shape_index = 0
+
+[node name="controlRoom" type="Node2D" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 3370, 367.812 )
+transform/scale = Vector2( 0.9, 0.9 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="hitbox" type="Area2D" parent="controlRoom"]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="controlRoom/hitbox"]
+
+shape = SubResource( 2 )
+trigger = false
+_update_shape_index = 0
+
+[node name="door" type="Sprite" parent="controlRoom"]
+
+transform/scale = Vector2( 1.8, 1.8 )
+texture = ExtResource( 8 )
+
+[node name="Panel" type="Panel" parent="controlRoom"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -114.0
+margin/top = -209.0
+margin/right = 111.0
+margin/bottom = -148.0
+
+[node name="Label" type="Label" parent="controlRoom/Panel"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 227.0
+margin/bottom = 58.0
+custom_fonts/font = ExtResource( 9 )
+text = "Salle de contrôle"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="diceRobot" type="Node2D" parent="." groups=[
+"character",
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 3058.44, 424.1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="diceRobot" type="Sprite" parent="diceRobot"]
+
+transform/scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 10 )
+
+[node name="hitbox" type="Area2D" parent="diceRobot"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 3 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="diceRobot/hitbox"]
+
+shape = SubResource( 3 )
+trigger = false
+_update_shape_index = 0
+
+[node name="bubble" type="Sprite" parent="diceRobot"]
+
+visibility/visible = false
+transform/pos = Vector2( 180.302, -236.564 )
+texture = ExtResource( 11 )
+flip_h = true
+
+[node name="bubble1" type="Sprite" parent="diceRobot"]
+
+visibility/visible = false
+transform/pos = Vector2( 180.302, -236.564 )
+texture = ExtResource( 11 )
+flip_h = true
+
+[node name="text" type="Label" parent="diceRobot"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+theme/theme = ExtResource( 12 )
+margin/left = 54.0
+margin/top = -342.0
+margin/right = 310.0
+margin/bottom = -210.0
+align = 1
+valign = 1
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="text1" type="Label" parent="diceRobot"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+theme/theme = ExtResource( 12 )
+margin/left = 54.0
+margin/top = -342.0
+margin/right = 310.0
+margin/bottom = -210.0
+align = 1
+valign = 1
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="next" type="Sprite" parent="diceRobot"]
+
+visibility/visible = false
+transform/pos = Vector2( 331.982, -274.09 )
+texture = ExtResource( 13 )
+
+[node name="next1" type="Sprite" parent="diceRobot"]
+
+visibility/visible = false
+transform/pos = Vector2( 331.982, -274.09 )
+texture = ExtResource( 13 )
+
+[node name="cardRobot" type="Node2D" parent="." groups=[
+"character",
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 1487, 424.1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="cardRobot" type="Sprite" parent="cardRobot"]
+
+transform/scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 14 )
+
+[node name="hitbox" type="Area2D" parent="cardRobot"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 3 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cardRobot/hitbox"]
+
+shape = SubResource( 3 )
+trigger = false
+_update_shape_index = 0
+
+[node name="bubble" type="Sprite" parent="cardRobot"]
+
+visibility/visible = false
+transform/pos = Vector2( 184.846, -250.196 )
+texture = ExtResource( 11 )
+flip_h = true
+
+[node name="text" type="Label" parent="cardRobot"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+theme/theme = ExtResource( 12 )
+margin/left = 59.0
+margin/top = -356.0
+margin/right = 315.0
+margin/bottom = -224.0
+align = 1
+valign = 1
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="next" type="Sprite" parent="cardRobot"]
+
+visibility/visible = false
+transform/pos = Vector2( 331.982, -274.09 )
+z/z = 1
+texture = ExtResource( 13 )
+
+[node name="cinematic" parent="." instance=ExtResource( 15 )]
+
+[node name="slotMachine2" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 1917.35, 419.117 )
+transform/scale = Vector2( 0.45, 0.45 )
+texture = ExtResource( 16 )
+
+[node name="hitbox" type="Area2D" parent="slotMachine2"]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="slotMachine2/hitbox"]
+
+shape = SubResource( 4 )
+trigger = false
+_update_shape_index = 0
+
+[node name="slotMachine1" type="Sprite" parent="slotMachine2"]
+
+transform/pos = Vector2( -400, 0 )
+texture = ExtResource( 16 )
+
+[node name="slotMachine3" type="Sprite" parent="slotMachine2"]
+
+transform/pos = Vector2( 400, 0 )
+texture = ExtResource( 16 )
+
+[node name="slotMachine4" type="Sprite" parent="slotMachine2"]
+
+transform/pos = Vector2( 200.833, -38.1957 )
+transform/scale = Vector2( 0.666667, 0.666667 )
+z/z = -1
+texture = ExtResource( 16 )
+
+[node name="slotMachine5" type="Sprite" parent="slotMachine2"]
+
+transform/pos = Vector2( -199.167, -38.1957 )
+transform/scale = Vector2( 0.666667, 0.666667 )
+z/z = -1
+texture = ExtResource( 16 )
+
+[node name="paper" type="Sprite" parent="slotMachine2"]
+
+transform/pos = Vector2( 117.237, 351.711 )
+transform/rot = 4.96645
+transform/scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 17 )
+
+[node name="slotMachine6" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 2607.35, 419.117 )
+transform/scale = Vector2( 0.45, 0.45 )
+texture = ExtResource( 16 )
+
+[node name="hitbox" type="Area2D" parent="slotMachine6"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="slotMachine6/hitbox"]
+
+shape = SubResource( 4 )
+trigger = false
+_update_shape_index = 0
+
+[node name="slotMachine6 3" type="Sprite" parent="slotMachine6"]
+
+transform/pos = Vector2( -400, 0 )
+texture = ExtResource( 16 )
+
+[node name="slotMachine6 2" type="Sprite" parent="slotMachine6"]
+
+transform/pos = Vector2( 400, 0 )
+texture = ExtResource( 16 )
+
+[node name="slotMachine6 5" type="Sprite" parent="slotMachine6"]
+
+transform/pos = Vector2( 200.833, -38.1957 )
+transform/scale = Vector2( 0.666667, 0.666667 )
+z/z = -1
+texture = ExtResource( 16 )
+
+[node name="slotMachine6 4" type="Sprite" parent="slotMachine6"]
+
+transform/pos = Vector2( -199.167, -38.1957 )
+transform/scale = Vector2( 0.666667, 0.666667 )
+z/z = -1
+texture = ExtResource( 16 )
+
+[node name="receptionistRobot" type="Node2D" parent="." groups=[
+"character",
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 770.96, 421.483 )
+
+[node name="receptionOffice2" type="Sprite" parent="receptionistRobot"]
+
+transform/pos = Vector2( -41.7564, -133.636 )
+transform/scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 18 )
+
+[node name="receptionistRobot" type="Sprite" parent="receptionistRobot"]
+
+transform/scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 19 )
+
+[node name="receptionOffice1" type="Sprite" parent="receptionistRobot"]
+
+transform/pos = Vector2( -33.8928, 38.9513 )
+transform/scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 20 )
+
+[node name="hitbox" type="Area2D" parent="receptionistRobot"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 5 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="receptionistRobot/hitbox"]
+
+shape = SubResource( 5 )
+trigger = false
+_update_shape_index = 0
+
+[node name="text" type="Label" parent="receptionistRobot"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+theme/theme = ExtResource( 12 )
+margin/left = 68.0
+margin/top = -268.0
+margin/right = 243.0
+margin/bottom = -171.0
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="bubble" type="Sprite" parent="receptionistRobot"]
+
+visibility/visible = false
+transform/pos = Vector2( 156.534, -194.5 )
+texture = ExtResource( 21 )
+flip_h = true
+
+[node name="next" type="Sprite" parent="receptionistRobot"]
+
+visibility/visible = false
+transform/pos = Vector2( 252.332, -219.048 )
+texture = ExtResource( 13 )
+
+[node name="securityRobot" type="Sprite" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 1131.55, 429.051 )
+transform/scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 22 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="hitbox" type="Area2D" parent="securityRobot"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 6 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="securityRobot/hitbox"]
+
+shape = SubResource( 6 )
+trigger = false
+_update_shape_index = 0
+
+[node name="cautionSign" type="StaticBody2D" parent="." groups=[
+"canInteractObjects",
+]]
+
+editor/display_folded = true
+transform/pos = Vector2( 3706.47, 525.573 )
+input/pickable = false
+shapes/0/shape = SubResource( 7 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="cautionSign" type="Sprite" parent="cautionSign"]
+
+transform/scale = Vector2( 2.5, 2.5 )
+texture = ExtResource( 23 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cautionSign"]
+
+shape = SubResource( 7 )
+trigger = false
+_update_shape_index = 0
+
+[node name="hitbox" type="Area2D" parent="cautionSign"]
+
+input/pickable = true
+shapes/0/shape = SubResource( 8 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cautionSign/hitbox"]
+
+shape = SubResource( 8 )
+trigger = false
+_update_shape_index = 0
+
+[node name="securityRobot2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 4053.55, 429.051 )
+transform/scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 22 )
+
+[node name="fakeDoor" type="Sprite" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 4289.37, 368.217 )
+transform/scale = Vector2( 1.6, 1.6 )
+texture = ExtResource( 8 )
+flip_h = true
+
+[node name="vent" type="Sprite" parent="fakeDoor"]
+
+transform/pos = Vector2( -1.26538, -97.0836 )
+transform/scale = Vector2( 1.11111, 1.11111 )
+texture = ExtResource( 24 )
+
+[node name="rubble" type="AnimatedSprite" parent="."]
+
+editor/display_folded = true
+visibility/visible = false
+transform/pos = Vector2( 294.53, 462.344 )
+transform/scale = Vector2( 0.9, 0.9 )
+frames = SubResource( 9 )
+animation = "default"
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="hitbox" type="Area2D" parent="rubble"]
+
+editor/display_folded = true
+input/pickable = true
+shapes/0/shape = SubResource( 10 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rubble/hitbox"]
+
+shape = SubResource( 10 )
+trigger = false
+_update_shape_index = 0
+
+[node name="cinematicAnimation" type="AnimationPlayer" parent="."]
+
+playback/process_mode = 1
+playback/default_blend_time = 0.0
+root/root = NodePath("..")
+anims/rubble = SubResource( 11 )
+playback/active = true
+playback/speed = 1.0
+blend_times = [  ]
+autoplay = ""
+
+

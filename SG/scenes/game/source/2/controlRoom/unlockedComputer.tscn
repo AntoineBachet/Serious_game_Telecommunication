@@ -1,0 +1,278 @@
+[gd_scene load_steps=13 format=1]
+
+[ext_resource path="res://scripts/game/source/2/controlRoom/unlockedComputer.gd" type="Script" id=1]
+[ext_resource path="res://scenes/game/riddleOverlay.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/game/white.jpg" type="Texture" id=3]
+[ext_resource path="res://assets/game/source/2/controlRoom/icon_pressed.png" type="Texture" id=4]
+[ext_resource path="res://assets/game/source/2/controlRoom/icon_hover.png" type="Texture" id=5]
+[ext_resource path="res://fonts/segoeuisl30.fnt" type="BitmapFont" id=6]
+[ext_resource path="res://assets/game/source/2/controlRoom/robot_icon_normal.png" type="Texture" id=7]
+[ext_resource path="res://assets/game/source/2/controlRoom/documents_icon.png" type="Texture" id=8]
+[ext_resource path="res://assets/game/source/2/controlRoom/mail_icon.png" type="Texture" id=9]
+[ext_resource path="res://assets/game/source/2/controlRoom/d4_bleu_small.png" type="Texture" id=10]
+[ext_resource path="res://assets/game/source/2/controlRoom/d4.png" type="Texture" id=11]
+[ext_resource path="res://themes/popup.tres" type="Theme" id=12]
+
+[node name="Node2D" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="riddleOverlay" parent="." instance=ExtResource( 2 )]
+
+[node name="bg" type="TextureFrame" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 1920.0
+margin/bottom = 1080.0
+texture = ExtResource( 3 )
+modulate = Color( 0.27451, 0.411765, 0.6, 1 )
+expand = true
+stretch_mode = 0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="control_robot_program" type="TextureButton" parent="."]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 260.0
+margin/top = 282.0
+margin/right = 460.0
+margin/bottom = 482.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/pressed = ExtResource( 4 )
+textures/hover = ExtResource( 5 )
+params/resize_mode = 0
+params/stretch_mode = 0
+
+[node name="Label" type="Label" parent="control_robot_program"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 200.0
+margin/right = 250.0
+margin/bottom = 250.0
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Control robots"
+align = 1
+valign = 1
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Sprite" type="Sprite" parent="control_robot_program"]
+
+transform/pos = Vector2( 125, 125 )
+texture = ExtResource( 7 )
+
+[node name="documents_program" type="TextureButton" parent="."]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 510.0
+margin/top = 282.0
+margin/right = 760.0
+margin/bottom = 532.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/pressed = ExtResource( 4 )
+textures/hover = ExtResource( 5 )
+params/resize_mode = 0
+params/stretch_mode = 0
+
+[node name="Label" type="Label" parent="documents_program"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 200.0
+margin/right = 250.0
+margin/bottom = 250.0
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Documents"
+align = 1
+valign = 1
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Sprite" type="Sprite" parent="documents_program"]
+
+transform/pos = Vector2( 125, 125 )
+texture = ExtResource( 8 )
+
+[node name="mail_program" type="TextureButton" parent="."]
+
+editor/display_folded = true
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 750.0
+margin/top = 282.0
+margin/right = 1000.0
+margin/bottom = 532.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/pressed = ExtResource( 4 )
+textures/hover = ExtResource( 5 )
+params/resize_mode = 0
+params/stretch_mode = 0
+
+[node name="Label" type="Label" parent="mail_program"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 200.0
+margin/right = 250.0
+margin/bottom = 250.0
+custom_fonts/font = ExtResource( 6 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Mail"
+align = 1
+valign = 1
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Sprite" type="Sprite" parent="mail_program"]
+
+transform/pos = Vector2( 125, 125 )
+texture = ExtResource( 9 )
+
+[node name="robot_program" type="WindowDialog" parent="."]
+
+editor/display_folded = true
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 270.0
+margin/top = 200.0
+margin/right = 1670.0
+margin/bottom = 1000.0
+popup/exclusive = false
+window/title = "Control Robots Program"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="robot_program"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 20.0
+margin/top = 20.0
+margin/right = 1380.0
+margin/bottom = 780.0
+custom_fonts/normal_font = ExtResource( 6 )
+bbcode/enabled = true
+bbcode/bbcode = "[center]Programme de contrôle des robots[/center]"
+visible_characters = -1
+percent_visible = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LineEdit" type="LineEdit" parent="robot_program"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 550.0
+margin/top = 650.0
+margin/right = 850.0
+margin/bottom = 680.0
+custom_fonts/font = ExtResource( 6 )
+placeholder/alpha = 0.6
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="validate" type="Button" parent="robot_program"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 625.0
+margin/top = 700.0
+margin/right = 775.0
+margin/bottom = 750.0
+custom_fonts/font = ExtResource( 6 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Valider"
+flat = false
+
+[node name="d4" type="Sprite" parent="robot_program"]
+
+transform/pos = Vector2( 658.216, 519.462 )
+texture = ExtResource( 10 )
+
+[node name="d4_2" type="Sprite" parent="robot_program"]
+
+transform/pos = Vector2( 774.871, 523.353 )
+texture = ExtResource( 11 )
+
+[node name="error" type="AcceptDialog" parent="."]
+
+visibility/visible = false
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+theme/theme = ExtResource( 12 )
+margin/left = 640.0
+margin/top = 440.0
+margin/right = 1280.0
+margin/bottom = 640.0
+popup/exclusive = false
+window/title = "Error"
+dialog/hide_on_ok = true
+
+[node name="Timer" type="Timer" parent="."]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = true
+autostart = false
+
+

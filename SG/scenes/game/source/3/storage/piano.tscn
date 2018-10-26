@@ -1,0 +1,80 @@
+[gd_scene load_steps=7 format=1]
+
+[ext_resource path="res://scripts/game/source/3/storage/piano.gd" type="Script" id=1]
+[ext_resource path="res://scenes/game/riddleOverlay.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/game/piano.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/game/source/3/storage/musicSheet.png" type="Texture" id=4]
+[ext_resource path="res://themes/text30.tres" type="Theme" id=5]
+[ext_resource path="res://assets/game/source/3/storage/paper.png" type="Texture" id=6]
+
+[node name="Node2D" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="riddleOverlay" parent="." instance=ExtResource( 2 )]
+
+[node name="piano" parent="." instance=ExtResource( 3 )]
+
+[node name="musicSheet" type="Sprite" parent="."]
+
+transform/pos = Vector2( 994, 400 )
+texture = ExtResource( 4 )
+
+[node name="riddle" type="RichTextLabel" parent="musicSheet"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+theme/theme = ExtResource( 5 )
+margin/left = -614.0
+margin/top = -16.0
+margin/right = 648.0
+margin/bottom = 19.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode/enabled = false
+bbcode/bbcode = ""
+visible_characters = -1
+percent_visible = 1.0
+
+[node name="paper" type="Sprite" parent="."]
+
+transform/pos = Vector2( 454.582, 231.14 )
+transform/scale = Vector2( 1.02177, 0.5684 )
+texture = ExtResource( 6 )
+
+[node name="code1" type="RichTextLabel" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+theme/theme = ExtResource( 5 )
+margin/left = 138.0
+margin/top = 125.0
+margin/right = 418.0
+margin/bottom = 336.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode/enabled = false
+bbcode/bbcode = ""
+visible_characters = -1
+percent_visible = 1.0
+
+[node name="code2" type="RichTextLabel" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+theme/theme = ExtResource( 5 )
+margin/left = 458.0
+margin/top = 125.0
+margin/right = 738.0
+margin/bottom = 328.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode/enabled = false
+bbcode/bbcode = ""
+visible_characters = -1
+percent_visible = 1.0
+
+

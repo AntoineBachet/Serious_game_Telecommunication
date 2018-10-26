@@ -1,0 +1,129 @@
+[gd_scene load_steps=5 format=1]
+
+[ext_resource path="res://scripts/game/source/1/entrance/bille.gd" type="Script" id=1]
+[ext_resource path="res://assets/game/source/1/bille.png" type="Texture" id=2]
+[ext_resource path="res://fonts/segoeuisl24.fnt" type="BitmapFont" id=3]
+
+[sub_resource type="CircleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 17.422
+
+[node name="bille1" type="RigidBody2D"]
+
+transform/pos = Vector2( 256.942, 614.037 )
+transform/scale = Vector2( 0.895605, 0.924276 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1.31751, 0, 0, 1.27331, -1.03671, -0.0556735 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+mode = 0
+mass = 1.0
+friction = 1.0
+bounce = 0.1
+gravity_scale = 2.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+velocity/linear = Vector2( 0, 0 )
+velocity/angular = 0.0
+damp_override/linear = -1.0
+damp_override/angular = -1.0
+script/script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+transform/pos = Vector2( -1.03671, -0.0556735 )
+transform/scale = Vector2( 1.31751, 1.27331 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Button" type="TextureButton" parent="."]
+
+rect/scale = Vector2( 0.05, 0.05 )
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = -23.0
+margin/top = -22.0
+margin/right = 863.0
+margin/bottom = 865.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+textures/normal = ExtResource( 2 )
+textures/pressed = ExtResource( 2 )
+textures/hover = ExtResource( 2 )
+textures/disabled = ExtResource( 2 )
+textures/focused = ExtResource( 2 )
+params/resize_mode = 0
+params/stretch_mode = 0
+
+[node name="Label" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = -16.0
+margin/top = -11.0
+margin/right = 13.0
+margin/bottom = 13.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="underscore" type="Label" parent="."]
+
+visibility/visible = false
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = -15.0
+margin/top = -11.0
+margin/right = 14.0
+margin/bottom = 13.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "_"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="underscore1" type="Label" parent="."]
+
+visibility/visible = false
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = -15.0
+margin/top = -11.0
+margin/right = 14.0
+margin/bottom = 13.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "_"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+
+
