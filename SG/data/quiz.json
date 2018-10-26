@@ -1,0 +1,847 @@
+﻿{
+	"tutorial": {
+		"1": {
+			"title": {
+				"fr": "Le braille et le morse",
+				"en": "Braille and Morse code"
+			},
+			"description": {
+				"fr": "En quittant Bourg-Palette, nos deux héros discutent des découvertes qu'ils ont faites dans l'étrange demeure du vieux fou.",
+				"en": "As they're leaving Pallet Town, our heroes discuss what they found in the old man's house."
+			},
+			"questions": [{
+					"dialogue": [{
+							"character": "juliette",
+							"text": {
+								"fr": "C'est donc ça qui se cachait dans la maison du vieux !",
+								"en": "So that's what was hidden in the old man's house!"
+							}
+						},
+						{
+							"character": "juliette",
+							"text": {
+								"fr": "C'est étrange, tout tourne autour du braille et du morse...",
+								"en": "It's strange, everything is about braille and Morse code..."
+							}
+						},
+						{
+							"character": "victor",
+							"text": {
+								"fr": "Ah, oui, je ne savais pas que le braille se codait sur --- points.",
+								"en": "Yes, I didn't know braille was coded in --- points."
+							}
+						}
+					],
+					"question": {
+						"fr": "Sur combien de points le braille se code-t-il ?",
+						"en": "With how many dots is braille coded?"
+					},
+					"right_answer": {
+						"fr": ["6"]
+					},
+					"other_answers": {
+						"fr": ["4", "8"]
+					},
+					"score": "1"
+				},
+
+
+
+
+
+				{
+					"dialogue": [{
+							"character": "juliette",
+							"text": {
+								"fr": "Du coup, on peut coder plein de combinaisons différentes !",
+								"en": "So, we can code a lot of different combinations!"
+							}
+						},
+						{
+							"character": "victor",
+							"text": {
+								"fr": "Absolument, on peut en coder ---.",
+								"en": "Yes, we can code ---"
+							}
+						}
+					],
+					"question": {
+						"fr": "Combien de combinaisons différentes peut-on coder en braille ?",
+						"en": "How many different combinations can be coded in braille?"
+					},
+					"right_answer": {
+						"fr": ["64"]
+					},
+					"other_answers": {
+						"fr": ["68", "72"]
+					}
+				},
+
+
+
+
+
+
+				{
+					"dialogue": [{
+							"character": "victor",
+							"text": {
+								"fr": "Du coup, toutes les lettres se codent sur le même nombre de points,",
+								"en": "That way, all the letters are coded with the same number of points,"
+							}
+						},
+						{
+							"character": "victor",
+							"text": {
+								"fr": "il me semble que ça s'appelle un code ---.",
+								"en": "I think it's called a ---."
+							}
+						}
+					],
+					"question": {
+						"fr": "Quel type de code le braille est-il ?",
+						"en": "What type of code is braille?"
+					},
+					"right_answer": {
+						"fr": ["à longueur fixe"],
+						"en": ["fixed-length code"]
+					},
+					"other_answers": {
+						"fr": ["à longueur variable"],
+						"en": ["variable-length code"]
+					}
+				},
+
+
+
+
+
+
+				{
+					"dialogue": [{
+							"character": "juliette",
+							"text": {
+								"fr": "Et le morse ?",
+								"en": "What about the Morse code?"
+							}
+						},
+						{
+							"character": "victor",
+							"text": {
+								"fr": "C'est un code --- !",
+								"en": "It's a ---"
+							}
+						}
+					],
+					"question": {
+						"fr": "Quel type de code le morse est-il ?",
+						"en": "What type of code is Morse code?"
+					},
+					"right_answer": {
+						"fr": ["à longueur variable"],
+						"en": ["variable-length code"]
+					},
+					"other_answers": {
+						"fr": ["à longueur fixe"],
+						"en": ["fixed-length code"]
+					}
+				},
+
+
+
+
+
+				{
+					"condition": "tutorial_1_house_pianoSolved",
+					"alternative_dialogue": [{
+						"character": "juliette",
+						"text": {
+							"fr": "Au fait, j'ai vu qu'il y avait une partition sur le piano. J'aime bien la musique.",
+							"en": "By the way, I saw a music sheet on the piano. I love music!"
+						}
+					}],
+					"dialogue": [{
+							"character": "juliette",
+							"text": {
+								"fr": "Au fait, je ne savais pas que tu savais jouer du piano, c'était quoi comme air ?",
+								"en": "By the way, I didn't know you could play the piano, what was that tune?"
+							}
+						},
+						{
+							"character": "victor",
+							"text": {
+								"fr": "Je crois que c'était ---.",
+								"en": "I think it was ---."
+							}
+						}
+					],
+					"question": {
+						"fr": "Quel était l'air joué sur le piano ?",
+						"en": "What was the tune played on the piano?"
+					},
+					"right_answer": {
+						"fr": ["Le Seigneur des Anneaux"],
+						"en": ["The Lord of the Rings"]
+					},
+					"other_answers": {
+						"fr": ["Peer Gynt", "La valse d'Amélie", "Il pleut, il pleut, bergère"],
+						"en": ["Peer Gynt"]
+					}
+				}
+			],
+
+
+
+
+			"end_dialogue": [{
+					"character": "juliette",
+					"text": {
+						"fr": "On a appris plein de choses aujourd'hui, même si tout le village a été détruit !",
+						"en": "We learnt a lot of things today, even if the village was destroyed!"
+					}
+				},
+				{
+					"character": "victor",
+					"text": {
+						"fr": "Il faut maintenant retrouver les autres survivants !",
+						"en": "Now we have to find other survivors!"
+					}
+				}
+			]
+
+		}
+	},
+	"source": {
+		"2": {
+			"title": {
+				"fr": "La théorie de l'information",
+				"en": "The information theory"
+			},
+			"description": {
+				"fr": "Victor et Juliette récapitulent ce qu'ils ont appris dans le casino des robots.",
+				"en": "Victor and Juliette go over what they learnt in the robots' casino."
+			},
+			"questions": [{
+					"dialogue": [{
+							"character": "juliette",
+							"text": {
+								"fr": "On n'a toujours pas retrouvé nos amis !",
+								"en": "We still haven't found our friends!"
+							}
+						},
+						{
+							"character": "victor",
+							"text": {
+								"fr": "C'est vrai... Mais au moins on a appris des choses, ça nous servira peut-être.",
+								"en": "That's right... But we learnt some things, it may show useful later."
+							}
+						},
+						{
+							"character": "juliette",
+							"text": {
+								"fr": "Je ne m'en souviens pas trop...",
+								"en": "I can't really remember..."
+							}
+						},
+						{
+							"character": "juliette",
+							"text": {
+								"fr": "Que valait la quantité d'information d'une carte dans un paquet de 32 cartes ?",
+								"en": "What was the quantity of information of a card in a 32 cards deck?"
+							}
+						},
+						{
+							"character": "victor",
+							"text": {
+								"fr": "Ça fait --- bits.",
+								"en": "It's --- bits."
+							}
+						}
+					],
+					"question": {
+						"fr": "Quelle est la quantité d'information d'une carte dans un paquet de 32 cartes ?",
+						"en": "What is the quantity of information of a card in a deck of 32?"
+					},
+					"right_answer": {
+						"fr": ["5"]
+					},
+					"other_answers": {
+						"fr": ["4", "6"]
+					},
+					"score": "1"
+				},
+
+
+				{
+					"dialogue": [{
+							"character": "juliette",
+							"text": {
+								"fr": "Comment ça marche exactement ? Par exemple, si on prend un événement très peu probable ?",
+								"en": "How does it work exactly? For example, if we take a highly unlikely event?"
+							}
+						},
+						{
+							"character": "victor",
+							"text": {
+								"fr": "Dans ce cas, la quantité d'information est ---.",
+								"en": "In this case, the quantities of information is ---."
+							}
+						}
+					],
+					"question": {
+						"fr": "Comment est la quantité d'information d'un événement très peu probable ?",
+						"en": "How is the quantity of information of an unlikely event?"
+					},
+					"right_answer": {
+						"fr": ["très grande"],
+						"en": ["very high"]
+					},
+					"other_answers": {
+						"fr": ["très petite"],
+						"en": ["very small"]
+					},
+					"score": "1"
+				},
+
+
+				{
+					"dialogue": [{
+							"character": "juliette",
+							"text": {
+								"fr": "Et l'entropie ? Qu'est-ce que ça représente ?",
+								"en": "What about entropy? What does it represent?"
+							}
+						},
+						{
+							"character": "victor",
+							"text": {
+								"fr": "Ça représente ---.",
+								"en": "It represents ---."
+							}
+						}
+					],
+					"question": {
+						"fr": "Que représente l'entropie ?",
+						"en": "What does entropy represent?"
+					},
+					"right_answer": {
+						"fr": ["la quantité d'information moyenne par symbole"],
+						"en": ["the average self-information per symbol"]
+					},
+					"other_answers": {
+						"fr": ["la quantité d'information maximale par symbole"],
+						"en": ["the maximum self-information per symbol"]
+					},
+					"score": "1"
+				},
+
+
+				{
+					"dialogue": [{
+							"character": "juliette",
+							"text": {
+								"fr": "Du coup, quelles sont les valeurs possibles ? Si on prend une source à M symboles ?",
+								"en": "So what are its possible values? What if we take a source with M symbols?"
+							}
+						},
+						{
+							"character": "victor",
+							"text": {
+								"fr": "Je crois que l'entropie peut être ---.",
+								"en": "I think entropy can be ---."
+							}
+						}
+					],
+					"question": {
+						"fr": "Quelles sont les valeurs possibles de l'entropie pour une source avec un alphabet à M symboles ?",
+						"en": "What are the possible values of entropy for a source with an M-symbol alphabet?"
+					},
+					"right_answer": {
+						"fr": ["entre 0 et log(M)"],
+						"en": ["between 0 and log(M)"]
+					},
+					"other_answers": {
+						"fr": ["entre 1 et log(M)", "supérieure à 0"],
+						"en": ["between 1 and log(M)", "greater than 0"]
+					},
+					"score": "1"
+				},
+
+
+				{
+					"condition": "source_2_miniGameRoom_pianoSolvedPlayed",
+					"dialogue": [{
+							"character": "juliette",
+							"text": {
+								"fr": "Au fait, tu as reconnu la musique du piano ?",
+								"en": "By the way, did you recognized the music on the piano?"
+							}
+						},
+						{
+							"character": "victor",
+							"text": {
+								"fr": "Je crois que c'était ---.",
+								"en": "I think it was ---."
+							}
+						}
+					],
+					"question": {
+						"fr": "Quel était l'air joué sur le piano ?",
+						"en": "What was the tune played on the piano?"
+					},
+					"right_answer": {
+						"fr": ["Star Wars"],
+						"en": ["Star Wars"]
+					},
+					"other_answers": {
+						"fr": ["Bohemian Rhapsody", "The Entertainer"],
+						"en": ["Bohemian Rhapsody", "The Entertainer"]
+					}
+				}
+
+			],
+
+			"end_dialogue": []
+		},
+
+
+
+		"3": {
+			"title": {
+				"fr": "",
+				"en": ""
+			},
+			"description": {
+				"fr": "",
+				"en": ""
+			},
+			"questions": [{
+					"dialogue": [{
+							"character": "juliette",
+							"text": {
+								"fr": "Quel endroit étrange ! Il y avait des codes partout !",
+								"en": "What a strange place! There were codes everywhere!"
+							}
+						},
+						{
+							"character": "victor",
+							"text": {
+								"fr": "Oui, on a pu découvrir de différents codes.",
+								"en": "Yes, we discovered different codes."
+							}
+						},
+						{
+							"character": "juliette",
+							"text": {
+								"fr": "J'ai entendu parler du code de Fano-Shannon. Comment le construit-on ?",
+								"en": "I've heard of the Fano-Shannon code. How it is done?"
+							}
+						},
+						{
+							"character": "victor",
+							"text": {
+								"fr": "Chaque symbole est codé ---.",
+								"en": "Each symbol is coded ---."
+							}
+						}
+					],
+					"question": {
+						"fr": "Comment construire un code avec l'algorithme de Fano-Shannon ?",
+						"en": "How to construct a code with the Fano-Shannon algorithm?"
+					},
+					"right_answer": {
+						"fr": ["sur une longueur égale à sa quantité d'information"],
+						"en": ["with a length equal to its self-information"]
+					},
+					"other_answers": {
+						"fr": ["sur une longueur d'autant plus grande qu'il est probable"],
+						"en": ["with a higher length when it has a higher probability"]
+					},
+					"score": "1"
+				},
+
+
+
+				{
+					"dialogue": [{
+							"character": "juliette",
+							"text": {
+								"fr": "Et le code de Huffman, qu'on a vu plusieurs fois dans les toilettes ?",
+								"en": "And what about the Huffman code, which we saw several times in the toilets?"
+							}
+						},
+						{
+							"character": "victor",
+							"text": {
+								"fr": "On classe les symboles par probabilité décroissante et, à chaque étape, ---.",
+								"en": "The symbols are ordered in descending order of probability and, in each step, ---."
+							}
+						}
+					],
+					"question": {
+						"fr": "Comment construire un code avec l'algorithme de Huffman ? (avec un alphabet de code binaire)",
+						"en": "How to construct a code with the Huffman algorithm? (with a binary code alphabet)"
+					},
+					"right_answer": {
+						"fr": ["on les regroupe deux par deux, puis on code de droite à gauche"],
+						"en": ["regrouped in pairs, then coded from right to left"]
+					},
+					"other_answers": {
+						"fr": ["on les regroupe deux par deux, puis on code de gauche à droite"],
+						"en": ["regrouped in pairs, then coded from left to right"]
+					},
+					"score": "1"
+				},
+
+
+
+
+				{
+					"dialogue": [{
+							"character": "juliette",
+							"text": {
+								"fr": "On a aussi vu d'autres codes. Par exemple, les codes dans les vitrines du magasin.",
+								"en": "We saw other codes as well. For example, the codes in the shop's display cases."
+							}
+						},
+						{
+							"character": "juliette",
+							"text": {
+								"fr": "Ils étaient tous assez différents, non ?",
+								"en": "They were all quite different, weren't they?"
+							}
+						},
+						{
+							"character": "victor",
+							"text": {
+								"fr": "Tout à fait. Deux de ces codes étaient ---.",
+								"en": "They were. Two were ---."
+							}
+						}
+					],
+					"question": {
+						"fr": "Quelle propriété est partagée par deux des codes vus dans le magasin ?",
+						"en": "What property is shared by two of the codes seen in the shop?"
+					},
+					"right_answer": {
+						"fr": ["des codes réguliers"],
+						"en": ["non-singular codes"]
+					},
+					"other_answers": {
+						"fr": ["des codes déchiffrables", "des codes instantanés"],
+						"en": ["decipherable codes", "prefix codes"]
+					},
+					"score": "1"
+				},
+
+
+
+				{
+					"dialogue": [{
+						"character": "victor",
+						"text": {
+							"fr": "Et deux autres étaient ---.",
+							"en": "And two other were ---."
+						}
+					}],
+					"question": {
+						"fr": "Quelle propriété est partagée par deux des codes vus dans le magasin ?",
+						"en": "What property is shared by two of the codes seen in the shop?"
+					},
+					"right_answer": {
+						"fr": ["des codes non déchiffrables"],
+						"en": ["non-decipherable codes"]
+					},
+					"other_answers": {
+						"fr": ["des codes singuliers", "des codes instantanés"],
+						"en": ["singular codes", "prefix codes"]
+					},
+					"score": "1"
+				},
+
+
+
+
+				{
+					"dialogue": [{
+							"character": "juliette",
+							"text": {
+								"fr": "Il existe vraiment pleins de codes différents !",
+								"en": "There are really a lot of different codes!"
+							}
+						},
+						{
+							"character": "juliette",
+							"text": {
+								"fr": "Le code d'Huffman me semble assez compliqué par rapport aux autres qu'on a vus...",
+								"en": "The Huffman code seems quite complicated to me compared to the others we saw..."
+							}
+						},
+						{
+							"character": "juliette",
+							"text": {
+								"fr": "Pourquoi est-ce qu'on l'utilise quand même ?",
+								"en": "Why is it used anyway?"
+							}
+						},
+						{
+							"character": "victor",
+							"text": {
+								"fr": "C'est parce qu'il a une propriété intéressante : il minimise la distance moyenne du code.",
+								"en": "Because it has an interesting property: it minimises the code's average distance."
+							}
+						},
+						{
+							"character": "victor",
+							"text": {
+								"fr": "C'est ce qu'on appelle un ---.",
+								"en": "It's called a ---."
+							}
+						}
+					],
+					"question": {
+						"fr": "Quelle est la propriété intéressante du code de Huffman ?",
+						"en": "What propriety of the Huffman code is particularly interesting?"
+					},
+					"right_answer": {
+						"fr": ["code compact"],
+						"en": ["compact code"]
+					},
+					"other_answers": {
+						"fr": ["code instantané", "code minimal"],
+						"en": ["prefix code", "minimal code"]
+					},
+					"score": "1"
+				},
+
+
+				{
+					"condition": "source_3_storage_pianoSolved",
+					"dialogue": [{
+							"character": "juliette",
+							"text": {
+								"fr": "Au fait, tu as reconnu la musique du piano ?",
+								"en": "By the way, did you recognized the music on the piano?"
+							}
+						},
+						{
+							"character": "victor",
+							"text": {
+								"fr": "Je crois que c'était ---.",
+								"en": "I think it was ---."
+							}
+						}
+					],
+					"question": {
+						"fr": "Quel était l'air joué sur le piano ?",
+						"en": "What was the tune played on the piano?"
+					},
+					"right_answer": {
+						"fr": ["Le Parrain"],
+						"en": ["The Godfather"]
+					},
+					"other_answers": {
+						"fr": ["Indiana Jones", "Les Noces de Figaro"],
+						"en": ["Indiana Jones", "The Marriage of Figaro"]
+					}
+				}
+
+			],
+
+			"end_dialogue": []
+		}
+	},
+	"canal": {
+		"2": {
+			"title": {
+				"fr": "Le codage canal",
+				"en": "The channel code"
+			},
+			"description": {
+				"fr": "Victor et Juliette reparlent de ce qu'ils ont appris dans cet immeuble.",
+				"en": "Victor and Juliette go over what they learnt in the robots' casino."
+			},
+			"questions": [{
+					"dialogue": [{
+							"character": "juliette",
+							"text": {
+								"fr": "On va enfin pouvoir avoir des informations sur ce qu'il s'est passé !",
+								"en": "We still haven't found our friends!"
+							}
+						},
+						{
+							"character": "victor",
+							"text": {
+								"fr": "Je l'espère... Les obstacles que nous avons eu étaient plus difficiles que d'habitude.",
+								"en": "That's right... But we learnt some things, it may show useful later."
+							}
+						},
+						{
+							"character": "juliette",
+							"text": {
+								"fr": "Tu trouves ? Je ne m'en souviens pas trop...",
+								"en": "I can't really remember..."
+							}
+						},
+						{
+							"character": "juliette",
+							"text": {
+								"fr": "Sachant que la distance minimale vaut 3, combien d'erreurs peut-on détecter ?",
+								"en": "What was the quantity of information of a card in a 32 cards deck?"
+							}
+						},
+						{
+							"character": "victor",
+							"text": {
+								"fr": "On peut corriger --- erreur(s)",
+								"en": "It's --- bits."
+							}
+						}
+					],
+					"question": {
+						"fr": "Combien d'erreurs peut-on détecter lorsque la distance minimale vaut 3 ?",
+						"en": "What is the quantity of information of a card in a deck of 32?"
+					},
+					"right_answer": {
+						"fr": ["2"]
+					},
+					"other_answers": {
+						"fr": ["0", "1", "3"]
+					},
+					"score": "1"
+				},
+
+
+				{
+					"dialogue": [{
+							"character": "juliette",
+							"text": {
+								"fr": "D'accord, mais peut-on toutes les corriger ou nous sommes également limités ?",
+								"en": "How does it work exactly? For example, if we take a highly unlikely event?"
+							}
+						},
+						{
+							"character": "victor",
+							"text": {
+								"fr": "Nous ne pouvons en corriger que ---.",
+								"en": "In this case, the quantities of information is ---."
+							}
+						}
+					],
+					"question": {
+						"fr": "Sachant que la distance minimale vaut 3, combien d'erreurs peut-on corriger",
+						"en": "How is the quantity of information of an unlikely event?"
+					},
+					"right_answer": {
+						"fr": ["1"],
+						"en": ["very high"]
+					},
+					"other_answers": {
+						"fr": ["0", "2", "3"],
+						"en": ["very small"]
+					},
+					"score": "1"
+				},
+
+
+				{
+					"dialogue": [{
+							"character": "juliette",
+							"text": {
+								"fr": "Tu te rappelle de Hamming ?",
+								"en": "You remember Hamming ?"
+							}
+						},
+						{
+							"character": "victor",
+							"text": {
+								"fr": "Oui ! Par exemple quelle est la distance de Hamming entre 0011010 et 0100110 ?",
+								"en": "Yes ! For example what is the Hamming distance between 0011010 and 0100110 ?"
+							}
+						}
+					],
+					"question": {
+						"fr": "Quelle est la distance de hamming de 0011010 et 0100110 ? ",
+						"en": "What is the Hamming distance between 0011010 and 0100110 ?"
+					},
+					"right_answer": {
+						"fr": ["4"],
+						"en": ["4"]
+					},
+					"other_answers": {
+						"fr": ["36", "3", "1"],
+						"en": ["36", "3", "1 "]
+					},
+					"score": "1"
+				},
+
+
+				{
+					"dialogue": [{
+							"character": "juliette",
+							"text": {
+								"fr": "Et toute cette histoire de matrice génératrice et de contrôle je ne suis pas sûre de bien avoir compris",
+								"en": "And all these stories of ..."
+							}
+						},
+						{
+							"character": "victor",
+							"text": {
+								"fr": "Mais si tu te souviens le produit de la matrice génératrice et de la transposée de la matrice de contrôle donne --- ",
+								"en": "I think entropy can be ---."
+							}
+						}
+					],
+					"question": {
+						"fr": "A quoi est égale le produit de la matrice génératrice et de la transposée de la matrice de controle ? ",
+						"en": "What are the possible values of entropy for a source with an M-symbol alphabet?"
+					},
+					"right_answer": {
+						"fr": ["la matrice nulle"],
+						"en": ["between 0 and log(M)"]
+					},
+					"other_answers": {
+						"fr": ["la matrice identité", "une matrice non nulle dont les lignes et les colonnes respectent la parité"],
+						"en": ["between 1 and log(M)", "greater than 0"]
+					},
+					"score": "1"
+				},
+
+
+				{
+					"condition": "canal_2_loft_pianosloved",
+					"dialogue": [{
+							"character": "juliette",
+							"text": {
+								"fr": "Au fait, tu as reconnu la musique du piano ?",
+								"en": "By the way, did you recognized the music on the piano?"
+							}
+						},
+						{
+							"character": "victor",
+							"text": {
+								"fr": "Je crois que c'était ---.",
+								"en": "I think it was ---."
+							}
+						}
+					],
+					"question": {
+						"fr": "Quel était l'air joué sur le piano ?",
+						"en": "What was the tune played on the piano?"
+					},
+					"right_answer": {
+						"fr": ["Star Wars"],
+						"en": ["Star Wars"]
+					},
+					"other_answers": {
+						"fr": ["la petite maison dans la prairie", "le bon la brute et le truant"],
+						"en": ["Bohemian Rhapsody", "The Entertainer"]
+					}
+				}
+
+			],
+
+			"end_dialogue": []
+		}
+	}
+}

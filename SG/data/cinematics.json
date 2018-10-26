@@ -1,0 +1,1792 @@
+﻿{
+	"intro": {
+		"potato_field": {
+			"main": [{
+					"action": "character_animation",
+					"character": "character",
+					"animation": "idle_left"
+				},
+				{
+					"action": "character_animation",
+					"character": "juliette",
+					"animation": "idle_right"
+				},
+				{
+					"action": "wait",
+					"time": "0.5"
+				},
+				{
+					"dialogue": [{
+							"character": "character",
+							"text": {
+								"fr": "... C'est encore à nous de ramasser les patates pour le village !",
+								"en": "... It's once again our job to harvest the potatoes for the village!"
+							}
+						},
+						{
+							"character": "juliette",
+							"text": {
+								"fr": "Il n'y a pas eu beaucoup de survivants, il faut bien nous rendre utiles.",
+								"en": "There were only few survivors, we have to be helpful!"
+							}
+						},
+						{
+							"character": "character",
+							"text": {
+								"fr": "Je sais bien, mais j'aimerais qu'on nous autorise à explorer hors du village, comme les adultes.",
+								"en": "I know, but I still wish we could go scavenge outside the village, just like the adults!"
+							}
+
+						},
+						{
+							"character": "juliette",
+							"text": {
+								"fr": "Peut-être quand nous serons plus grands.",
+								"en": "Maybe when we're older."
+							}
+
+						}
+					]
+				},
+
+				{
+					"action": "shake_camera",
+					"time": "1"
+				},
+
+				{
+					"action": "wait",
+					"time": "1.0"
+				},
+
+				{
+					"action": "sound",
+					"name": "intro_collapse"
+				},
+
+				{
+					"action": "wait",
+					"time": "1.5"
+				},
+
+				{
+					"dialogue": [{
+							"character": "character",
+							"text": {
+								"fr": "Qu'est-ce qui se passe ??? Un tremblement de terre ?",
+								"en": "What's happening??? An earthquake?"
+							}
+						},
+						{
+							"character": "juliette",
+							"text": {
+								"fr": "Pourquoi maintenant ? Il n'y a plus eu de tremblement de terre depuis longtemps !",
+								"en": "Why now? There hasn't been any earthquake in a long time!"
+							}
+						},
+						{
+							"character": "character",
+							"text": {
+								"fr": "Il avait l'air plutôt violent, j'espère que le village va bien.",
+								"en": "It was pretty violent, I hope the village is okay."
+							}
+						},
+
+						{
+							"character": "juliette",
+							"text": {
+								"fr": "Vite, rentrons !",
+								"en": "Hurry, let's go back!"
+							}
+						}
+					]
+				},
+
+				{
+					"action": "animation",
+					"name": "leave_screen"
+				}
+			]
+		}
+	},
+
+	"tutorial": {
+		"1": {
+			"village": {
+				"arrival": [{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "idle_right"
+					},
+					{
+						"action": "animation",
+						"name": "enter_village"
+					},
+					{
+						"dialogue": [{
+								"character": "character",
+								"text": {
+									"fr": "Le village est détruit !",
+									"en": "The village is destroyed!"
+								}
+							},
+							{
+								"character": "juliette",
+								"text": {
+									"fr": "Et aucune trace des autres...",
+									"en": "No sign of the others..."
+								}
+							},
+							{
+								"character": "juliette",
+								"text": {
+									"fr": "Tu crois qu'ils ont réussi à fuir à temps ?",
+									"en": "Do you think they were able to leave in time?"
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "Je ne sais pas, fouillons le village !",
+									"en": "I don't know, let's search the village!"
+								}
+							}
+						]
+					}
+				]
+			},
+
+
+
+			"house": {
+				"enter_room": [{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "idle_right"
+					},
+					{
+						"action": "wait",
+						"time": "0.2"
+					},
+					{
+						"dialogue": [{
+								"character": "juliette",
+								"text": {
+									"fr": "Je crois que c'est la maison du vieux fou...",
+									"en": "I think it's the crazy old man's house..."
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "C'est la seule maison qui tient encore debout !",
+									"en": "It's the only house still standing!"
+								}
+							},
+							{
+								"character": "juliette",
+								"text": {
+									"fr": "Connaissant le vieux, il doit y avoir plein de choses bizarres ici...",
+									"en": "Knowing the elder, there must be a lot of weird things here..."
+								}
+							},
+							{
+								"character": "juliette",
+								"text": {
+									"fr": "En fouillant, on pourrait peut-être trouver où sont partis les gens du village.",
+									"en": "Maybe we could get a clue as to where the other people are, if we have a look around."
+								}
+							}
+						]
+					}
+				]
+			},
+
+
+			"secretroom": {
+				"enter_room": [{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "idle_right"
+					},
+					{
+						"action": "wait",
+						"time": "0.2"
+					},
+					{
+						"dialogue": [{
+								"character": "character",
+								"text": {
+									"fr": "Oh ! Une pièce secrète !",
+									"en": "Oh! A secret room!"
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "Il fait très sombre ici...",
+									"en": "It's very dark in here..."
+								}
+							}
+						]
+					}
+				],
+
+				"light": [{
+						"action": "wait",
+						"time": "1"
+					},
+					{
+						"dialogue": [{
+								"character": "character",
+								"text": {
+									"fr": "Cette lampe n'a pas l'air de fonctionner correctement...",
+									"en": "It doesn't seem to work very well..."
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "On dirait qu'il y a une logique à ces motifs. Qu'est-ce que ça signifie ?",
+									"en": "But it seems that there is some logic behind these patterns. What does it mean?"
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "Je devrais les noter sur un papier.",
+									"en": "I should write these patterns down."
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "Ou peut être que je peux trouver un appareil pour m'aider. Ce serait plus simple.",
+									"en": "Or maybe I can find some kind of device that can help me. It would be easier."
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "En tout cas, je devrais pouvoir relancer la séquence en éteignant puis en rallumant la lampe.",
+									"en": "Anyway, I should be able to reset the sequence by turning the lamp off and on again."
+								}
+							}
+						]
+					}
+				],
+
+
+				"end_level": [{
+						"action": "show",
+						"name": "juliette"
+					},
+					{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "idle_left"
+					},
+					{
+						"action": "character_animation",
+						"character": "juliette",
+						"animation": "idle_right"
+					},
+					{
+						"action": "animation",
+						"name": "juliette_enter"
+					},
+					{
+						"dialogue": [{
+								"character": "juliette",
+								"text": {
+									"fr": "Tu as trouvé quelque chose ?",
+									"en": "Have you found anything?"
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "Oui, un message...",
+									"en": "Yes, a message..."
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "On dirait que ça vient d'un autre groupe de survivants.",
+									"en": "It looks like it comes from another group of survivors."
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "Il y a un endroit indiqué, mais il manque des informations.",
+									"en": "There's a place mentioned in it, but it is missing information."
+								}
+							},
+							{
+								"character": "juliette",
+								"text": {
+									"fr": "Il faut essayer de trouver cet endroit !",
+									"en": "We have to try and find this place!"
+								}
+							},
+							{
+								"character": "juliette",
+								"text": {
+									"fr": "Peut-être que c'est là-bas que sont partis les gens du village !",
+									"en": "Maybe that's where the people of the village fled!"
+								}
+							},
+							{
+								"character": "juliette",
+								"text": {
+									"fr": "On y trouvera sûrement d'autres survivants !",
+									"en": "We'll probably find more survivors there!"
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "Je vais regarder sur une carte où on pourrait aller !",
+									"en": "I'll look on a map where we could go!"
+								}
+							},
+							{
+								"character": "juliette",
+								"text": {
+									"fr": "D'accord !",
+									"en": "Okay!"
+								}
+							}
+						]
+					},
+					{
+						"action": "animation",
+						"name": "juliette_leave"
+					},
+					{
+						"action": "sound",
+						"name": "woodendoor"
+					},
+					{
+						"action": "wait",
+						"time": "1"
+					},
+					{
+						"action": "hide",
+						"name": "juliette"
+					}
+				]
+			}
+
+		}
+	},
+
+
+
+	"source": {
+		"1": {
+			"source_entry": {
+				"arrival": [{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "idle_right"
+					},
+					{
+						"action": "wait",
+						"time": "0.5"
+					},
+					{
+						"dialogue": [{
+								"character": "juliette",
+								"text": {
+									"fr": "Qu'est ce qu'on fait maintenant qu'on est ici ?",
+									"en": "What do we do now that we're here?"
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "Je sais pas trop... Avançons, il y a l'air d'avoir quelque chose là-bas !",
+									"en": "I don't really know... Let's keep moving, it looks like there's something over there!"
+								}
+							}
+						]
+					}
+				],
+
+				"doorLocked": [{
+					"dialogue": [{
+							"character": "character",
+							"text": {
+								"fr": "C'est fermé... Évidemment.",
+								"en": "It's locked... Obviously."
+							}
+						},
+						{
+							"character": "character",
+							"text": {
+								"fr": "On dirait que la ville qu'on cherchait est juste derrière cette barrière.",
+								"en": "It seems that the city we're looking for is just past this fence."
+							}
+						},
+						{
+							"character": "character",
+							"text": {
+								"fr": "Il faudrait chercher la clé.",
+								"en": "We should search for the key."
+							}
+						},
+						{
+							"character": "character",
+							"text": {
+								"fr": "Je suis trop mauvais en escalade de toute façon.",
+								"en": "I don't think I can climb up this fence anyway."
+							}
+						}
+					]
+				}],
+
+
+				"robotfall": [{
+						"action": "character_animation",
+						"character": "robot",
+						"animation": "angry"
+					},
+					{
+						"action": "sound",
+						"name": "metal_drop"
+					},
+					{
+						"action": "animation",
+						"name": "robotfall"
+					},
+					{
+						"dialogue": [{
+								"character": "robot",
+								"text": {
+									"fr": "STOP, HUMAIN.",
+									"en": "STOP, HUMAN."
+								}
+							},
+
+							{
+								"character": "robot",
+								"text": {
+									"fr": "J'ai été chargé par mon créateur de protéger ce village !... (Même si plus personne n'y vit maintenant.)",
+									"en": "My creator ordered me to protect this village!... (Even if no one lives here anymore.)"
+								}
+
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "Oh... donc il n'y a personne ici... Pourquoi restes-tu là alors ?",
+									"en": "So there's no one here... Why are you staying here then?"
+								}
+							},
+							{
+								"character": "robot",
+								"text": {
+									"fr": "Je protège ce village depuis maintenant quatre-vingt ans grâce à l'énergie solaire !",
+									"en": "I've been protecting this place for eighty years thanks to solar energy!"
+								}
+							}
+						]
+					},
+
+					{
+						"action": "characterSet",
+						"character": "robot",
+						"animation": "sad"
+					},
+
+					{
+						"dialogue": [{
+							"character": "robot",
+							"text": {
+								"fr": "Mais quand tout le monde est parti d'ici, ils ont oublié de m'emmener avec eux.",
+								"en": "But when they all decided to leave, they forgot to take me with them."
+							}
+						}]
+					},
+
+					{
+						"action": "character_animation",
+						"character": "robot",
+						"animation": "happy"
+					},
+
+					{
+						"dialogue": [{
+								"character": "robot",
+								"text": {
+									"fr": "Sinon, moi, c'est Automate R24-OA-BA--OOA-T ! R-O-B-O-T, pour faire court !",
+									"en": "By the way, I'm Automat RX3254-OOA-BA--OOA-Three ! R-O-B-O-T, for short! "
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "Et moi, c'est Victor !",
+									"en": "And I'm Victor!"
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "Et elle, c'est ma sœur, Juliette !",
+									"en": "And she's my sister, Juliette!"
+								}
+							},
+							{
+								"character": "juliette",
+								"text": {
+									"fr": "Salut !",
+									"en": "Hi!"
+								}
+							},
+							{
+								"character": "robot",
+								"text": {
+									"fr": "Quels jolis noms ! Pourriez-vous me rendre un service, mes amis ?",
+									"en": "Such pleasant names! Could you do me a favor, my friends? "
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "Bien sûr ! Que devons-nous faire ?",
+									"en": "Of course! What should we do?"
+								}
+							}
+						]
+					},
+
+					{
+						"action": "character_animation",
+						"character": "robot",
+						"animation": "sad"
+					},
+
+					{
+						"dialogue": [{
+								"character": "robot",
+								"text": {
+									"fr": "Un de mes circuits s'est déréglé et j'aimerais que tu m'aides à le réparer.",
+									"en": "One of my circuits broke and I'd like you to help me fix it."
+								}
+							},
+							{
+								"character": "robot",
+								"text": {
+									"fr": "Le système qui assure mon équilibre est géré par des billes, treize exactement.",
+									"en": "The system that prevents me from falling uses some marbles, thirteen to be precise."
+								}
+							},
+							{
+								"character": "robot",
+								"text": {
+									"fr": "Mais il est un peu vieux et une des billes ne fait plus le même poids que les autres.",
+									"en": "But it's a bit old and one of the marbles now has a different weight from the others."
+								}
+							},
+							{
+								"character": "robot",
+								"text": {
+									"fr": "J'avais une balance jadis, mais elle m'a été volée par un vieux fou il y a fort longtemps...",
+									"en": "I used to have scales, but some mad old fool stole them long ago."
+								}
+							},
+							{
+								"character": "juliette",
+								"text": {
+									"fr": "Une balance ? On en a justement trouvé une !",
+									"en": "A weighing scale? We happen to have found one!"
+								}
+							}
+						]
+					},
+					{
+						"action": "character_animation",
+						"character": "robot",
+						"animation": "happy"
+					},
+					{
+						"dialogue": [{
+								"character": "robot",
+								"text": {
+									"fr": "C'est super ! Tu peux me la donner ?",
+									"en": "That's great! Can you give it to me?"
+								}
+							},
+							{
+								"character": "robot",
+								"text": {
+									"fr": "Je peux ouvrir la vitre sur mon corps pour que tu puisses manipuler les billes,",
+									"en": "I can open the glass panel on my body so that you can weigh them,"
+								}
+							},
+							{
+								"character": "robot",
+								"text": {
+									"fr": "mais, pour des raisons de sécurité, tu ne peux manipuler les billes que trois fois.",
+									"en": "but, for safety reasons, you can only manipulate the marbles trois times."
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "Je peux au moins essayer !",
+									"en": "I can at least try!"
+								}
+							}
+						]
+					},
+					{
+						"action": "character_animation",
+						"character": "robot",
+						"animation": "happy"
+					},
+					{
+						"dialogue": [{
+							"character": "robot",
+							"text": {
+								"fr": "Merci mon ami !",
+								"en": "Thanks you my friend!"
+							}
+						}]
+					}
+				],
+
+
+				"nomoredoor": [{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "idle_left"
+					},
+					{
+						"action": "character_animation",
+						"character": "robot",
+						"animation": "happy"
+					},
+					{
+						"action": "animation",
+						"name": "riddleSolved"
+					},
+					{
+						"dialogue": [{
+								"character": "robot",
+								"text": {
+									"fr": "Merci beaucoup Victor !",
+									"en": "Thanks a lot Victor!"
+								}
+							},
+
+							{
+								"character": "robot",
+								"text": {
+									"fr": "Je vais retourner au village maintenant !",
+									"en": "I'll go back to the village now!"
+								}
+							}
+						]
+					},
+
+					{
+						"action": "animation_not_blocking",
+						"name": "AdiosDoor"
+					},
+					{
+						"action": "wait",
+						"time": "0.7"
+					},
+					{
+						"action": "sound",
+						"name": "metal_fall"
+					},
+					{
+						"action": "wait",
+						"time": "0.5"
+					}
+				]
+			}
+		},
+
+
+
+		"2": {
+			"village": {
+				"enterVillage": [{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "idle_right"
+					},
+					{
+						"action": "animation",
+						"name": "enterVillage"
+					},
+					{
+						"dialogue": [{
+								"character": "juliette",
+								"text": {
+									"fr": "Il n'y a vraiment personne ici...",
+									"en": "There's no one here..."
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "Il reste un dernier endroit à fouiller, ce vieux casino.",
+									"en": "We still have to search this old casino."
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "On trouvera peut-être quelque chose d'intéressant.",
+									"en": "Maybe we'll find something interesting."
+								}
+							}
+						]
+					}
+				],
+
+				"exitCasino": [{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "idle_left"
+					},
+					{
+						"action": "wait",
+						"time": "0.2"
+					},
+					{
+						"dialogue": [{
+								"character": "juliette",
+								"text": {
+									"fr": "Ouf, on a réussi à sortir de ce casino !",
+									"en": "Whew, we finally got out of this casino!"
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "Oui... Mais aucune trace de nos amis... Il n'y a rien à part des robots ici !",
+									"en": "Yes... But no sign of our friends... There's nothing here but robots!"
+								}
+							},
+							{
+								"character": "juliette",
+								"text": {
+									"fr": "Continuons, on trouvera peut-être quelque chose plus loin !",
+									"en": "Let's keep going, we may find something farther!"
+								}
+							}
+						]
+					}
+				]
+			},
+			"casino": {
+				"enterCasino": [{
+						"action": "wait",
+						"time": "0.2"
+					},
+					{
+						"dialogue": [{
+							"character": "juliette",
+							"text": {
+								"fr": "Oh ! Il y a plein de robots ici !",
+								"en": "Oh! This place is full of robots!"
+							}
+						}]
+					},
+					{
+						"action": "shake_camera",
+						"time": "1"
+					},
+					{
+						"action": "wait",
+						"time": "0.5"
+					},
+					{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "jump"
+					},
+					{
+						"action": "sound",
+						"name": "intro_collapse"
+					},
+					{
+						"action": "wait",
+						"time": "0.5"
+					},
+					{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "idle_left"
+					},
+					{
+						"action": "wait",
+						"time": "0.2"
+					},
+					{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "idle_right"
+					},
+					{
+						"action": "wait",
+						"time": "0.2"
+					},
+					{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "idle_left"
+					},
+					{
+						"action": "animation_not_blocking",
+						"name": "rubble"
+					},
+					{
+						"action": "show",
+						"name": "rubble"
+					},
+					{
+						"dialogue": [{
+								"character": "character",
+								"text": {
+									"fr": "Qu'est-ce qui se passe ?",
+									"en": "What's happening?"
+								}
+							},
+							{
+								"character": "juliette",
+								"text": {
+									"fr": "Encore un tremblement de terre !",
+									"en": "Another earthquake!"
+								}
+							},
+							{
+								"character": "juliette",
+								"text": {
+									"fr": "Regarde, des gravats devant la porte ! On est bloqués ici !",
+									"en": "Look, rubble in front of the door! We're stuck here!"
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "Je suis sûr qu'on va trouver un moyen de sortir...",
+									"en": "I'm sure we'll find a way to get out..."
+								}
+							}
+						]
+					}
+				],
+
+				"diceRobot": [{
+					"dialogue": [{
+							"character": "character",
+							"text": {
+								"fr": "Nous voulons jouer !",
+								"en": "We want to play your game!"
+							}
+						},
+						{
+							"character": "diceRobot",
+							"text": {
+								"fr": "Très bien, je vais vous exposer les règles.",
+								"en": "Very well, I'll explain the rules to you."
+							}
+						},
+						{
+							"character": "diceRobot",
+							"text": {
+								"fr": "Je vais jeter deux dés à quatre faces.",
+								"en": "I'm going to throw two four-sided dice."
+							}
+						},
+						{
+							"character": "diceRobot",
+							"text": {
+								"fr": "Vous devez deviner la somme des valeurs des deux dés.",
+								"en": "You have to guess the sum of the values of the dice."
+							}
+						},
+						{
+							"character": "diceRobot",
+							"text": {
+								"fr": "Vous aurez le droit de poser trois questions au maximum.",
+								"en": "You can ask three questions at most."
+							}
+						},
+						{
+							"character": "diceRobot",
+							"text": {
+								"fr": "Sélectionnez des valeurs sur le pupitre, et je vous dirai si la réponse est parmi elles.",
+								"en": "Select values on the console, and I'll tell you whether or not the answer is one of them."
+							}
+						},
+						{
+							"character": "diceRobot",
+							"text": {
+								"fr": "J'ai ajouté un instrument pour vous aider...",
+								"en": "There's an additional measuring tool to help you..."
+							}
+						},
+						{
+							"character": "character",
+							"text": {
+								"fr": "Ça a l'air amusant !",
+								"en": "It sounds fun!"
+							}
+						},
+						{
+							"character": "diceRobot",
+							"text": {
+								"fr": "Enfin, vous devez réussir trois fois de suite pour gagner.",
+								"en": "Finally, you have to succeed three times in a row to win."
+							}
+						},
+						{
+							"character": "diceRobot",
+							"text": {
+								"fr": "Nous commencerons à votre signal, monsieur.",
+								"en": "Ready when you are, sir."
+							}
+						}
+					]
+				}],
+
+				"diceRobot2": [{
+					"dialogue": [{
+							"character": "character",
+							"text": {
+								"fr": "Nous voulons jouer !",
+								"en": "We want to play your game!"
+							}
+						},
+						{
+							"character": "diceRobot",
+							"text": {
+								"fr": "Très bien, je vais vous exposer les règles.",
+								"en": "Very well, I'll explain the rules to you."
+							}
+						},
+						{
+							"character": "diceRobot",
+							"text": {
+								"fr": "J'ai en ma possession douze dés, dont un est pipé.",
+								"en": "I have got twelve dice, among which one is loaded."
+							}
+						},
+						{
+							"character": "diceRobot",
+							"text": {
+								"fr": "Vous devez trouver lequel à l'aide d'une balance.",
+								"en": "You have to find which one using a set of scales."
+							}
+						},
+						{
+							"character": "diceRobot",
+							"text": {
+								"fr": "Vous ne saurez pas s'il est plus lourd ou plus léger.",
+								"en": "You won't know if it's lighter or heavier than the others."
+							}
+						},
+						{
+							"character": "diceRobot",
+							"text": {
+								"fr": "Vous aurez le droit à trois pesées au maximum.",
+								"en": "You can use the scales three times at most."
+							}
+						},
+						{
+							"character": "diceRobot",
+							"text": {
+								"fr": "J'ai ajouté un instrument pour vous aider...",
+								"en": "There's an additional measuring tool to help you..."
+							}
+						},
+						{
+							"character": "character",
+							"text": {
+								"fr": "Ça a l'air amusant !",
+								"en": "It sounds fun!"
+							}
+						},
+						{
+							"character": "diceRobot",
+							"text": {
+								"fr": "Nous commencerons à votre signal, monsieur.",
+								"en": "Ready when you are, sir."
+							}
+						}
+					]
+				}],
+
+				"cardRobot": [{
+
+					"dialogue": [{
+							"character": "cardRobot",
+							"text": {
+								"fr": "Bonjour cher client !",
+								"en": "Hello dear customer!"
+							}
+						},
+						{
+							"character": "cardRobot",
+							"text": {
+								"fr": "Notre casino est un peu spécial puisqu'ici, le client est toujours gagnant !",
+								"en": "Our casino is a bit special, as the clients always win here!"
+							}
+						},
+						{
+							"character": "character",
+							"text": {
+								"fr": "(... et aussi parce que tous les croupiers sont des robots ?)",
+								"en": "(... and also because all the dealers are robots?)"
+							}
+						},
+						{
+							"character": "cardRobot",
+							"text": {
+								"fr": "Nul besoin de savoir compter les cartes, je vais vous montrer un petit exemple si vous le souhaitez.",
+								"en": "No need to count cards, I will show you an example if you want."
+							}
+						},
+						{
+							"character": "cardRobot",
+							"text": {
+								"fr": "Je vais tirer une carte que vous devrez deviner grâce à des questions 'vrai' ou 'faux'.",
+								"en": "I will draw a card and you will have to guess which one using 'true' or 'false' questions."
+							}
+						},
+						{
+							"character": "cardRobot",
+							"text": {
+								"fr": "Vous ne pouvez poser que cinq questions.",
+								"en": "You can only ask five questions."
+							}
+						},
+						{
+							"character": "character",
+							"text": {
+								"fr": "D'accord, ça m'a l'air plutôt simple !",
+								"en": "Ok! Seems simple enough to me."
+							}
+						},
+						{
+							"character": "cardRobot",
+							"text": {
+								"fr": "Évidemment, il est possible de gagner en jouant au hasard, mais vous ne gagnerez pas à tous les coups !",
+								"en": "Of course it's possible to win by sheer luck, but then you won't win every time!"
+							}
+						},
+						{
+							"character": "cardRobot",
+							"text": {
+								"fr": "Alors, pour vous aider, nous distribuons à l'entrée de petites brochures comportant des rappels sur la quantité d'information !",
+								"en": "To help our clients, we hand out leaflets with reminders about self-information at the front desk."
+							}
+						},
+						{
+							"character": "character",
+							"text": {
+								"fr": "Je ferais mieux de lire attentivement ce qu'il y a dedans.",
+								"en": "I should probably go through it."
+							}
+						},
+						{
+							"character": "cardRobot",
+							"text": {
+								"fr": "Nous commencerons le jeu dès que vous serez prêt ! Je vous attends ici !",
+								"en": "The game will start whenever you are ready! I will wait for you here!"
+							}
+						}
+					]
+				}],
+
+				"jackpot": [{
+						"action": "wait",
+						"time": "0.2"
+					},
+					{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "idle_right"
+					},
+					{
+						"action": "victorAnim",
+						"anim": "yeah"
+					},
+					{
+						"action": "wait",
+						"time": "0.4"
+					},
+					{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "jump"
+					},
+					{
+						"action": "wait",
+						"time": "0.3"
+					},
+					{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "idle_left"
+					},
+					{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "jump"
+					},
+					{
+						"action": "wait",
+						"time": "0.3"
+					},
+					{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "idle_right"
+					},
+					{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "jump"
+					},
+					{
+						"action": "wait",
+						"time": "0.3"
+					},
+					{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "idle_left"
+					},
+					{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "jump"
+					},
+					{
+						"action": "wait",
+						"time": "0.4"
+					},
+					{
+						"action": "victorAnim",
+						"anim": "default"
+					}
+				]
+			},
+
+			"controlRoom": {
+				"enterControlRoom": [{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "idle_right"
+					},
+					{
+						"action": "wait",
+						"time": "0.2"
+					},
+					{
+						"dialogue": [{
+							"character": "character",
+							"text": {
+								"fr": "On trouvera peut-être un moyen de sortir dans cette pièce...",
+								"en": "Maybe we'll find a way to get out in this room..."
+							}
+						}]
+					}
+				],
+
+				"finishControlRobot": [{
+						"action": "wait",
+						"time": "0.2"
+					},
+					{
+						"dialogue": [{
+							"character": "character",
+							"text": {
+								"fr": "J'espère que ce programme a bien permis de déblayer les gravats !",
+								"en": "I hope using this program really cleared the rubble!"
+							}
+						}]
+					}
+				]
+			},
+
+			"miniGameRoom": {
+				"pianoHelp": [{
+					"dialogue": [{
+							"character": "pianoRobot",
+							"text": {
+								"fr": "Bonjour, humain.",
+								"en": "Hello, human."
+							}
+						},
+						{
+							"character": "pianoRobot",
+							"text": {
+								"fr": "Peux-tu m'aider ?",
+								"en": "Can you help me?"
+							}
+						},
+						{
+							"character": "character",
+							"text": {
+								"fr": "Bien sûr, quel est le problème ?",
+								"en": "Of course, what's the problem?"
+							}
+						},
+						{
+							"character": "pianoRobot",
+							"text": {
+								"fr": "Avant de partir, les humains de ce village m'ont donné une nouvelle partition.",
+								"en": "Before leaving, the humans of this village gave me a new music sheet."
+							}
+						},
+						{
+							"character": "pianoRobot",
+							"text": {
+								"fr": "Ils ont utilisé un codage étrange, et je n'arrive pas à la lire...",
+								"en": "They used a strange code, I can't read it..."
+							}
+						},
+						{
+							"character": "pianoRobot",
+							"text": {
+								"fr": "Tu pourrais essayer de trouver l'air ? La partition est sur le piano.",
+								"en": "Could you try to find the tune? The sheet is on the piano."
+							}
+						},
+						{
+							"character": "character",
+							"text": {
+								"fr": "Je vais essayer !",
+								"en": "I'll try!"
+							}
+						}
+					]
+				}],
+
+				"pianoSolved": [{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "idle_right"
+					},
+					{
+						"action": "wait",
+						"time": "0.2"
+					},
+					{
+						"dialogue": [{
+							"character": "pianoRobot",
+							"text": {
+								"fr": "Tu as réussi à lire la partition ! Merci pour ton aide !",
+								"en": "You managed to read the score! Thanks for your help!"
+							}
+						}]
+					}
+				]
+			}
+		},
+
+		"3": {
+			"outside": {
+				"intro": [{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "idle_right"
+					},
+					{
+						"action": "animation",
+						"name": "enter"
+					},
+					{
+						"dialogue": [{
+								"character": "juliette",
+								"text": {
+									"fr": "Victor ! Je suis fatiguée, arrêtons-nous là !",
+									"en": "Victor! I'm tired, let's stop here!"
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "D'accord.",
+									"en": "Okay"
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "Tu pourrais me donner une barre chocolatée ?",
+									"en": "Could you give me a chocolate bar?"
+								}
+							},
+							{
+								"character": "juliette",
+								"text": {
+									"fr": "Oui.",
+									"en": "Yes."
+								}
+							},
+							{
+								"character": "juliette",
+								"text": {
+									"fr": "Victor ! Il ne nous reste plus rien dans nos sacs !",
+									"en": "Victor! There's nothing left in our bags!"
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "Vraiment ??",
+									"en": "Really??"
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "On trouvera peut-être des choses dans cette station service.",
+									"en": "Maybe we'll find something in this gas station."
+								}
+							},
+							{
+								"character": "juliette",
+								"text": {
+									"fr": "Allons-y !",
+									"en": "Lets go!"
+								}
+							}
+						]
+					}
+				]
+			},
+
+			"shop": {
+				"enterShop": [{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "idle_right"
+					},
+					{
+						"action": "wait",
+						"time": "0.2"
+					},
+					{
+						"dialogue": [{
+								"character": "juliette",
+								"text": {
+									"fr": "Oh ! On dirait qu'il y a pleins de choses ici !",
+									"en": "Oh! It seems there're a lot of things here!"
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "Oui, je vais voir ce que je peux récupérer.",
+									"en": "Yes, I'll see what I can take."
+								}
+							}
+						]
+					}
+				]
+			},
+
+			"toilets": {
+				"repairSink": [{
+						"action": "wait",
+						"time": "0.2"
+					},
+					{
+						"dialogue": [{
+								"character": "character",
+								"text": {
+									"fr": "Il faudrait qu'on prenne de l'eau de remplir nos bouteilles.",
+									"en": "We have to take some water to fill our bottles."
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "Oh ! L'eau ne coule pas ! Qu'est-ce qu'il se passe ?",
+									"en": "Oh! The sink doesn't work! Why is that?"
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "On dirait que la plomberie est cassée, je vais devoir réparer ça.",
+									"en": "The plumbing seems to be broken, I'll have to fix it."
+								}
+							}
+						]
+					}
+				],
+
+
+				"endLevel": [{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "idle_right"
+					},
+					{
+						"action": "wait",
+						"time": "0.2"
+					},
+					{
+						"dialogue": [{
+							"character": "juliette",
+							"text": {
+								"fr": "Je crois qu'on a tout ce qu'il nous faut.",
+								"en": "I think you have all we need."
+							}
+						}]
+					}
+				]
+			}
+		}
+	},
+
+
+	"canal": {
+		"1": {
+			"entrance": {
+				"intro": [{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "idle_right"
+					},
+					{
+						"action": "animation",
+						"name": "enter_area"
+					},
+					{
+						"dialogue": [{
+								"character": "character",
+								"text": {
+									"fr": "Pourquoi sommes-nous venus ici ? Cet endroit tombe en ruines...",
+									"en": "Why did we come here? This place is falling apart..."
+								}
+							},
+							{
+								"character": "juliette",
+								"text": {
+									"fr": "Attends, il y a un homme bizarre là-bas !",
+									"en": "Wait, there's a weird man over there!"
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "Je vais aller lui parler !",
+									"en": "I'll go and see him!"
+								}
+							}
+						]
+					}
+				],
+				"outro": [{
+					"dialogue": [
+
+						{
+							"character": "character",
+							"text": {
+								"fr": "J'ai trouvé ! Canal !",
+								"en": "I've found the answer! Canal!"
+							}
+						},
+						{
+							"character": "freddy",
+							"text": {
+								"fr": "Alors tu as résolu ma petite énigme... Tu peux passer.",
+								"en": "So you solved my little riddle... You can pass."
+							}
+						},
+						{
+							"character": "freddy",
+							"text": {
+								"fr": "Bienvenue chez moi. On m'appelle Freddy.",
+								"en": "Welcome to my home. I'm called Freddy."
+							}
+						}
+					]
+				}]
+			}
+		},
+		"2": {
+			"floor": {
+				"intro": [{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "idle_right"
+					},
+					{
+						"action": "wait",
+						"time": "0.2"
+					},
+					{
+						"dialogue": [{
+								"character": "character",
+								"text": {
+									"fr": "L'ascenseur s'est arrêté brutalement...",
+									"en": "The elevator stops..."
+								}
+							},
+							{
+								"character": "juliette",
+								"text": {
+									"fr": "Penses-tu qu'on peut le réparer ?",
+									"en": "Do you think we can repair it ?"
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "Peut-être, fouillons cet étage!",
+									"en": "Maybe, search this floor!"
+								}
+							}
+						]
+					}
+				]
+			},
+			"loft": {
+				"talk_with_Nikola": [{
+					"dialogue": [{
+							"character": "character",
+							"text": {
+								"fr": "Bonjour Monsieur, je m'appelle Victor et voici Juliette.",
+								"en": "Hello Sir, I'm Victor and this is Juliette."
+							}
+						},
+						{
+							"character": "Nikola",
+							"text": {
+								"fr": "Vous serez digne de mes paroles",
+								"en": "You can speak with me only if you can solve the riddle."
+							}
+						},
+						{
+							"character": "Nikola",
+							"text": {
+								"fr": " si et seulement si vous résoudrez cette énigme.",
+								"en": ""
+							}
+						}
+					]
+				}],
+				"talk_with_Nikola_RiddleSolved": [{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "idle_right"
+					},
+					{
+						"dialogue": [{
+								"character": "Nikola",
+								"text": {
+									"fr": "Bravo ! Jamais je ne me serais douté que deux jeunes gens",
+									"en": ""
+								}
+							},
+							{
+								"character": "Nikola",
+								"text": {
+									"fr": " comme vous puissent avoir tant de connaissances.",
+									"en": ""
+								}
+							},
+							{
+								"character": "Nikola",
+								"text": {
+									"fr": "Je m'appelle Nikola et suis un ancien scientifique.",
+									"en": ""
+								}
+							}, {
+								"character": "character",
+								"text": {
+									"fr": "Merci Monsieur, nous sommes à la recherche de notre village",
+									"en": ""
+								}
+							}, {
+								"character": "character",
+								"text": {
+									"fr": "où tout le monde a disparu… Sauriez vous nous aider ? ",
+									"en": ""
+								}
+							},  {
+								"character": "Nikola",
+								"text": {
+									"fr": "Je dois avoir quelques informations qui peuvent vous être utiles.",
+									"en": ""
+								}
+							},  {
+								"character": "Nikola",
+								"text": {
+									"fr": "Cependant j'aurais besoin que vous me rendiez un service avant.",
+									"en": ""
+								}
+							}, {
+								"character": "Nikola",
+								"text": {
+									"fr": "Voyez vous je suis très malade et il me faut absolument mes médicaments ",
+									"en": ""
+								}
+							},{
+								"character": "Nikola",
+								"text": {
+									"fr": "sinon je ne passerai pas la journée. Je suis malheureusement trop faible pour me déplacer.",
+									"en": ""
+								}
+							}, {
+								"character": "Nikola",
+								"text": {
+									"fr": " Il y a une pharmacie abandonnée dans le centre commerciale que vous apercevrez du toit.",
+									"en": ""
+								}
+							}, {
+								"character": "Nikola",
+								"text": {
+									"fr": "Si vous me rapportez ces médicaments je vous dirai tout ce que je sais.",
+									"en": ""
+								}
+							},{
+								"character": "character",
+								"text": {
+									"fr": "Bien sûr Nikola, vous pouvez compter sur nous.",
+									"en": ""
+								}
+							}, {
+								"character": "Nikola",
+								"text": {
+									"fr": " Tenez voilà la clé qui ouvre la porte menant au toit.",
+									"en": ""
+								}
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+
+	"ligne": {
+		"1": {
+			"entry": {
+				"intro": [{
+						"action": "character_animation",
+						"character": "character",
+						"animation": "idle_right"
+					},
+					{
+						"action": "animation",
+						"name": "enter"
+					},
+					{
+						"action": "wait",
+						"time": "0.2"
+					},
+					{
+						"dialogue": [{
+								"character": "juliette",
+								"text": {
+									"fr": "Victor, tu es sûr que c'est par ici ?",
+									"en": "Victor, are you sure it's this way?"
+								}
+							},
+							{
+								"character": "juliette",
+								"text": {
+									"fr": "Le chemin devient très sauvage et on ne voit presque plus la route !",
+									"en": "The way is becoming very wild and we nearly can't see the road anymore!"
+								}
+							},
+							{
+								"character": "character",
+								"text": {
+									"fr": "Oui, on a bien suivi la carte !",
+									"en": "Yes, we followed the map!"
+								}
+							},
+							{
+								"character": "juliette",
+								"text": {
+									"fr": "Regarde, un vieux robot sur le chemin !",
+									"en": "Look, an old robot on the road!"
+								}
+							},
+							{
+								"character": "juliette",
+								"text": {
+									"fr": "On pourrait essayer de lui parler ?",
+									"en": "We could try to talk to it?"
+								}
+							}
+						]
+					}
+				],
+
+				"talk_with_robot": [{
+					"dialogue": [{
+							"character": "robot",
+							"text": {
+								"fr": "Vous ne pas passer.",
+								"en": "You not pass."
+							}
+						},
+						{
+							"character": "robot",
+							"text": {
+								"fr": "Vous devoir donner mot de passe pour passer.",
+								"en": "You give password to pass."
+							}
+						}
+					]
+				}],
+
+				"cannot_pass": [{
+					"dialogue": [{
+						"character": "robot",
+						"text": {
+							"fr": "Vous ne pas passer.",
+							"en": "You not pass."
+						}
+					}]
+				}],
+
+				"can_pass": [{
+						"dialogue": [{
+							"character": "robot",
+							"text": {
+								"fr": "Vous pouvoir passer.",
+								"en": "You can pass."
+							}
+						}]
+					},
+					{
+						"action": "animation",
+						"name": "pass"
+					}
+				],
+
+				"talk_with_robot2": [{
+					"dialogue": [{
+						"character": "robot",
+						"text": {
+							"fr": "Vous pouvoir passer.",
+							"en": "You can pass."
+						}
+					}]
+				}]
+			}
+		}
+	}
+}

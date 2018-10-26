@@ -1,0 +1,308 @@
+﻿{
+	"braille": {
+		"title": {
+			"fr": "Braille",
+			"en": "Braille"
+		},
+		"entries": {
+			"entry1": {
+				"title": {
+					"fr": "Le braille"
+				},
+				"content": {
+					"fr": "Le braille est un système d'écriture tactile à points saillants pour les personnes aveugles ou malvoyantes. Il a été inventé par Louis Braille (1809-1852) qui l'a publié en 1829.\nUn document qui n'est pas écrit en braille et n'est donc pas lisible par un aveugle est dit \"en noir\".\nUn caractère est représenté dans une matrice de six points sur deux colonnes, numérotés de haut en bas et de gauche à droite (de 1 à 6), par un à six points en relief.\nLa signification de chaque symbole dépend de la langue et de l'alphabet utilisés."
+				}
+			},
+			"entry2": {
+				"title": {
+					"fr": "De la cécité"
+				},
+				"content": {
+					"fr": "La cécité est une déficience visuelle totale qui touchait un grand nombre d'êtres humains dans le monde avant le cataclysme. Cette absence de vue peut être héréditaire ou due à des maladies.\nPrivés du sens de la vue, les personnes atteintes de cécité développent davantage leurs autres sens, notamment celui du toucher qui leur permet d'apprendre l'alphabet Braille.\nEn 2016, la cécité touchait 207 000 individus en France, 40 000 000 dans le monde. 1,7 million de personnes présentaient une déficience visuelle en France."
+				}
+			},
+			"entry3": {
+				"title": {
+					"fr": "La plage braille"
+				},
+				"content": {
+					"fr": "Les nouvelles technologies ont créé de nombreux outils permettant aux personnes non-voyantes de \"lire\" des textes en écriture romaine.\nParmi ces outils, la plage braille est une plage tactile sur laquelle se trouve une bande de petits picots se levant ou s'abaissant afin de composer les caractères affichés sur une ligne sur un écran d'ordinateur. L'utilisateur peut faire défiler le texte au fur et à mesure à un certain rythme, ou appuyer sur un bouton dès qu'il a fini de lire chaque ligne pour avoir la suite du texte."
+				}
+			},
+			"entry4": {
+				"title": {
+					"fr": "Alphabet braille"
+				},
+				"content": {
+					"fr": "[img]res://assets/encyclopedia/braille/entry4/image.png[/img]"
+				}
+			},
+			"entry5": {
+				"title": {
+					"fr": "Le braille mathématique"
+				},
+				"content": {
+					"fr": "[img]res://assets/encyclopedia/braille/entry5/image.png[/img]"
+				}
+			},
+			"entry6": {
+				"title": {
+					"fr": "Le braille musical"
+				},
+				"content": {
+					"fr": "Sans signe de rythme spécifique, les notes seront considérées comme des croches.\n[img]res://assets/encyclopedia/braille/entry6/image1.jpg[/img]\nSi l'on veut écrire une noire (qui dure deux croches), on doit ajouter le point 6 à la note. Pour indiquer une blanche (qui dure quatre croches), on doit ajouter le point 3 à la note. Pour les rondes (qui durent huit croches), on doit ajouter les points 3 et 6.\nLes signes de clé n'ont pas autant d'importance sur une partition en braille qu'en noir. En revanche, les notes doivent toujours être précédées d'un signe d'octave. Les octaves sont comptées à partir du bas et indiquées par les points 4, 5 et 6.\n[img]res://assets/encyclopedia/braille/entry6/image2.jpg[/img]"
+				}
+			}
+
+		}
+	},
+	"morse": {
+		"title": {
+			"fr": "Morse",
+			"en": "Morse code"
+		},
+		"entries": {
+			"entry1": {
+				"title": {
+					"fr": "Le morse"
+				},
+				"content": {
+					"fr": "L'alphabet morse est un code permettant de transmettre un texte par une série d'impulsions courtes ou longues.\nElles peuvent être produites par des gestes, de la lumière, du son. Il a été inventé par Samuel Morse en 1832 pour la télégraphie.\nChaque lettre, chiffre ou signe de ponctuation est associée à une unique combinaison de signaux intermittents.\nIl est utilisé dans les domaines maritimes, aéronautiques et militaires.\nLe code morse international est le plus utilisé de nos jours. Il est étendu à un certain nombre de caractères internationaux et digrammes. Lorsque cela ne suffit pas, on utilise d'autres codes, comme le code wabun pour le japonais."
+				}
+			},
+			"entry2": {
+				"title": {
+					"fr": "Alphabet morse"
+				},
+				"content": {
+					"fr": "[img]res://assets/encyclopedia/morse/morseTable.png[/img]"
+				}
+			}
+		}
+	},
+	"source": {
+		"title": {
+			"fr": "Codage source"
+		},
+		"sections": {
+			"section1": {
+				"title": {
+					"fr": "Quantité d'information"
+				},
+				"entries": {
+					"entry1": {
+						"title": {
+							"fr": "Quantité d'information"
+						},
+						"content": {
+							"fr": "La quantité d'information d'un évènement de probabilité p est i = -log p.\nSi on choisit un logarithme en base 2, la quantité d'information s'exprime en bits.\nAvec cette définition, la quantité d'information associée à un évènement est positive ou nulle, et d'autant plus grande que sa probabilité est faible ; à la limite, un évènement certain a une quantité d'information nulle, un évènement de probabilité nulle une quantité d'information infinie.\nCette quantité renseigne sur la diminution d'incertitude apportée par la réalisation d'un événement."
+						}
+					},
+					"entry2": {
+						"title": {
+							"fr": "Entropie"
+						},
+						"content": {
+							"fr": "[b]Entropie[/b]\nL'entropie d'une source X produisant des symboles x1, x2, ..., xM avec des probabilités p1, p2, ..., pM est la quantité d'information moyenne par symbole :\n [img]res://assets/encyclopedia/source/section1/entry2/image0.png[/img]\nSi on choisit un logarithme en base 2, l'entropie s'exprime en bits par symbole. En notant M le nombre de symboles que peut produire la source, on a l'inégalité suivante : 0 ≤ H(X) ≤ log M.\nLa valeur de l'entropie en bits est le nombre de questions à choix binaire à poser pour déterminer à coup sûr l'évènement réalisé.\n[b]Entropies conditionnelles et conjointe[/b]\nSi on étudie la transmission de symboles sur un canal entre un source X et un récepteur Y, on peut définir les entropies conditionnelles et l'entropie conjointe.\nOn note x1, x2, , ..., xM les symboles de X de probabilité pi pour i entre 1 et M et y1, y2, , ..., yN les symboles de Y de probabilité pj pour j entre 1 et N. On note également pij les probabilités conjointes de X et Y et p(j/i) (respectivement p(i/j)) les probabilités conditionnelles de Y sachant X (respectivement X sachant Y).\nL'entropie conditionnelle de Y sachant X est :\n[img]res://assets/encyclopedia/source/section1/entry2/image1.png[/img]\nL'entropie conditionnelle de X sachant Y est :\n[img]res://assets/encyclopedia/source/section1/entry2/image2.png[/img]\nL'entropie conjointe de X et Y est :\n[img]res://assets/encyclopedia/source/section1/entry2/image3.png[/img]\nH(Y|X) représente l'incertitude due au bruit sur le canal de transmission."
+						}
+					},
+					"entry3": {
+						"title": {
+							"fr": "Transinformation"
+						},
+						"content": {
+							"fr": "[b]Transinformation[/b]\nLa transinformation I(X,Y) est la quantité d'information qui est transmise sur le canal entre la source X et le récepteur Y. On peut la définir par les relations suivantes, avec les notations de l'entrée 'Entropie' :\n[img]res://assets/encyclopedia/source/section1/entry3/image1.png[/img]\n\n[b]Capacité[/b]\nLa capacité d'un canal est le maximum, vis-à-vis à toutes les lois possibles pour la source X, de I(X,Y). C'est la quantité maximale d'information qui peut être transmise [i]via[/i] le canal."
+						}
+					},
+					"entry4": {
+						"title": {
+							"fr": "Énigme des cartes"
+						},
+						"content": {
+							"fr": "[b]Énoncé[/b]\nLe robot possède un paquet de 32 cartes et en tire une. Le client doit trouver la carte du robot en posant des questions en 'oui'/'non'.\n\n[b]Solution[/b]\nLa quantité d'information de chaque carte est la même : elle vaut -log2(1/2^5) = -log2(1/32) = 5 bits. Chaque carte peut donc être trouvée en posant 5 questions dont la réponse est 'oui' ou 'non'. On peut par exemple utiliser la dichotomie et séparer les cartes possibles en deux paquets de même taille à chaque étape."
+						}
+					},
+					"entry5": {
+						"title": {
+							"fr": "Énigme des dés"
+						},
+						"content": {
+							"fr": "[b]Énoncé[/b]\nLe robot jette deux dés à quatre faces. Le client doit deviner la somme des dés en trois questions (ayant une réponse en oui/non), trois fois de suite.\n\n[b]Solution[/b]\nLes valeurs possibles n'ont pas la même quantité d'information (par exemple, 5 est plus probable que 2).\nIl faut séparer les possibilités en deux groupes de même quantité d'information. Une méthode consiste à calculer les quantités d'information de chaque valeur et de séparer les valeurs possibles en deux groupes de même quantité d'information. Une autre méthode consiste à effectuer un codage de Huffman : il suffit de 'lire' le code représenté graphiquement de droite à gauche, chaque embranchement correspondant à une question. Si le codage de Huffman donne le plus petit nombre de questions à poser en moyenne, la dichotomie est ici presque aussi efficace et permet aussi de trouver la somme des dés en trois questions à coup sûr.\nL'infomètre et le probamètre permettent de voir qu'un évènement de probabilité nulle apporterait une quantité d'information infinie, tandis qu'un évènement certain n'apporte aucune information."
+						}
+					},
+					"entry6": {
+						"title": {
+							"fr": "Énigme du dé pipé"
+						},
+						"content": {
+							"fr": "[b]Énoncé[/b]\nLe robot possède douze dés, dont un qui est pipé, sans qu'on sache s'il est plus ou moins lourd que les dés normaux. Le client doit déterminer le dé pipé en trois pesées au maximum.\n\n[b]Solution[/b]\nOn sépare les dés en trois lots de quatre qu'on note A, B, C. Les dés sont notés a1, a2, a3, a4, b1, b2, b3, b4, c1, c2, c3, c4.\nOn place le lot A sur le plateau de gauche, le lot B sur le plateau de droite.\n\nCas 1 : Équilibre, le dé pipé est dans le lot C.\nOn place c1+c2 sur un plateau et deux dés non pipés sur l'autre.\n- Cas 1a : Équilibre, le dé pipé est c3 ou c4.\n- Cas 1b : Pas équilibre, le dé pipé est c1 ou c2.\nOn place un des deux dés potentiellement pipés sur un plateau, un dé non pipé sur l'autre. S'il y a équilibre, le dé pipé est celui qui reste ; sinon, c'est celui qu'on a mis sur le plateau.\n\nCas 2 : Pas équilibre, le dé pipé est dans le lot A ou B. On note de quel côté la balance penche.\nOn met a1+a2+b2 sur le plateau de gauche, b1+a3+c1 sur le plateau de droite.\n\nCas 2a : Équilibre, le dé pipé est a4, b3 ou b4.\nOn place a4+b3 sur le plateau de gauche, deux dés non pipés sur le plateau de droite. S'il y a équilibre, le dé pipé est b4 ; si la balance penche du même côté qu'à la première pesée, le dé pipé est a4 (le seul qui n'ait pas changé de côté) ; si la balance penche de l'autre côté, le dé pipé est b3 (le seul qui ait changé de côté).\n\nCas 2b : Pas équilibre.\nSi la balance penche du même côté qu'à la première pesée, le dé pipé est a1, a2 ou b1. On place a1+b1 sur le plateau de gauche et deux dés non pipés sur le plateau de droite. S'il y a équilibre, le dé pipé est a2 ; si la balance penche du même côté qu'à la première pesée, le dé pipé est a1 (le seul qui n'ait pas changé de côté) ; si la balance penche de l'autre côté, le dé pipé est b1.\nSi la balance penche de l'autre côté, le dé pipé a changé de plateau, c'est a3 ou b2. On place a3 sur un plateau et un dé non pipé sur l'autre. S'il y a équilibre, le dé pipé est b2. Sinon, le dé pipé est a3."
+						}
+					},
+					"entry7": {
+						"title": {
+							"fr": "L'expérience de Shannon"
+						},
+						"content": {
+							"fr": "Claude Shannon (1916-2001) est l'un des fondateurs de la théorie de l'information. Il conçut une expérience pour déterminer l'entropie des lettres de la langue anglaise, c'est-à-dire la quantité d'information contenue en moyenne dans chaque caractère (les vingt-six lettres de l'alphabet et l'espace) en anglais.\nL'expérience de Shannon consiste à faire deviner à un joueur les lettres successives d'une phrase à partir des lettres précédentes. Ainsi, connaissant les k premières lettres de la phrase, le joueur doit deviner la (k+1)-ième lettre. Si celle-ci n'est pas la bonne, le joueur doit continuer à deviner. Si la lettre devinée est la bonne, celle-ci est montrée au joueur et on passe à la lettre suivante. À chaque étape, le nombre de tentatives pour déterminer la lettre est enregistré. L'entropie ainsi déterminée est plus faible que celle qu'on calculerait en déterminant simplement les fréquences des lettres dans un texte anglais, du fait de la corrélation qui existe entre un caractère et ceux qui le précèdent."
+						}
+					}
+				}
+			},
+			"section2": {
+				"title": {
+					"fr": "Codage"
+				},
+				"entries": {
+					"entry1": {
+						"title": {
+							"fr": "Algorithme de Fano-Shannon"
+						},
+						"content": {
+							"fr": "L'algorithme de Fano-Shannon est un algorithme de codage de source entropique. La longueur de chaque mot codé est égale à la quantité d'information de ce mot à l'entrée du codeur (arrondie à l'entier supérieur). Pour chaque mot de code on a donc l'inégalité suivante :\n[img]res://assets/encyclopedia/source/section2/entry1/image1.png[/img]\nen notant pi la probabilité du symbole i et ni la longueur de son mot de code."
+						}
+					},
+					"entry2": {
+						"title": {
+							"fr": "Algorithme de Huffman"
+						},
+						"content": {
+							"fr": "L'algorithme de Huffman est un algorithme de codage de source entropique. Les mots de code sont d'autant plus courts que les symboles associés sont probables.\nOn classe les symboles par ordre décroissant de probabilité. On regroupe itérativement les r symboles de plus faible probabilité, où r est la base dans laquelle on travaille (r=2 en binaire). On attribue comme probabilité à chaque groupement la somme des probabilités des r symboles qui le composent. À chaque étape, les groupements sont réordonnés par ordre décroissant de probabilité. On répète cet algorithme jusqu'à ce qu'il ne reste que r symboles.\nOn construit ensuite rétroitérativement le code.\nDans le cas où on ne pourrait pas obtenir r symboles à la dernière étape, des symboles fictifs de probabilité nulle sont ajoutés avant de mettre en œuvre l'algorithme.\nL'algorithme de Huffman permet d'obtenir un code compact.\n\n[img]res://assets/encyclopedia/source/section2/entry2/image1.png[/img]"
+						}
+					},
+					"entry3": {
+						"title": {
+							"fr": "Propriétés des codes"
+						},
+						"content": {
+							"fr": "[b]Code régulier :[/b] Un code est dit régulier lorsque tous les mots de code sont distincts.\n\n[b]Code déchiffrable :[/b] Un code est dit déchiffrable si toute suite de mots de codes est associée à un unique message. Le codage est alors sans ambiguïté. Un code déchiffrable est régulier.\n\n[b]Code instantané :[/b] Un code est dit instantané si les mots de codes satisfont la condition du préfixe, c'est-à-dire qu'aucun mot de code n'est le début d'un autre mot. Un code instantané est déchiffrable.\n\n[b]Code compact :[/b] Un code est dit compact si sa longueur moyenne est inférieure ou égale à celle de tous les autres codes construits avec la même source et le même alphabet de code."
+						}
+					}
+
+				}
+			}
+		}
+
+	},
+	"test": {
+		"title": {
+			"fr": "Je suis un chapitre"
+		},
+		"sections": {
+			"section1": {
+				"title": {
+					"fr": "Section 1"
+				},
+				"entries": {
+					"entry1": {
+						"title": {
+							"fr": "Entrée 1"
+						},
+						"content": {
+							"fr": "Texte de l'entrée 1"
+						}
+					},
+					"entry2": {
+						"title": {
+							"fr": "Entrée 2"
+						},
+						"content": {
+							"fr": "Texte de l'entrée 2"
+						}
+					}
+				}
+			},
+			"section2": {
+				"title": {
+					"fr": "Section 2"
+				},
+				"entries": {
+					"entry1": {
+						"title": {
+							"fr": "Entrée 1"
+						},
+						"content": {
+							"fr": "Entrée 1 de la section 2 de ce chapitre"
+						}
+					}
+				}
+			}
+		}
+	},
+	"canal": {
+		"title": {
+			"fr": "Codage Canal"
+		},
+		"sections": {
+			"section1": {
+				"title": {
+					"fr": "Code linéaire binaire"
+				},
+				"entries": {
+					"entry1": {
+						"title": {
+							"fr": "Matrice génératrice"
+						},
+						"content": {
+							"fr": "Un code linéaire C(n,k) est entièrement défini par k vecteurs de base du sous-espace vectoriel V. Ceux-ci constituent une matrice génératrice du code.\n\nChaque colonne de la matrice G contient au moins un 1. Par permutation des lignes et des colonnes de la matrice et par addition d'une ligne à l'autre, il est toujours possible d'obtenir une matrice consituée de deux blocs juxtaposés : une matrice identité I de dimension k x k et une matrice A à k lignes et n-k=m colonnes.\n\nSi [i]s[/i] est le message d'information ([i]s[/i] est un vecteur ligne de k bits), le message codé peut s'écrire : \n\n[center][i]f(s)=sG[/i][/center]\n\n\nOn dit qu'un code est systématique lorsque les bits d'information dans le message codé sont en tête et les bits de contrôle en fin."
+						}
+					},
+					"entry2": {
+						"title": {
+							"fr": "Matrice de contrôle"
+						},
+						"content": {
+							"fr": "L'ensemble W des vecteurs orthogonaux à tous les vecteurs de V est aussi un sous-espace vectoriel de K.Ce sous-espace orthogonal W a pour dimension n-k=m et correspond à un nouveau code pour lequel on peut choisir une base et la matrice génératrice asociée H de n-k lignes et n colonnes. Ces matrices sont appelées [b]matrice de contrôle[/b] ou de parité. Tout mesage [i]v[/i] du code V est orthogonal aux vecteurs lignes de la matrice de contrôle H.\n Cette condition est une condition nécessaire et suffisante pour qu'un élément de K soit un message de V. Une matrice G génératrice du code V et une matrie de contrôle H vérifient la relation : \n\n[center][img]res://assets/encyclopedia/canal/section1/entry3/image1.png[/img][/center]\n\nLa matrice H correspondant à la matrice G de la forme (I,A) est : \n\n[center][img]res://assets/encyclopedia/canal/section1/entry3/image2.png[/img][/center]"
+						}
+					},
+					"entry3": {
+						"title": {
+							"fr": "Syndrome"
+						},
+						"content": {
+							"fr": "Soit un message reçu [i]r[/i]. On appelle syndrome l'expression : \n\n[center][img]res://assets/encyclopedia/canal/section1/entry3/image3.png[/img][/center] \n\n Si le syndrome est nul, le mot reçu [i]r[/i] est un mot du code. Si le syndrome est non nul, le mot reçu [i]r[/i] n'est pas un mot du code. Il y a alors eu une erreur de transmission.\nSi le syndrome est non nul et qu'il n'y a qu'un seul bit erroné, la valuer de syndrome est égale à la colonne de la matrice [i]H[/i] correspondant au bit erroné. La correction de l'erreur est donc facilitée."
+						}
+					},
+					"entry4": {
+						"title": {
+							"fr": "Distance de Hamming"
+						},
+						"content": {
+							"fr": " La distance de Hamming, [i]d(z,z')[/i], entre deux mots de même longueur [i]z[/i] et [i]z'[/i] (c.-à-d. deux [i]n[/i]-uplets dans le cas le plus général) est le nombre de symboles (c'est à dire de positions) pour lesquels [i]z[/i] et [i]z'[/i] diffèrent."
+						}
+					},
+					"entry5": {
+						"title": {
+							"fr": "Pouvoir de correction et de détection d'un code"
+						},
+						"content": {
+							"fr": "Soit D la distance minimale de V, on peut détecter sur tout message transmis toutes les configurations d'erreurs portant sur 1,2,...,D-1 bits. On dit que le code V a une capacité de détection d'erreur de [i]d[/i] erreurs avec : \n\n[center][i]D=d+1[/i][/center]\n\n On peut également corriger sur tout message transmis toutes les configurations d'erreurs portant sur 1,2,...,(D-1)/2 bits. On dit que le code V a une capacité de correction d'erreur de [i]t[/i] erreurs avec : \n\n[center][i]D=2t+1[/i][/center]\n\n Enfin, il est possible de détecter [i]d'[/i] symboles erronés et parmi ceux-ci d'en corriger [i]t'[/i] si la relation suivante est vérifiée : \n\n[center][i]D=d'+t'+1[/i][/center]\n\n"
+						}
+					}
+				}
+			},
+			"section2": {
+				"title": {
+					"fr": "Codes Trouvés"
+				},
+				"entries": {
+					"entry1": {
+						"title": {
+							"fr": "Message trouvé sous le pot de fleurs"
+						},
+						"content": {
+							"fr": "[center][b][u]Code linéaire[/u][/b]\n\n00000\n00101\n01010\n01111\n10011\n10110\n11001\n11100[/center]"
+						}
+					},
+					"entry2": {
+						"title": {
+							"fr": "Message trouvé devant l'entrée du loft"
+						},
+						"content": {
+							"fr": "[center][b][u]Code linéaire[/u][/b]\n\n0000000\n000100X\n0010010\n0011011\n01X01X0\n010110X\n0110110\n0111X11\n1000XX1\n1001110\n1010101\n1011100\n11X0011\n1101X10\n1110001\n1111000[/center]"
+						}
+					}
+				}
+			}
+		}
+	}
+}
