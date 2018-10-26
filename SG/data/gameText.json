@@ -1,0 +1,1464 @@
+﻿{
+	"intro": {
+		"apocalypse": {
+			"apocalypse": {
+				"fr": "À force d'actions irresponsables, les humains provoquèrent un changement climatique tel qu'ils s'auto-détruisirent. Tremblements de terre, raz-de-marée, incendies... les catastrophes se succédèrent, frappant les villes et décimant la population. En l'espace de deux ans, l'espèce humaine fut presque entièrement anéantie.",
+				"en": "By dint of irresponsible actions, humans caused such a climate change they self-destructed. Earthquakes, tsunamis, wildfires... disasters succeeded one another, striking cities and mowing the population down. In the space of two years, the humankind was almost entirely wiped out."
+			}
+		},
+		"postApocalypse": {
+			"postApocalypse": {
+				"fr": "La nature reprit ses droits, restaurant ce que les hommes avaient détruit. La végétation repoussa, la faune envahit les villes en ruines.\nAprès la Grande Catastrophe, les survivants se regroupèrent en communauté éparses pour survivre dans ce nouveau monde. C'est dans le village de Bourg-Palette que naquirent nos deux héros, Victor et Juliette.",
+				"en": "Nature reclaimed its rights, restoring what humans had destroyed. Vegetation grew back, fauna took over decaying cities.\nAfter the Great Disaster, survivors gathered in scattered communities to survive in this new world. Our two heroes were born in the village of Pallet Town: they're called Victor and Juliette."
+			}
+		}
+	},
+	"tutorial": {
+		"1": {
+			"village": {
+				"howToMove": {
+					"fr": "Utiliser les touches directionnelles ou les touches Q/D pour se déplacer.",
+					"en": "Use the arrow keys or the Q/D keys to move."
+				},
+				"rubble1Dug": {
+					"fr": "Vous avez utilisé votre pelle pour déblayer les gravats !",
+					"en": "You used your shovel to dig into the pile of rubble!"
+				},
+				"rubble2Dug": {
+					"fr": "Vous avez utilisé votre pelle pour déblayer les gravats !",
+					"en": "You used your shovel to dig into the pile of rubble!"
+				},
+				"houseDoorShovel": {
+					"fr": "Vous essayez de forcer la porte avec la pelle, sans succès.",
+					"en": "You try to break the door open using your shovel, but it fails."
+				},
+				"julietteTalk": {
+					"fr": "Juliette : 'Regarde, tout est détruit !'",
+					"en": "Juliette: 'Look, everything has been destroyed!'"
+				},
+				"julietteInteract": {
+					"fr": "Ça ne s'est pas passé comme prévu...",
+					"en": "It didn't go as expected..."
+				},
+				"shovelPickedUp": {
+					"fr": "Vous avez ramassé une pelle !\nInventaire débloqué (I ou clic sur l'icône). Un succès a été débloqué.",
+					"en": "You picked up a shovel!\nInventory unlocked (I or click the icon). An achievement was unlocked."
+				},
+				"rubble1Interact": {
+					"fr": "C'est un tas de gravats.\nCliquez sur l'icône de l'inventaire ou appuyez sur I pour utiliser un objet.",
+					"en": "It's a pile of rubble.\nClick the inventory icon or press I to use an item."
+				},
+				"rubble2Interact": {
+					"fr": "C'est un tas de gravats.",
+					"en": "It's a pile of rubble"
+				},
+				"keyPickedUp": {
+					"fr": "Vous avez trouvé une clé sous les gravats !",
+					"en": "You found a key under the pile of rubble!"
+				},
+				"houseDoorLocked": {
+					"fr": "La porte est verrouillée.",
+					"en": "The door is locked."
+				},
+				"houseDoorUnlocked": {
+					"fr": "Vous avez déverrouillé la porte.",
+					"en": "You unlocked the door."
+				},
+				"julietteShovelBis": {
+					"fr": "Vous redonnez un coup de pelle à Juliette. Ce n'est pas très efficace.",
+					"en": "You hit Juliette with the shovel again. It's not very effective."
+				},
+				"shovelPopup": {
+					"fr": "Appuyer sur E ou Entrée pour ramasser la pelle.\nUne icône s'affiche lorsque vous pouvez interagir avec un objet.",
+					"en": "Press E or Enter to pick up the shovel.\nAn icon pops up whenever you interact with an object."
+				},
+				"hardmode": {
+					"fr": "Vous vous apprêtez à abattre la pelle sur Juliette.\nElle s'en souviendra...",
+					"en": "You're about to hit Juliette with your shovel.\nShe will remember that..."
+				},
+				"hitJuliette": {
+					"fr": "Frapper Juliette",
+					"en": "Hit Juliette"
+				},
+				"spareJuliette": {
+					"fr": "Épargner Juliette",
+					"en": "Spare Juliette"
+				}
+			},
+			"house": {
+				"chestPuzzleTip1": {
+					"fr": "Juliette : 'Cette serrure est étrange...\nOn dirait qu'on peut insérer des objets dans les trous.'",
+					"en": "Juliette: 'This lock is strange...\nIt seems small objects can be inserted in the holes.'"
+				},
+				"chestPuzzleTip2": {
+					"fr": "Juliette : 'Peut-être qu'on peut se servir des bâtonnets pour écrire en braille !'",
+					"en": "Juliette: 'Maybe we can use the sticks to write something in braille!'"
+				},
+				"chestOpen": {
+					"fr": "Le coffre s'ouvre. Vous trouvez un sac de billes, un oscilloscope et une balance.",
+					"en": "The chest is open. You find marbles, an oscilloscope and scales."
+				},
+				"deskPuzzleSolved": {
+					"fr": "Le tiroir s'ouvre. Vous y trouvez une carte.\nCarte débloquée (M).",
+					"en": "The drawer opens. You find a map in it.\nMap unlocked (M)."
+				},
+				"deskPuzzleTip": {
+					"fr": "Juliette : 'Jette un œil à tous ces papiers sur le bureau.'",
+					"en": "Juliette: 'Take a look at all these documents on the desk.'"
+				},
+				"deskInteract": {
+					"fr": "Vous ramassez les feuilles de papier.\nVous les placez dans l'encyclopédie. Cliquer sur le bouton de l'encyclopédie ou appuyer sur J pour ouvrir l'encyclopédie.",
+					"en": "You pick up the paper sheets.\nYou put them in your encyclopedia. Click the encyclopedia button or press J to access the encyclopedia."
+				},
+				"deskFilesBraille": {
+					"fr": "Ce sont des feuilles à propos du braille.",
+					"en": "Those are files about the braille writing system."
+				},
+				"deskLockedSafeHover": {
+					"fr": "Le coffre est verrouillé par un digicode.",
+					"en": "There is a code pad keeping the safe locked."
+				},
+				"deskUnlockedSafeHover": {
+					"fr": "Le coffre est ouvert.",
+					"en": "The safe is open."
+				},
+				"whiteboardHover": {
+					"fr": "C'est un tableau blanc. Vous feriez mieux de ne pas effacer ce qu'il y a dessus !",
+					"en": "It's a white board. You had better leave it alone!"
+				},
+				"whiteboardEraser": {
+					"fr": "Juliette : 'Ne touche pas à ça !'",
+					"en": "Juliette: 'Don't touch this!'"
+				},
+				"whiteboardTip": {
+					"fr": "Juliette : 'Il y a beaucoup de symboles en braille, pas seulement des lettres !'",
+					"en": "Juliette: 'There's more to braille than just letters!'"
+				},
+				"pencilCup": {
+					"fr": "Juliette : 'Ce n'est pas le moment de faire du coloriage, Victor !'",
+					"en": "Juliette: 'It's not the right time to do colouring, Victor!"
+				},
+				"pianoPuzzleTip": {
+					"fr": "Il existe aussi un braille musical !",
+					"en": "There is also braille code for music!"
+				},
+
+				"pianoSolved": {
+					"fr": "Quelle étrange façon d'écrire la musique ! À quoi cela pouvait-il bien servir ?",
+					"en": "What a strange way to write a song! What could it have been for?"
+				},
+				"bookshelfMove": {
+					"fr": "Vous poussez la bibliothèque sur le côté.",
+					"en": "You move the bookshelf aside."
+				},
+				"bookshelfInteract": {
+					"fr": "Il y a beaucoup de livres dans cette bibliothèque.",
+					"en": "There are lots of books in this bookshelf."
+				},
+				"bookshelfFindSticks": {
+					"fr": "Vous trouvez une boîte avec des bâtonnets.",
+					"en": "You find a box with sticks."
+				},
+				"secretDoorPuzzleTip1": {
+					"fr": "La porte est fermée par un étrange mécanisme.",
+					"en": "The door is locked by a strange mechanism."
+				},
+				"secretDoorPuzzleTip2": {
+					"fr": "Juliette : 'Il faut écrire quelque chose en braille, mais quoi ? Il doit y avoir un indice quelque part...'",
+					"en": "Juliette: 'You must write something in braille, but what? There must be a clue somewhere...'"
+				},
+				"secretDoorOpen": {
+					"fr": "La porte se déverrouille.",
+					"en": "The door is unlocked."
+				},
+				"julietteInteract": {
+					"fr": "Juliette : 'J'espère qu'on va trouver où sont partis les autres.'",
+					"en": "Juliette: 'I hope we'll find where the others are gone.'"
+				},
+				"julietteInteractMap": {
+					"fr": "Juliette : 'Alors, tu as trouvé une carte ?'",
+					"en": "Juliette: 'Have you found a map?"
+				},
+				"julietteInteractNextLocation": {
+					"fr": "Juliette : 'Où est-ce qu'on va maintenant ?'",
+					"en": "Juliette: 'Where do we go now?'"
+				}
+			},
+			"secretroom": {
+				"lampInteract": {
+					"fr": "La lampe n'a pas d'ampoule.",
+					"en": "The lamp doesn't have a light bulb."
+				},
+				"lampInteractPutLightBulb": {
+					"fr": "Vous mettez l'ampoule dans la lampe.",
+					"en": "You put the light bulb in the lamp."
+				},
+				"lampInteractOn": {
+					"fr": "Vous allumez la lampe.",
+					"en": "You switch on the light."
+				},
+				"lampInteractOff": {
+					"fr": "Vous éteignez la lampe",
+					"en": "You switch off the light."
+				},
+				"deskInteract": {
+					"fr": "Vous ramassez les feuilles de papier.\nVous les placez dans l'encyclopédie.",
+					"en": "You pick up the paper sheets.\nYou put them in your encyclopedia."
+				},
+				"computerPuzzleTip": {
+					"fr": "Juliette: 'Le mot de passe doit avoir un rapport avec les objets dans cette pièce.'",
+					"en": "Juliette: 'The password must have a link with the objects in this room.'"
+				},
+				"computerPuzzlePasswordForgottenButton": {
+					"fr": "Mot de passe oublié ?",
+					"en": "Forgot your password?"
+				},
+				"computerPuzzlePasswordForgotten": {
+					"fr": "Quelle jolie lampe !",
+					"en": "What a nice lamp!"
+				},
+				"computerPuzzleMessage": {
+					"fr": "[center]Rendez-vous à 42.0X @-?!ùY £$Z§§\n@-W?ù!D@!?E!ù@K-?-[/center]",
+					"en": "[center]Meet me at 42.0X @-?!ùY £$Z§§\n@-W?ù!D@!?E!ù@K-?-[/center]"
+				},
+				"computerPuzzleConnectButton": {
+					"fr": "Se connecter",
+					"en": "Connect"
+				},
+				"computerPuzzleWelcomeText": {
+					"fr": "[center]Bienvenue, [b]Doc[/b].\nVeuillez saisir votre mot de passe.[/center]",
+					"en": "[center]Welcome, [b]Doc[/b].\nPlease type your password.[/center]"
+				},
+				"safeSolved": {
+					"fr": "Le coffre-fort s'ouvre. Vous trouvez une ampoule à l'intérieur.",
+					"en": "The safe is now open. You found light inside."
+				},
+				"safeTip": {
+					"fr": "Juliette : 'Ces inscriptions ressemblent à du morse.'",
+					"en": "Juliette: 'These writings look like morse code.'"
+				},
+				"deskFilesMorse": {
+					"fr": "Ce sont des feuilles à propos du morse.",
+					"en": "Those are files about the morse writing system."
+				},
+				"computerInteract": {
+					"fr": "C'est un ordinateur, mais le clavier n'a que quatre touches.",
+					"en": "This is a computer, but there are only four keys on the keyboard."
+				},
+				"cardboardBoxesInteract": {
+					"fr": "Il y a un objet étrange dans cette boîte en carton.",
+					"en": "There is a weird object in this cardboard box."
+				},
+				"cardboardBoxesInteract2": {
+					"fr": "Vous avez ramassé la plage braille.",
+					"en": "You picked up the braille display."
+				},
+				"cardboardBoxesInteract3": {
+					"fr": "Il n'y a rien d'intéressant dans ces cartons.",
+					"en": "There isn't anything of interest in these boxes."
+				},
+				"lightOscilloNotIn": {
+					"fr": "Il ne se passe rien. Il faut peut-être allumer la lampe avant d'utiliser l'oscilloscope ?",
+					"en": "Nothing is happening, maybe I should turn the lamp on before using the oscilloscope?"
+				},
+				"lightOscilloIn": {
+					"fr": "Comment faire pour décoder ce signal ? Il y a peut être un indice dans la pièce.",
+					"en": "How can I decode this signal? Maybe there is a clue somewhere in this room."
+				}
+			},
+			"uselesshouse": {
+				"walrusInteract": {
+					"fr": "Ceci est un morse.",
+					"en": "This is a walrus."
+				},
+				"otterInteract": {
+					"fr": "Ceci est une loutre.",
+					"en": "This is an otter."
+				},
+				"samuelInteract": {
+					"fr": "Vous admirez une vieille photo en noir et blanc. Il y a une plaque avec une inscription en dessous : 'Samuel Morse (1791-1872)'.",
+					"en": "You are admiring an old black and white photograph. There's a plaque under it with a writing: 'Samuel Morse (1791-1872)'."
+				},
+				"plushInteract": {
+					"fr": "Quelle adorable peluche ! Qui peut bien être ce personnage ?",
+					"en": "What a cute stuffed toy! Who is this character?"
+				},
+				"plushPickedUp": {
+					"fr": "Vous avez ramassé la peluche !",
+					"en": "You picked up the stuffed toy!"
+				},
+				"julietteInteract": {
+					"fr": "Juliette : 'Regarde, une peluche ! Je la veux !'",
+					"en": "Juliette: 'Look, a stuffed toy! I want it!'"
+				},
+				"julietteGive": {
+					"fr": "Juliette : 'C'est pour moi ? Merci Victor !'",
+					"en": "Juliette: 'Is it for me? Thank you Victor!'"
+				},
+				"julietteGiven": {
+					"fr": "Juliette : 'J'adore cette peluche ! Il faut que je lui trouve un nom...'",
+					"en": "Juliette: 'I love this plush! I need to find a name for it...'"
+				}
+			}
+		}
+	},
+
+
+
+
+	"ligne": {
+		"1": {
+			"entry": {
+				"electricalBoxTip": {
+					"fr": "Juliette : 'On dirait qu'on peut brancher les deux câbles rouges à quelque chose.'",
+					"en": "Juliette: 'It seems you can connect the two red wires to something.'"
+				},
+				"riddleTip1": {
+					"fr": "Juliette : 'Il se passe quelque chose de bizarre toutes les six unités de temps...\nPeut-être que c'est une séparation ?'",
+					"en": "Juliette: 'Something weird happen every six time unit...\nMaybe it's a separation?'"
+				},
+				"riddleTip2": {
+					"fr": "Juliette : 'Il me semble que le braille se code sur six symboles.'",
+					"en": "Juliette: 'I think braille is coded on six symbols.'"
+				},
+				"interactJuliette": {
+					"fr": "Juliette : 'Le robot nous bloque la route.'",
+					"en": "Juliette: 'The robot blocks the road.'"
+				},
+				"interactJuliette2": {
+					"fr": "Juliette : 'Comment est-ce qu'on pourrait trouver son mot de passe ?'",
+					"en": "Juliette: 'How could we find its password?'"
+				},
+				"interactJuliette3": {
+					"fr": "Juliette : 'Tu as trouvé le mot de passe du robot sur le signal ?'",
+					"en": "Juliette: 'Did you find the robot's password on the signal?'"
+				},
+				"interactJuliette4": {
+					"fr": "Juliette : 'Il est mignon, ce robot !'",
+					"en": "Juliette: 'What a cute robot!'"
+				}
+			}
+		}
+	},
+
+	"source": {
+		"1": {
+			"source_entry": {
+				"door": {
+					"fr": "C'est fermé. Vous allez devoir trouver comment déverrouiller le portail si vous voulez continuer dans cette direction.",
+					"en": "It's locked. You'll need to find how to unlock the gate if you want to go further."
+				},
+				"julietteTalk": {
+					"fr": "Juliette : 'Il faut qu'on trouve comment entrer dans la ville !'",
+					"en": "Juliette: 'We must find how to enter this city!'"
+				},
+				"julietteTalk2": {
+					"fr": "Juliette : 'Le portail est ouvert maintenant ! Allons-y !'",
+					"en": "Juliette: 'The gate is open now! Let's go!'"
+				},
+				"robervalRiddleTip": {
+					"fr": "Juliette : 'Pour commencer, on pourrait séparer les billes en trois groupes de quatre, quatre et cinq.'",
+					"en": "Juliette: 'For starters, we could make three groups with four, four and five marbles.'"
+				},
+				"robervalRiddleTip2": {
+					"fr": "Juliette : 'Tu devrais utiliser la balance, Victor !'",
+					"en": "Juliette: 'You should use the scale, Victor!"
+				},
+				"marbleHere": {
+					"fr": "Veuillez placer la bille différente ici :",
+					"en": "Please put the different marble here:"
+				},
+				"more_than_one_marble": {
+					"fr": "Juliette : 'Il n'y a qu'une seule bille différente...'",
+					"en": "Juliette: 'There is only one different marble...'"
+				},
+				"no_marble": {
+					"fr": "Juliette : 'Euh... Tu n'as rien mis du tout, Victor...'",
+					"en": "Juliette: 'Err... You didn't put anything here Victor.'"
+				},
+				"wrongmarble": {
+					"fr": "Robot : 'Je ne pense pas que ce soit la bonne bille. Le système de sécurité a tout bloqué, il faut recommencer.'",
+					"en": "Robot: 'I don't think it's the right one. The security system has frozen everything, you must try again.'"
+				},
+				"rightMarble": {
+					"fr": "Robot : 'Oh mais... ça a l'air de fonctionner de nouveau !'",
+					"en": "Robot: 'Looks like my circuit works like a charm now!'"
+				},
+				"robervalRiddleWeighButton": {
+					"fr": "Peser",
+					"en": "Weigh"
+				},
+				"robervalRiddleNotepadLabel": {
+					"fr": "Carnet de notes",
+					"en": "Notepad"
+				},
+				"robervalRiddle": {
+					"fr": "Déterminer la bille qui est différente des autres en trois mesures.",
+					"en": "Find the marble that is different from the others with three measurements."
+				}
+			}
+		},
+
+		"2": {
+			"village": {
+				"julietteInteract1": {
+					"fr": "Juliette : 'Allez Victor, allons voir ce qu'il y a dans ce casino !'",
+					"en": "Juliette: 'Come on Victor, let's go and see what's inside!'"
+				},
+				"julietteInteract2": {
+					"fr": "Juliette : 'Ce casino est vraiment bizarre.'",
+					"en": "Juliette: 'This casino is so odd a place.'"
+				}
+			},
+			"casino": {
+				"diceRiddleInstructions": {
+					"fr": "Trouvez la somme des deux dés à quatre faces en trois questions, trois manches de suite.\nVous êtes à la manche n°%s. Il vous reste %s questions.",
+					"en": "Find the sum of the two four-sided dice in three questions, three rounds in a row.\nThis is round n°%s. You have %s questions left."
+				},
+				"diceRiddleInfometer": {
+					"fr": "Infomètre",
+					"en": "Information-o'meter"
+				},
+				"diceRiddleAsk": {
+					"fr": "Demander",
+					"en": "Ask"
+				},
+				"diceRiddleReset": {
+					"fr": "Réinitialiser",
+					"en": "Reset"
+				},
+				"diceRiddleThrowDice": {
+					"fr": "Jeter les dés",
+					"en": "Throw the dice"
+				},
+				"diceRiddleTips": {
+					"fr": ["Juliette : 'Je ne pense pas que le hasard ou la dichotomie soient les meilleures solutions...'", "Juliette : 'Un infomètre ? Qu'est-ce que c'est ?'", "Juliette : 'Pour trouver le plus rapidement possible, il faudrait séparer les valeurs en deux groupes avec la même quantité d'information.'"],
+					"en": ["Juliette: 'I don't think you should choose using luck or dichotomy...'", "Juliette: 'An information-o'meter? What is it?", "Juliette: 'To find the answer as fast as possible, the values should be separated in two groups with the same self-information.'"]
+				},
+				"diceRiddleNo": {
+					"fr": "Robot croupier : 'La somme des deux dés n'est pas parmi ces valeurs.'",
+					"en": "Croupier robot: 'The sum of the two dice is not one these numbers.'"
+				},
+				"diceRiddleYes": {
+					"fr": "Robot croupier : 'La somme des deux dés est parmi ces valeurs.'",
+					"en": "Croupier robot: 'The sum of the two dice is one these numbers.'"
+				},
+				"diceRiddleWin": {
+					"fr": "Robot croupier : 'Vous avez trouvé la somme des deux dés. Vous pouvez passer à la manche suivante.'",
+					"en": "Croupier robot: 'You have found the sum of the two dice. You can go on to the next round.'"
+				},
+				"diceRiddleFail": {
+					"fr": "Robot croupier : 'Vous n'avez pas trouvé la somme des deux dés en trois questions. Vous recommencez de zéro. Vous pouvez passer à la manche suivante.'",
+					"en": "Croupier robot: 'You have failed to find the sum of the two dice in three questions. You're starting all over. You can go on to the next round.'"
+				},
+				"diceRiddleSolved": {
+					"fr": "Robot croupier : 'Bravo, vous remportez le jeu.'",
+					"en": "Croupier robot: 'Congratulations, you've won the game.'"
+				},
+				"diceRobotInteract": {
+					"fr": "Robot croupier : 'Que diriez-vous d'un petit jeu, monsieur ?'",
+					"en": "Croupier robot: 'Would you fancy a little game, sir ?'"
+				},
+				"diceRobotInteract2": {
+					"fr": "Robot croupier : 'Que diriez-vous d'un autre jeu, monsieur ?'",
+					"en": "Croupier robot: 'Would you fancy another game, sir?'"
+				},
+				"diceRobotInteract3": {
+					"fr": "Robot croupier : 'Vous avez déjà gagné à mon jeu, monsieur. Je reste à votre disposition si vous avez besoin de quoi que ce soit.'",
+					"en": "Croupier robot: 'You have already won my game, sir. Should you need anything, I'm at your disposal.'"
+				},
+				"diceRobotShovel": {
+					"fr": "Robot croupier : 'Veuillez cesser cela immédiatement, monsieur. Ce n'est pas très urbain.'",
+					"en": "Croupier robot: 'Please stop this immediately, sir. It's not appropriate.'"
+				},
+				"diceRobotTool": {
+					"fr": "Robot croupier : 'Je ne suis pas qualifié pour utiliser cet outil, monsieur.'",
+					"en": "Croupier robot: 'I'm not qualified for this tool, sir.'"
+				},
+				"diceRobotSparePart": {
+					"fr": "Robot croupier : 'Vous venez réparer les machines à sous ? Vous êtes-vous signalé à l'accueil, monsieur ?",
+					"en": "Croupier robot: 'You're here to repair the slot machines? Have you reported to the front desk yet?'"
+				},
+				"diceRiddleProbameter": {
+					"fr": "Probamètre",
+					"en": "Probameter"
+				},
+				"diceWon": {
+					"fr": "Le robot vous donne un jeton.\nVous le mettez dans l'inventaire.",
+					"en": "The robot gives you a token.\nYou put it in the inventory."
+				},
+				"loadedDiceRiddleTips": {
+					"fr": ["Juliette : 'Essaye de faire des paquets de quatre pour commencer.'", "Juliette : 'Une fois que tu sauras dans quel paquet est le dé pipé, n'oublie pas qu'on ne sait pas s'il est plus lourd ou plus léger que les autres...'", "Juliette : 'L'infomètre de l'autre jeu est toujours là, on peut s'en servir !'"],
+					"en": ["Juliette: 'Try to make groups of four dice.'", "Juliette: 'Once you know in which group the loaded die is, remember we don't know if it's lighter or heavier than the others...", "Juliette: 'The information-o'meter from the other game is still here, we can use it!'"]
+				},
+				"loadedDiceRiddleInstructions": {
+					"fr": "Trouvez le dé pipé en trois pesées en plaçant des dés dans les compartiments du croupier.\nPressez les boutons sur le torse du robot pour peser.\nIl vous reste %s pesées.",
+					"en": "Find the loaded die in three weighings by placing dice in the croupier's compartments.\nPress the buttons on the robot's chest to weigh.\nYou have %s weighings left."
+				},
+				"loadedDiceRiddleNewGameText": {
+					"fr": "Pressez les boutons sur le bras du robot pour commencer le jeu.",
+					"en": "Press the buttons on the robot's arm to start the game."
+				},
+				"loadedDiceRiddleCircleLabel": {
+					"fr": "Placez le dé pipé ici",
+					"en": "Place the loaded die here"
+				},
+				"loadedDiceRiddleWeighButton": {
+					"fr": "Peser",
+					"en": "Weigh"
+				},
+				"loadedDieRiddleOverOneDie": {
+					"fr": "Robot croupier : 'Veuillez ne placer qu'un seul dé dans le réceptacle, monsieur.'",
+					"en": "Croupier robot: 'Please place only one die in the container, sir.'"
+				},
+				"loadedDiceRiddleNoDie": {
+					"fr": "Robot croupier : 'Veuillez placer un dé dans le réceptacle, monsieur.'",
+					"en": "Croupier robot: 'Please place a die in the container, sir.'"
+				},
+				"loadedDiceRiddleAnswerButton": {
+					"fr": "Répondre",
+					"en": "Answer"
+				},
+				"loadedDiceRiddleNewGameButton": {
+					"fr": "Nouvelle partie",
+					"en": "New game"
+				},
+				"loadedDiceRiddleLeft": {
+					"fr": "Gauche > Droite",
+					"en": "Left > Right"
+				},
+				"loadedDiceRiddleMiddle": {
+					"fr": "Gauche = Droite",
+					"en": "Left = Right"
+				},
+				"loadedDiceRiddleRight": {
+					"fr": "Gauche < Droite",
+					"en": "Left < Right"
+				},
+				"loadedDiceRiddleSolved": {
+					"fr": "Robot croupier : 'Bravo, vous avez trouvé le dé pipé. Vous remportez le jeu.'",
+					"en": "Croupier robot: 'Congratulations, you've found the loaded die. You've won the game.'"
+				},
+				"loadedDiceRiddleWrong": {
+					"fr": "Robot croupier : 'Vous n'avez pas trouvé le dé pipé en trois pesées. Nous repartirons de zéro à votre signal, monsieur.'",
+					"en": "Croupîer robot: 'You have failed to find the loaded die in three weighings. You're starting all over. Ready when you are, sir.'"
+				},
+				"loadedDiceRiddleUnevenWeighing": {
+					"fr": "Juliette : 'Il n'y a pas le même nombre de dés de chaque côté, ça ne sert à rien de faire cette pesée !'",
+					"en": "Juliette: 'This weighing will be useless, there's not the same number of dice on each side!"
+				},
+				"loadedDiceRiddleEmptyWeighing": {
+					"fr": "Juliette : 'Il n'y a aucun dé dans la balance, ça ne sert à rien de faire cette pesée !'",
+					"en": "Juliette: 'This weighing will be useless, there's no dice in the compartments!"
+				},
+				"loadedDiceRiddleKnownResult": {
+					"fr": "Juliette : 'On a déjà essayé cette pesée, ça ne sert à rien de la refaire !'",
+					"en": "Juliette: 'We've already tried this, doing it again would be useless!'"
+				},
+				"loadedDiceWon": {
+					"fr": "Le robot vous donne un jeton.\nVous le mettez dans l'inventaire.",
+					"en": "The robot gives you a token.\nYou put it in the inventory."
+				},
+				"loadedDiceRiddleUncertaintyMeter": {
+					"fr": "Incertitudomètre",
+					"en": "Uncertainty-o'meter"
+				},
+				"cardWon": {
+					"fr": "Le robot vous donne un jeton.\nVous le mettez dans l'inventaire.",
+					"en": "The robot gives you a token.\nYou put it in the inventory."
+				},
+				"slotMachineInteract1": {
+					"fr": "Ce sont des machines à sous.",
+					"en": "They are slot machines."
+				},
+				"slotMachineInteract2": {
+					"fr": "Juliette : 'Victor, qu'est-ce qu'il y a sur cette feuille froissée, par terre ?'\nVous ramassez la feuille et l'ajoutez à l'encyclopédie.",
+					"en": "Juliette: 'Victor, what is on this crumpled sheet of paper, on the floor ?'\nYou pick up the document and add it to the encyclopedia."
+				},
+				"slotMachineInteract3": {
+					"fr": "Juliette : 'Il nous faudrait des pièces pour pouvoir jouer.'",
+					"en": "Juliette: 'We can't play without coins.'"
+				},
+				"slotMachineToken": {
+					"fr": "Vous glissez le jeton dans la machine à sous. Une feuille de papier en sort et vous la mettez dans l'encyclopédie.",
+					"en": "You slide the token into the slot machine. A sheet of paper comes out and you put it in the encyclopedia."
+				},
+				"slotMachineJackpot": {
+					"fr": "TRIPLE SEPT !!! Vous récupérez votre jeton, mais pas de trace du jackpot.",
+					"en": "THREE SEVEN!!! You get your token back, but no sign of the jackpot."
+				},
+				"slotMachineBroken": {
+					"fr": "Ces machines à sous ont l'air en panne.",
+					"en": "These slot machines look out of order."
+				},
+				"receptionistRobotInteract1": {
+					"fr": "Réceptionniste : 'Bonjour et bienvenue au Casino Tesla.'",
+					"en": "Receptionist: 'Welcome to the Tesla Casino.'"
+				},
+				"receptionistRobotInteract2": {
+					"fr": "Réceptionniste : 'Voici une brochure que nous remettons à tous nos nouveaux clients.'\nVous la rangez dans l'encyclopédie.",
+					"en": "Receptionist: 'Here is a leaflet we give to all our new customers.'\n You put it in the encyclopedia."
+				},
+				"receptionistRobotInteract3": {
+					"fr": "Réceptionniste : 'Amusez-vous bien.'",
+					"en": "Receptionist: 'Enjoy your time here.'"
+				},
+				"securityRobotInteract": {
+					"fr": "Vigile : 'Je ne suis pas là pour faire la conversation aux clients.'",
+					"en": "Security guard: 'I'm not here to make conversation with customers.'"
+				},
+				"securityRobotShovel": {
+					"fr": "Ce n'est pas une bonne idée...",
+					"en": "It might not be a good idea..."
+				},
+				"controlRoomLabel": {
+					"fr": "Salle de contrôle",
+					"en": "Control room"
+				},
+				"cautionSignInteract": {
+					"fr": "Le panneau indique : 'Attention : sol glissant'. Ce ne serait pas prudent de continuer par là.",
+					"en": "The sign says: 'Caution: wet floor'. Walking there would not be wise."
+				},
+				"julietteInteract1": {
+					"fr": "Juliette : 'Encore des robots ? Qu'est-ce que c'est que cet endroit ? Il faut qu'on sorte d'ici.",
+					"en": "Juliette: 'More robots? What is this place? We need to get out of here.'"
+				},
+				"julietteInteract2": {
+					"fr": "Juliette : 'Je n'avais jamais vu un casino tenu par des robots !'",
+					"en": "Juliette: 'I had never seen a casino run by robots!'"
+				},
+				"rubbleShovel": {
+					"fr": "L'éboulement est trop important, vous ne parvenez pas à déblayer les gravats avec la pelle.",
+					"en": "The pile of rubble is too massive for you to clear it out with your shovel."
+				},
+				"rubbleInteract": {
+					"fr": "Un éboulement bloque la porte du casino.",
+					"en": "The door is blocked by a pile of rubble."
+				},
+				"slotMachineLeftSparePart": {
+					"fr": "Ces machines à sous fonctionnent très bien.",
+					"en": "These slot machines are already well-functioning."
+				},
+				"slotMachineRightSparePart1": {
+					"fr": "Vous pourriez utiliser cette pièce détachée pour réparer la machine, mais la trappe d'accès est fermée.",
+					"en": "You could use this spare part to repair the machine, but the access trapdoor is closed."
+				},
+				"slotMachineRightSparePart2": {
+					"fr": "Vous sortez la pièce défectueuse de la machine et la remplacez.",
+					"en": "You take the defective part out of the machine and replace it."
+				},
+				"slotMachineRightTool1": {
+					"fr": "Vous utilisez l'outil pour ouvrir une trappe sur le devant de la machine.",
+					"en": "You use the tool to open a compartment on the machine's front."
+				},
+				"slotMachineRightTool2": {
+					"fr": "Vous utilisez l'outil pour refermer la trappe. Vous avez réparé la machine à sous !",
+					"en": "You use the tool to close the compartment. You repaired the slot machine!"
+				},
+				"slotMachineRightTool3": {
+					"fr": "La trappe d'accès est déjà ouverte.",
+					"en": "The access trapdoor is already open."
+				},
+				"receptionistRobotTool": {
+					"fr": "Réceptionniste : 'Qu'est-ce que c'est que ça ? Ah, vous êtes le monsieur de la maintenance. Vous avez laissé votre outil ici la dernière fois, tenez.'",
+					"en": "Receptionist: 'What is that? Oh, you're the maintenance technician. You left your tool here last time, here it is.'"
+				},
+				"slotMachineRightShovel1": {
+					"fr": "Ces machines à sous sont déjà cassées, inutile d'insister.",
+					"en": "These slot machines are already broken."
+				},
+				"slotMachineRightShovel2": {
+					"fr": "Votre pelle ne convient pas pour ouvrir la trappe d'accès de la machine. Il vous faut un outil spécial.",
+					"en": "Your shovel cannot open the machine's access trapdoor. You will need a specific tool."
+				},
+				"slotMachineRepaired": {
+					"fr": "La machine à sous fonctionne de nouveau grâce à vous.",
+					"en": "The slot machine works again thanks to you."
+				},
+				"cardRiddleSolved": {
+					"fr": "Robot croupier : 'Bravo ! Les clients maîtrisant la notion de quantité d'information sont rois ici !'",
+					"en": "Croupier robot: 'Congratulations! Customers who understand self-information are kings here!"
+				},
+				"cardRiddleQuestion": {
+					"fr": "Est-ce que ma carte est parmi...",
+					"en": "Is my card among..."
+				},
+				"cardRiddleYes": {
+					"fr": "Robot croupier : 'Ma carte est parmi cette sélection.'",
+					"en": "Croupier robot: 'My card is in this selection.'"
+				},
+				"cardRiddleNo": {
+					"fr": "Robot croupier : 'Ma carte n'est pas parmi cette sélection.'",
+					"en": "Croupier robot: 'My card is not in this selection.'"
+				},
+				"cardRiddleFail": {
+					"fr": "Robot croupier : 'Vous n'avez pas trouvé la carte en cinq questions. Vous recommencez de zéro.'",
+					"en": "Croupier robot: 'You have failed to find the card in five questions. You're starting all over'"
+				},
+				"cardRiddleTip": {
+					"fr": "Juliette : 'On n'a droit à qu'à cinq questions, il vaut mieux ne pas juste choisir des cartes au hasard.'",
+					"en": "Juliette: 'We can only ask five questions, we can't just choose cards randomly.'"
+				},
+				"cardRiddleAllButton": {
+					"fr": "Tout",
+					"en": "All"
+				},
+				"slotMachineRightToken1": {
+					"fr": "La machine à sous est en panne, essayez-en une autre.",
+					"en": "The slot machine is out of order, try another one."
+				},
+				"slotMachineRightToken2": {
+					"fr": "Vous pensez avoir réparé la machine à sous, mais il vaut mieux en utiliser une autre.",
+					"en": "You think you have repaired the slot machine, but you had better use another one."
+				}
+			},
+			"controlRoom": {
+				"interactDesk": {
+					"fr": "Vous récupérez des papiers sur le bureau.\nVous les rangez dans l'encyclopédie.",
+					"en": "You find some papers on the desk.\nYou put them in the encyclopedia."
+				},
+				"clickOnTheIconTip": {
+					"fr": "Juliette : 'L'icône avec un robot est peut-être un programme pour contrôler les robots !'",
+					"en": "Juliette: 'Maybe the robot icon is a program to control the robots!'"
+				},
+				"entropieTip": {
+					"fr": "Juliette : 'Il y a sûrement une formule pour calculer ça quelque part.'",
+					"en": "Juliette: 'There must be a formula somewhere.'"
+				},
+				"unlockTheRobotsTip": {
+					"fr": "Juliette : 'Le programme est bloqué... On devrait retourner voir les robots.'",
+					"en": "Juliette: 'The program is locked... We should go back to the robots.'"
+				},
+				"error": {
+					"fr": "Erreur 505 : un des robots est bloqué. Vérifiez l'état des robots.",
+					"en": "Error 505: one of the robots is locked. Check the robots' state."
+				},
+				"alreadyExecuted": {
+					"fr": "Erreur : le programme a déjà été exécuté.",
+					"en": "Error: the program has already been executed."
+				},
+				"controlRobotProgramLabel": {
+					"fr": "Contrôle robots",
+					"en": "Robots control"
+				},
+				"documentsProgramLabel": {
+					"fr": "Mes documents",
+					"en": "My documents"
+				},
+				"mailProgramLabel": {
+					"fr": "E-mail",
+					"en": "E-mail"
+				},
+				"documentsProgram1": {
+					"fr": "Au milieu de documents sur le casino, vous trouvez une page avec des informations intéressantes que vous ajoutez à l'encyclopédie.",
+					"en": "Among documents about the casino, you find a page with relevant information and add it to the encyclopedia."
+				},
+				"documentsProgram2": {
+					"fr": "Vous avez déjà fait le tour des documents. Il n'y a plus que des factures et des registres.",
+					"en": "You have already gone through the documents. There's nothing left but bills and logs."
+				},
+				"mailProgram1": {
+					"fr": "En parcourant les mails, vous trouvez une note intéressante. Vous l'ajoutez à l'encyclopédie.",
+					"en": "Going through the mail, you stumble upon an interesting memo. You add it to the encyclopedia."
+				},
+				"mailProgram2": {
+					"fr": "Il n'y a plus rien d'intéressant dans ce programme.",
+					"en": "There is nothing else in this program."
+				},
+				"shannonRiddleTip": {
+					"fr": "Juliette : 'Et si on tapait une lettre ?'",
+					"en": "Juliette : 'How about we type a letter?'"
+				},
+				"shannonErrorCount": {
+					"fr": "Nombre de tentatives ratées : %s",
+					"en": "Number of failed attempts: %s"
+				},
+				"shannonRiddleWrongLetter": {
+					"fr": "Ce n'est pas la bonne lettre.",
+					"en": "This is not the right letter."
+				},
+				"shannonRiddleRightLetter": {
+					"fr": "Vous avez trouvé la bonne lettre !",
+					"en": "You found the right letter!"
+				},
+				"shannonRiddleInstructions": {
+					"fr": "L'ordinateur de contrôle est verrouillé !\nTapez la phrase qui le déverrouillera.",
+					"en": "The control computer is locked!\nFind the sentence that will unlock the computer."
+				},
+				"shannonWin": {
+					"fr": "L'ordinateur est déverrouillé ! Il vous a fallu %s essais pour %s caractères, soit %s bits par symbole.",
+					"en": "The computer is unlocked! You made %s attempts for %s characters, that is to say %s bits per symbol."
+				},
+				"julietteInteract": {
+					"fr": "Juliette : 'Tu crois qu'on a le droit d'être ici ?'",
+					"en": "Juliette: 'Do you think we're allowed here?'"
+				},
+				"controlRobotText": {
+					"fr": "Aidez Victor et Juliette à atteindre la sortie du casino en déplaçant les gravats !\nVous pouvez sélectionner des gravats en cliquant dessus et les déplacer grâce aux touches directionnelles.",
+					"en": "Help Victor and Juliette get to the casino's exit by moving the piles of rubble!\nYou can select a pile of rubble by clicking it and move it using the arrow keys."
+				}
+			},
+
+			"miniGameRoom": {
+				"talkWithPianoRobot": {
+					"fr": "Robot pianiste : 'Je n'arrive pas à lire cette partition !'",
+					"en": "Robot pianist: 'I can't read this music sheet!'"
+				},
+				"pianoTip": {
+					"fr": "Juliette : 'Il doit y avoir un rapport entre les probabilités données et ces nombres...'",
+					"en": "Juliette: 'There must be a link between the given probabilities and these numbers...'"
+				},
+				"pianoTip2": {
+					"fr": "Juliette : 'Plus une note est probable, plus sa quantité d'information est faible, non ?'",
+					"en": "Juliette: 'The more likely a note, the lower its self-information, right?'"
+				},
+				"julietteInteract": {
+					"fr": "Juliette : '...'",
+					"en": "Juliette: '...'"
+				},
+				"barInteract1": {
+					"fr": "Robot barmaid : 'Bienvenue, cher cli-... Tu es trop jeune, mon petit ! Tu n'as rien à faire au bar !'",
+					"en": "Robot barmaid: 'Welcome, dear custo-... You're too young, darling! You're not supposed to be at the bar!'"
+				},
+				"barInteract2": {
+					"fr": "Robot barmaid : 'Le bar est interdit aux enfants, jeunes gens. Retournez dans la salle principale.'",
+					"en": "Robot barmaid: 'No children allowed in the bar, kids. Go back to the main room.'"
+				},
+				"barInteract3": {
+					"fr": "Robot barmaid : 'Vous ne devriez même pas être dans un casino à votre âge !'",
+					"en": "Robot barmaid: 'You shouldn't even be in a casino at your age!'"
+				},
+				"barInteract4": {
+					"fr": "Robot barmaid : 'Vous n'allez donc jamais me laisser tranquille ?'",
+					"en": "Robot barmaid: 'Won't you ever leave me alone?'"
+				},
+				"barInteract5": {
+					"fr": "Robot barmaid : 'Bon... D'accord. Avant de tenir le bar, j'étais croupière, comme les autres. Que dites-vous d'une partie de blackjack ? Je vous donnerai quelque chose si vous gagnez et me laissez tranquille.'",
+					"en": "Robot barmaid: 'Alright... I'm the barmaid here but I used to be a croupier, just like the others. How about a game of blackjack? I'll give you something if you win and leave me alone.'"
+				},
+				"barInteract6": {
+					"fr": "Robot barmaid : 'Cette fois, je ne peux vraiment plus rien faire pour vous. Débrouillez-vous.'",
+					"en": "Robot barmaid: 'This time, there's really nothing I can do for you. You're on your own."
+				},
+				"blackjackMessage": {
+					"fr": "Robot barmaid : 'Vous avez réussi à me battre ! Voilà votre récompense : une pièce détachée.'",
+					"en": "Robot barmaid: 'You won! Here's you reward: a spare part.'"
+				},
+				"blackjackRules": {
+					"fr": "Le blackjack se joue avec un jeu de 52 cartes. L'as vaut 11 points, les figures (rois, dames et valets) valent 10 points, et les cartes de 2 à 10 correspondent à leur valeur nominale. Le but du jeu est de se rapprocher au maximum d'un score de 21 points, sans le dépasser, et en ayant un score plus élevé que la banque. La main la plus puissante du jeu est le blackjack, constitué d'un as et d'une figure.\n\nLe jeu se déroule de la manière suivante : le robot distribue une carte au joueur, une carte, face visible, à lui-même, une seconde carte au joueur et une seconde carte, face cachée, à lui-même. Il y a alors plusieurs actions possibles pour le joueur :\n-Rester sur son jeu : le joueur ne tire pas de carte supplémentaire ; le robot tire alors des cartes pour elle-même tant qu'il a une main qui vaut 16 ou moins.\n-Tirer une carte : le joueur demande une carte supplémentaire au robot ; si la valeur de sa main dépasse 21 points, on dit qu'il 'saute'.\nSi les deux parties obtiennent un blackjack, il y a égalité. Si l'un obtient un blackjack et l'autre atteint 21 points avec trois cartes ou plus, le premier remporte la manche. Si le joueur saute, le robot n'a pas besoin de jouer sa main.\n\nLe jeu se termine lorsque l'un des deux participants est ruiné. Gagner une manche rapporte 10 jetons ; la remporter avec un blackjack rapporte 10 jetons supplémentaires.",
+					"en": "Blackjack is played with a deck of 52 cards. The ace is worth 11 points, picture cards (kings, queens and jacks) are worth 10 points, and cards from 2 to 10 are worth their nominal value. The goal is to get as close as possible to 21 points, without going beyond, and having a higher score than the bank. The most powerful hand in the game is the blackjack, composed of an ace and a picture card.\n\nThe game takes places as follows: the robot deals a card to the player, a visible card to herself, another card to the player, and another hidden card to herself. From there, there are several possible actions for the player:\n-Stand: the player doesn't draw anymore card ; the robot then draws cards for herself while her hand is worth 16 or less.\n- Hit: the player asks the robot for one more card ; if his hand's value exceeds 21 points, the player is said to 'bust'.\nIf both parties get a blackjack, it is a draw. If one gets a blackjack and the other reaches 21 points with three cards or more, the first one wins the round. If the player busts, the robot doesn't need to play her hand.\n\nThe game ends when one party is ruined. Winning a round grants the winner 10 tokens; winning it with a blackjack grants 10 more tokens."
+				},
+				"blackjackRulesTitle": {
+					"fr": "Règles du jeu",
+					"en": "Rules of the game"
+				},
+				"blackjackNewRound": {
+					"fr": "Manche suivante",
+					"en": "Next round"
+				},
+				"blackjackNewGame": {
+					"fr": "Nouvelle partie",
+					"en": "New game"
+				},
+				"blackjackStand": {
+					"fr": "Rester",
+					"en": "Stand"
+				},
+				"blackjackHit": {
+					"fr": "Carte",
+					"en": "Hit"
+				},
+				"blackjackPlayer": {
+					"fr": "Joueur",
+					"en": "Player"
+				},
+				"blackjackDealer": {
+					"fr": "Croupière",
+					"en": "Dealer"
+				},
+				"blackjackBustPlayer": {
+					"fr": "Le joueur a sauté. Manche perdue.",
+					"en": "The player busted. Round lost."
+				},
+				"blackjackBustDealer": {
+					"fr": "Le croupier a sauté. Manche gagnée.",
+					"en": "The dealer busted. Round won."
+				},
+				"blackjackWinPlayer": {
+					"fr": "Le joueur gagne la manche.",
+					"en": "The player wins the round."
+				},
+				"blackjackWinDealer": {
+					"fr": "La croupière gagne la manche.",
+					"en": "The dealer wins the round."
+				},
+				"blackjackDoubleBlackjack": {
+					"fr": "Double blackjack. Égalité.",
+					"en": "Double blackjack. Draw."
+				},
+				"blackjackBlackjackPlayer": {
+					"fr": "Blackjack, le joueur gagne la manche.",
+					"en": "Blackjack, the player wins the round."
+				},
+				"blackjackBlackjackDealer": {
+					"fr": "Blackjack, le croupier gagne la manche.",
+					"en": "Blackjack, the dealer wins the round."
+				},
+				"blackjackDraw": {
+					"fr": "Égalité.",
+					"en": "Draw."
+				},
+				"blackjackWinGame": {
+					"fr": "Vous avez gagné la partie !",
+					"en": "You won the game!"
+				},
+				"blackjackLoseGame": {
+					"fr": "Vous avez perdu la partie.",
+					"en": "You lost the game."
+				},
+				"blackjackMoney": {
+					"fr": "Argent",
+					"en": "Money"
+				},
+				"blackjackRound": {
+					"fr": "Manche",
+					"en": "Round"
+				}
+			}
+		},
+		"3": {
+			"outside": {
+				"interactJuliette": {
+					"fr": "Juliette : 'Il faut vraiment qu'on trouve des ressources !'",
+					"en": "Juliette: 'We really have to find some resources!'"
+				},
+				"interactJuliette2": {
+					"fr": "Juliette : 'On a récupéré tout ce qu'il nous fallait ! On peut repartir maintenant.'",
+					"en": "Juliette: 'We found all we needed! We can leave now.'"
+				},
+				"interactRoadsign": {
+					"fr": "Où aller ?",
+					"en": "Where to go?"
+				},
+				"interactPump": {
+					"fr": "Ces pompes à essence sont vides depuis longtemps.",
+					"en": "These petrol pumps have been empty for a long time."
+				}
+			},
+			"shop": {
+				"interactMahjong": {
+					"fr": "Vous récupérez une boîte de jeu avec des tuiles en bois.\nVous la rangez dans l'inventaire.",
+					"en": "You pick up a box with wooden tiles.\nYou put it in the inventory."
+				},
+				"interactJuliette1": {
+					"fr": "Juliette : 'On pourrait commencer par récupérer ce qu'il y a dans ces vitrines.'",
+					"en": "Juliette: 'We could collect what's in these display cases first.'"
+				},
+				"interactJulietteToilets": {
+					"fr": "Juliette : 'Victor ! On a encore des choses à récupérer ici !",
+					"en": "Juliette: 'Victor! We still have stuff to collect here!'"
+				},
+				"interactJuliette2": {
+					"fr": "Juliette : 'Il y a sûrement d'autres choses à récupérer dans les toilettes.'",
+					"en": "Juliette: 'There must be some other stuff to collect in the toilets.'"
+				},
+				"interactJuliette3": {
+					"fr": "Juliette : 'Je crois qu'il ne reste plus rien ici, on peut repartir.'",
+					"en": "Juliette: 'I think there's nothing left here, we can leave now."
+				},
+				"tile_riddle1Tip": {
+					"fr": "Juliette : 'On peut sûrement décoder la suite de zéros et de uns à l'aide de l'arbre.'",
+					"en": "Juliette: 'We surely can decode the sequence of zeros and ones using the tree.'"
+				},
+				"tile_riddle1Tip_noTiles": {
+					"fr": "Juliette : 'Je crois qu'il faut mettre des objets dans les emplacements...'",
+					"en": "Juliette: 'I think we have to put objects in the slots...'"
+				},
+				"tile_riddle1Lose": {
+					"fr": "Ça ne marche pas.",
+					"en": "It doesn't work."
+				},
+				"tile_riddle1Win": {
+					"fr": "Juliette : 'Oh ! La serrure se déverrouille !'",
+					"en": "Juliette: 'Oh! The lock is opening!'"
+				},
+				"cabinetBottlesOpen": {
+					"fr": "La vitrine s'ouvre. Vous mettez les bouteilles dans l'inventaire.",
+					"en": "The display case opens. You put the bottles in the inventory."
+				},
+				"cabinetBottlesEmpty": {
+					"fr": "Il n'y a plus rien dans cette vitrine.",
+					"en": "There isn't anything left in this display case."
+				},
+				"tile_riddle2Tip1": {
+					"fr": "Juliette : 'On peut sûrement décoder la suite de zéros et de uns à l'aide du tableau.'",
+					"en": "Juliette: 'We surely can decode the sequence of zeros and ones using the table.'"
+				},
+				"tile_riddle2Tip2": {
+					"fr": "Juliette : 'On dirait qu'il y a plusieurs possibilités, on va devoir essayer plusieurs combinaisons.'",
+					"en": "Juliette: 'It seems there's more than one possibility, we'll have to try different combinations.'"
+				},
+				"tile_riddle2Tip_noTiles": {
+					"fr": "Juliette : 'Je crois qu'il faut mettre des objets dans les emplacements...'",
+					"en": "Juliette: 'I think we have to put objects in the slots...'"
+				},
+				"tile_riddle2Lose": {
+					"fr": "Ça ne marche pas.",
+					"en": "It doesn't work."
+				},
+				"tile_riddle2Wrong": {
+					"fr": "Juliette : 'Ça ne marche pas, c'est étrange, cette combinaison semble correcte pourtant...\nIl doit y avoir plusieurs possibilités.'",
+					"en": "Juliette : 'It doesn't work, it's strange, this combinaison seems to be right...\nThere must are different possibilities.'"
+				},
+				"tile_riddle2Win": {
+					"fr": "Juliette : 'Oh ! La serrure se déverrouille !'",
+					"en": "Juliette: 'Oh! The lock is opening!'"
+				},
+				"cabinetChocolateOpen": {
+					"fr": "La vitrine s'ouvre. Vous mettez les barres chocolatées dans l'inventaire.",
+					"en": "The display case opens. You put the chocolate bars in the inventory."
+				},
+				"cabinetChocolateEmpty": {
+					"fr": "Il n'y a plus rien dans cette vitrine.",
+					"en": "There isn't anything left in this display case."
+				},
+				"tile_riddle3Tip": {
+					"fr": "Juliette : 'Plusieurs tuiles sont codées par le même symbole ! Il va falloir faire beaucoup d'essais...'",
+					"en": "Juliette: 'Several tiles are coded using the same symbol! We'll have to do lots of attempts...'"
+				},
+				"tile_riddle3Tip_noTiles": {
+					"fr": "Juliette : 'Je crois qu'il faut mettre des objets dans les emplacements...'",
+					"en": "Juliette: 'I think we have to put objects in the slots...'"
+				},
+				"tile_riddle3Lose": {
+					"fr": "Ça ne marche pas.",
+					"en": "It doesn't work."
+				},
+				"tile_riddle3Win": {
+					"fr": "Juliette : 'Oh ! La serrure se déverrouille !'",
+					"en": "Juliette: 'Oh! The lock is opening!'"
+				},
+				"cabinetNoodlesOpen": {
+					"fr": "La vitrine s'ouvre. Vous mettez les nouilles dans l'inventaire.",
+					"en": "The display case open. You put the noodles in the inventory."
+				},
+				"cabinetNoodlesEmpty": {
+					"fr": "Il n'y a plus rien dans cette vitrine.",
+					"en": "There isn't anything left in this display case."
+				},
+				"cabinetShovel": {
+					"fr": "Juliette : 'Arrête de toujours essayer de tout casser, Victor !'",
+					"en": "Juliette: 'Stop trying to break everything all the time, Victor!'"
+				},
+				"interactDoor": {
+					"fr": "Vous déverrouillez la sortie de secours.",
+					"en": "You unlock the emergency exit."
+				}
+			},
+			"toilets": {
+				"interactJuliette1": {
+					"fr": "Juliette : 'Une trousse de premiers soins serait sûrement utile !'",
+					"en": "Juliette: 'A first aid kid would surely be usefull!'"
+				},
+				"interactJuliette2": {
+					"fr": "Juliette : 'Il faudrait qu'on remplisse nos bouteilles.'",
+					"en": "Juliette: 'We should fill our bottles.'"
+				},
+				"interactJuliette3": {
+					"fr": "Juliette : 'Je crois qu'il n'y a plus rien dans cette pièce.'",
+					"en": "Juliette: 'I think there's nothing left in this room.'"
+				},
+				"halfHuffmanRiddleTip": {
+					"fr": "Juliette : 'Il y a peut-être quelque chose qui nous aiderait dans l'encyclopédie.'",
+					"en": "Juliette: 'There might be something that could help us in the encyclopedia."
+				},
+				"halfHuffmanRiddleGood": {
+					"fr": "Vous avez trouvé la bonne séquence !",
+					"en": "You found the right sequence!"
+				},
+				"halfHuffmanRiddleWrong": {
+					"fr": "Ce n'est pas la bonne séquence de touches.",
+					"en": "This is not the right sequence of buttons."
+				},
+				"halfHuffmanSolved": {
+					"fr": "L'armoire à pharmacie s'ouvre. Vous y trouvez une trousse de premiers soins.",
+					"en": "The first-aid box opens. You find a first-aid kit in it."
+				},
+				"huffmanRiddle": {
+					"fr": "Il faut réparer la plomberie des toilettes !",
+					"en": "The plumbing needs fixing!"
+				},
+				"huffmanFreePipes": {
+					"fr": "Tuyaux disponibles : ",
+					"en": "Free pipes: "
+				},
+				"huffmanNoPipes": {
+					"fr": "Il n'y a plus de tuyaux disponibles.",
+					"en": "There is no pipes left."
+				},
+				"huffmanHowToFix": {
+					"fr": "[b]Instructions pour installer un tuyau[/b]\nCliquez sur une intersection puis sur une autre pour poser des tuyaux entre ces deux points.\nLes tuyaux ne peuvent être installés que sur une ligne droite.\nRepassez sur les tuyaux déjà en place pour les enlever.",
+					"en": "[b]How to place a pipe[/b]\nClick on an intersection then on another to install pipes between these two points.\nThe pipes can only be place on a straight line.\nDo the same to remove the pipes."
+				},
+				"huffmanRiddleTip": {
+					"fr": "Juliette : 'On dirait qu'il reste des morceaux de tuyaux... On devrait les utiliser.'",
+					"en": "Juliette: 'It seems there are still some pipes left... We should use them."
+				},
+				"huffmanRiddleTip2": {
+					"fr": "Juliette : 'On dirait que les tuyaux forment un motif... Je crois qu'il faut regrouper étape par étape les tuyaux associés aux valeurs les plus faibles.'",
+					"en": "Juliette: 'It seems the pipes form a pattern... I think we need to group step by step the pipes associated with the lowest values.'"
+				},
+				"huffmanRiddleSolved": {
+					"fr": "Vous avez réparé la plomberie !",
+					"en": "The plumbing is fixed!"
+				},
+				"huffmanRiddleNotSolved": {
+					"fr": "Ça n'a pas l'air correct...",
+					"en": "It doesn't seem to be the correct solution..."
+				},
+				"huffmanSolved": {
+					"fr": "Juliette : 'La plomberie est réparée ! Nous devrions pouvoir récupérer de l'eau dans l'évier maintenant.'",
+					"en": "Juliette: 'The plumbing is fixed! We should be able to get some water from the sink.'"
+				},
+				"huffmanRiddleEraseAll": {
+					"fr": "Tout effacer",
+					"en": "Erase all"
+				},
+				"getWater1": {
+					"fr": "Vous faites couler l'eau.",
+					"en": "Water starts running in the sink."
+				},
+				"getWater2": {
+					"fr": "Vous récupérez de l'eau dans vos bouteilles.",
+					"en": "You fill your plastic bottles with water."
+				},
+				"getWater3": {
+					"fr": "Les bouteilles sont déjà remplies.",
+					"en": "The bottles are already filled."
+				}
+			},
+			"children_area": {
+				"interactJuliette": {
+					"fr": "Juliette : 'Oh ! Une piscine à boules !!!'",
+					"en": "Juliette: 'Oh! A ball pool!!!"
+				},
+				"enterPiscine": {
+					"fr": "Vous entrez dans la piscine à boules. C'est cool !",
+					"en": "You get in the ball pool. It's cool!"
+				},
+				"exitPiscine": {
+					"fr": "Vous sortez de la piscine à boules.",
+					"en": "You get out of the ball pool."
+				},
+				"interactDoor": {
+					"fr": "La porte est fermée de l'intérieur.",
+					"en": "The door is closed from the inside."
+				}
+			},
+			"storage": {
+				"carInteract": {
+					"fr": "C'est une vieille voiture... La portière est coincée.",
+					"en": "It's an old car... The door is stuck."
+				},
+				"carShovel": {
+					"fr": "Vous forcez la porte de la voiture avec votre pelle.",
+					"en": "You break the car's door open with your shovel."
+				},
+				"carRiddleScanButton": {
+					"fr": "Scanner",
+					"en": "Scan"
+				},
+				"carRiddleRight": {
+					"fr": "Vous captez un message mais il est inintelligible : ce n'est qu'une séquence de bips en boucle.",
+					"en": "You pick up a message but it is unintelligible: you can only hear a sequence of beeps over and over."
+				},
+				"carRiddleWrong": {
+					"fr": "La radio de la voiture ne capte rien avec cette fréquence et ce canal.",
+					"en": "The car's radio doesn't get any signal with this frequence and this canal."
+				},
+				"carRiddleInstructions": {
+					"fr": "Dans la voiture, il reste une vieille radio et la boîte à gants.",
+					"en": "There are still an old radio and the glove box in the car."
+				},
+				"carRiddleOscilloBeforeScan": {
+					"fr": "Juliette : 'Pour quoi faire ? La radio ne capte aucun signal.'",
+					"en": "Juliette: 'What for? The radio can't get any signal.'"
+				},
+				"carRiddleBoxBeforeCode": {
+					"fr": "La boîte à gants est verrouillée par le digicode.",
+					"en": "The code pad keeps the glove box locked."
+				},
+				"carRiddleBoxOpen": {
+					"fr": "La boîte à gants s'ouvre.",
+					"en": "The glove box opens."
+				},
+				"carRiddleCode": {
+					"fr": "Vous entendez un cliquetis dans la boîte à gants.",
+					"en": "You hear a clinking sound coming from the glove box."
+				},
+				"carRiddleShovel": {
+					"fr": "Vous essayez de forcer la boîte à gants en utilisant la pelle, sans succès.",
+					"en": "You try to break the glove box open using the shovel, but it fails."
+				},
+				"carRiddleHat": {
+					"fr": "Juliette : 'Oh, un chapeau de magicien !'",
+					"en": "Juliette: 'Oh, a wizard hat!'"
+				},
+				"carRiddleTip": {
+					"fr": "Juliette : 'Tu n'as pas comme une impression de déjà vu ?'",
+					"en": "Juliette: 'Déjà vu.'"
+				},
+				"cardboardBoxesInteract": {
+					"fr": "Vous trouvez dans les cartons des papiers que vous rajoutez à l'encyclopédie.",
+					"en": "You found in these cardboard boxes papers that you add to the encyclopedia."
+				},
+				"cardboardBoxesInteract2": {
+					"fr": "Il n'y a plus rien d'intéressant dans ces cartons.",
+					"en": "There is nothing interesting in these cardboard boxes."
+				},
+				"julietteInteract": {
+					"fr": "Juliette : 'Il n'y a pas l'air d'y avoir grand chose d'intéressant.'",
+					"en": "Juliette: 'There doesn't seem to be anything interesting.'"
+				}
+			}
+		}
+	},
+
+
+	"canal": {
+		"1": {
+			"entrance": {
+				"binInteract1": {
+					"fr": "C'est une poubelle couverte de fourmis.",
+					"en": "It's a bin full of ants."
+				},
+				"binInteract2": {
+					"fr": "Il n'y a rien d'intéressant dans cette poubelle.",
+					"en": "There's nothing of interest in this bin."
+				},
+				"interactFreddy1": {
+					"fr": "L'homme vous tend un bout de papier, sans un mot.",
+					"en": "The man hands you a piece of paper without a word."
+				},
+				"interactFreddy2": {
+					"fr": "Homme : '...'",
+					"en": "Man: '...'"
+				},
+				"interactFreddy3": {
+					"fr": "Vous dites 'Manap' à l'homme, mais il reste impassible.",
+					"en": "You say 'Manap' to the man, but he remains impassive."
+				},
+				"interactFreddy4": {
+					"fr": "Freddy : 'Tu peux passer.'",
+					"en": "Freddy: 'You can pass.'"
+				},
+				"interactJuliette": {
+					"fr": "Juliette : 'Cet homme là-bas me fait peur.'",
+					"en": "Juliette: 'That man over there scares me.'"
+				},
+				"interactJuliette2": {
+					"fr": "Juliette : 'Va lui parler, je t'attends ici.'",
+					"en": "Juliette: 'Go talk to him, I'll wait for you here."
+				},
+				"interactJuliette3": {
+					"fr": "Juliette : 'Freddy me fait toujours peur.'",
+					"en": "Juliette: 'I'm still scared of Freddy.'"
+				},
+				"entranceRiddleTip1": {
+					"fr": "Juliette : 'Une grille de 1 et de 0... Certains chiffres sont un peu effacés. Ils ne doivent pas être utiles.'",
+					"en": "Juliette: 'A grid of 1s and 0s... Some figures are faded. They're probably useless."
+				},
+				"entranceRiddleTip2": {
+					"fr": "Juliette : 'Ça me rappelle un code qu'on a déjà vu...",
+					"en": "Juliette: 'It reminds me of a code we've already seen.'"
+				},
+				"entranceRiddleTip3": {
+					"fr": "Juliette : 'Tu es sûr qu'il n'y a pas d'erreur ? Peut-être qu'on pourrait se servir de ces autres chiffres pour la corriger.'",
+					"en": "Juliette: 'Are you sure this is right? Perhaps we could use these faded figures to correct it."
+				},
+				"entranceRiddleAnswer1": {
+					"fr": "Juliette : 'Manap ? Mais ça ne veut rien dire ! Pourtant, c'est ce qui est marqué... Allons voir le gardien.'",
+					"en": "Juliette: 'Manap? But it doesn't mean anything! Still, it's written on the paper... Let's go and talk to the guardian.'"
+				},
+				"entranceRiddleAnswer2": {
+					"fr": "Juliette : 'Canal ! Bravo Victor, tu as corrigé le message ! Allons voir le gardien.'",
+					"en": "Juliette: 'Canal! Congratulations Victor, you have corrected the message! Let's go and talk to the guardian.'"
+				},
+				"useShovelFreddy": {
+					"fr": "Ce n'est pas une bonne idée...",
+					"en": "It may not be a good idea..."
+				},
+				"useShovelAnthill": {
+					"fr": "Vous écrasez la fourmilière d'un coup de pelle. Monstre.",
+					"en": "You crush the anthill with your shovel. You monster."
+				},
+				"interactAnthill": {
+					"fr": "C'est une fourmilière. Beurk !",
+					"en": "It's an anthill. Ew!"
+				},
+				"interactAnthillCrushed": {
+					"fr": "Il ne reste rien de la fourmilière.",
+					"en": "There's nothing left of the anthill."
+				}
+			}
+		},
+		"2": {
+			"building": {
+				"buildingDoorLocked": {
+					"fr": "La porte est verrouillée.",
+					"en": "The door is locked."
+				},
+				"buildingDoorUnlocked": {
+					"fr": "Vous avez déverrouillé la porte.",
+					"en": "You unlocked the door."
+				},
+				"DigicodeWin": {
+					"fr": "Juliette : 'Tu as réussi à dévérouiller la porte'"
+				},
+				"DigicodeLose": {
+					"fr": "La porte ne s'ouvre pas..."
+				},
+				"DigicodeTip": {
+					"fr": "Juliette : 'Tu as vu ces belles fleurs ?'"
+				},
+				"Grafiti": {
+					"fr": "Le graphe a été tagué."
+				}
+			},
+			"hall": {
+				"elevatorLocked": {
+					"fr": "Juliette : 'On dirait qu'il n'y a pas de courant'"
+				},
+				"elevatorUnlocked": {
+					"fr": "Vous avez remis le courant"
+				}
+			},
+			"staircase": {
+				"InterruptorWin": {
+					"fr": "Juliette : 'Tu as réussi à remettre le courant'"
+				},
+				"InterruptorLose": {
+					"fr": "Rien ne se passe..."
+				},
+				"InterruptorTip": {
+					"fr": "Qui est donc ce cher Hamming ?"
+				}
+			},
+			"floor": {
+				"toolBoxInteract": {
+					"fr": "Est-ce suffisant pour faire repartir l'ascenseur ?"
+				},
+				"elevatorBlocked": {
+					"fr": "Juliette : 'On dirait qu'il y a un problème de connexion entre ces fils.'"
+				},
+				"elevatorUnblocked": {
+					"fr": "Vous avez réparé l'ascenseur."
+				},
+				"elevatorTip1": {
+					"fr": "On dirait que le panneau ne tient pas très bien."
+				},
+				"elevatorTip2": {
+					"fr": "Le mot est-il un mot de code ?"
+				},
+				"elevatorWin": {
+					"fr": "Bravo ! L'ascenseur redémarre."
+				},
+				"elevatorLose": {
+					"fr": "L'ascenseur ne veut toujours pas repartir..."
+				},
+				"controlPanelOut": {
+					"fr": "Le panneau de contrôle a déjà été enlevé."
+				}
+			},
+			"loftEntrance": {
+				"loftDoorUnlocked": {
+					"fr": "La porte est dévérouillée."
+				},
+				"loftDoorLocked": {
+					"fr": "La porte est vérouillée."
+				},
+				"loftDigicTip": {
+					"fr": "Les bits manquants trouvés, la porte s'ouvrira..."
+				},
+				"loftDigicWin": {
+					"fr": "Juliette : 'On dirait que tu as réussi à ouvrir la porte !'"
+				},
+				"loftDigicLose": {
+					"fr": "Rien ne se passe."
+				},
+				"staircaseUnlocked": {
+					"fr": "Le toit est maintenant accessible"
+				},
+				"staircaseLocked": {
+					"fr": "La grille est fermée à clé"
+				},
+				"matriceInWall": {
+					"fr": "Juliette : 'Qu'as tu trouvé dans le trou du mur ?'"
+				}
+			},
+			"roomFloor": {
+				"PostItWin": {
+					"fr": "Félicitation, tu commences à prendre le contrôle du codage canal !"
+				},
+				"PostItLose": {
+					"fr": "Il semble que ce ne soit pas la bonne réponse..."
+				},
+				"PostItTip": {
+					"fr": "Il faut prendre le contrôle du cours."
+				}
+			},
+			"loft": {
+				"interactScientist1": {
+					"fr": "Juliette : 'Il n'a vraiment pas l'air de vouloir répondre tant que l'on a pas répondu à son énigme.'"
+				},
+				"interactScientist2": {
+					"fr": "Nikola : 'Vous êtes des personnes dignes de confiance. Avez-vous trouvé les médicaments ?'"
+				},
+				"interactScientist3": {
+					"fr": "Vous donnez la réponse 'Oui' mais le scientifique refuse de vous adresser la parole."
+				},
+				"asciiRiddleTip1": {
+					"fr": "Juliette : 'Que veulent dire ces 3 codes ?'",
+					"en": "Juliette: ''"
+				},
+				"asciiRiddleTip2": {
+					"fr": "Juliette : 'N'y a t-il pas quelque chose pour nous aider dans le bazar du bureau ?'",
+					"en": "Juliette: ''"
+				},
+				"asciiRiddleTip3": {
+					"fr": "Juliette : 'As-tu correctement déchiffré ces éléments ? '",
+					"en": "Juliette: ''"
+				},
+				"asciiRiddleAnswer1": {
+					"fr": "Juliette : 'Oui! On dirait que tu as trouvé la solution, allons voir ce scientifique.'",
+					"en": "Juliette: ''"
+				},
+				"asciiRiddleAnswer2": {
+					"fr": "Juliette : 'cAU ? Bravo Victor, tu as décodé le message ! Allons voir le scientifique.'",
+					"en": "Juliette: ''"
+				},
+
+				"pianoTip": {
+					"fr": "Tiens des capacités..."
+				},
+				"pianoTip2": {
+					"fr": "Quelle est la formule de la capacité d'un canal symétrique binaire ?"
+				}
+			}
+		},
+		"patate_sacree": {
+			"1": {
+				"outside": {
+					"cowInteract": {
+						"fr": "Vache : Meuh!",
+						"en": "Cow : Meuh!"
+					},
+					"julietteInteract": {
+						"fr": "Juliette : Bonjour chef!",
+						"en": "Juliette : Hello chief!"
+					}
+				}
+			}
+		}
+	}
+}
