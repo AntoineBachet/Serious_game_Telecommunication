@@ -1,0 +1,313 @@
+﻿{
+	"antkiller": {
+		"category": "secret",
+		"conditions": ["canal_1_entrance_anthillDestroyed"],
+		"title": {
+			"fr": "Tueur de fourmis",
+			"en": "Ant killer"
+		},
+		"description": {
+			"fr": "Détruire la fourmilière.",
+			"en": "Destroy the anthill."
+		}
+	},
+	"killedjuliette": {
+		"category": "secret",
+		"conditions": ["julietteGone"],
+		"title": {
+			"fr": "Sororicide",
+			"en": "Sororicide"
+		},
+		"description": {
+			"fr": "Essayer de se débarrasser de Juliette.",
+			"en": "Try to get rid of Juliette."
+		}
+	},
+	"pigeonlover": {
+		"category": "secret",
+		"conditions": ["pigeon_hat_unlocked"],
+		"title": {
+			"fr": "Le Petit Nikola",
+			"en": "A boy and his pigeon"
+		},
+		"description": {
+			"fr": "Trouver le chapeau de pigeon.",
+			"en": "Find the pigeon hat."
+		}
+	},
+	"plushlover": {
+		"category": "secret",
+		"conditions": ["tutorial_1_uselesshouse_plushGiven"],
+		"title": {
+			"fr": "Amoureux des peluches",
+			"en": "Plush lover"
+		},
+		"description": {
+			"fr": "Donner la peluche à Juliette.",
+			"en": "Give the stuffed toy to Juliette."
+		}
+	},
+	"jackpot": {
+		"category": "secret",
+		"conditions": ["source_2_casino_jackpot"],
+		"title": {
+			"fr": "Chanceux",
+			"en": "Lucky"
+		},
+		"description": {
+			"fr": "Faire un triple sept sur une machine à sous.",
+			"en": "Do a three seven on a slot machine."
+		}
+	},
+	"piano": {
+		"category": "story",
+		"conditions": ["tutorial_1_house_pianoMessageShown", "source_2_miniGameRoom_pianoSolvedPlayed", "source_3_storage_pianoSolved"],
+		"type": "or",
+		"title": {
+			"fr": "Virtuose",
+			"en": "Virtuoso"
+		},
+		"description": {
+			"fr": "Montrer vos talents musicaux.",
+			"en": "Show your musical skills."
+		}
+	},
+	"piano_all": {
+		"category": "story",
+		"conditions": ["tutorial_1_house_pianoMessageShown", "source_2_miniGameRoom_pianoSolvedPlayed", "source_3_storage_pianoSolved"],
+		"requirements": ["piano"],
+		"title": {
+			"fr": "Mozart",
+			"en": "Mozart"
+		},
+		"description": {
+			"fr": "Montrer vos talents musicaux partout.",
+			"en": "Show you musical skills everywhere."
+		}
+	},
+	"tutorial_1_braille": {
+		"category": "story",
+		"conditions": ["tutorial_1_house_secretDoorMessageShown"],
+		"title": {
+			"fr": "Bille en tête",
+			"en": "Lose your marbles"
+		},
+		"description": {
+			"fr": "Découvrir une pièce secrète.",
+			"en": "Find a secret room."
+		}
+	},
+	"tutorial_1_morse": {
+		"category": "story",
+		"conditions": ["tutorial_1_secretroom_computerPuzzleSolved"],
+		"title": {
+			"fr": "Illuminé",
+			"en": "Enlightened"
+		},
+		"description": {
+			"fr": "Recevoir un message.",
+			"en": "Receive a message."
+		}
+	},
+	"ligne_1_entrance": {
+		"category": "story",
+		"conditions": ["ligne_1_entrySolved"],
+		"title": {
+			"fr": "Vous ne passerez pas",
+			"en": "You shall not pass"
+		},
+		"description": {
+			"fr": "Accéder au bunker.",
+			"en": "Access the bunker."
+		}
+	},
+	"canal_1_entrance": {
+		"category": "story",
+		"conditions": ["canal_1_entrance_entranceRiddleSolved", "canal_1_entrance_outroPlayed"],
+		"title": {
+			"fr": "Freddy, il s'appelle Freddy",
+			"en": "One night at Freddy's"
+		},
+		"description": {
+			"fr": "Trouver l'hôpital.",
+			"en": "Find the hospital."
+		}
+	},
+	"canal_2_building": {
+		"category": "story",
+		"conditions": ["canal_2_building_buildingDoorUnlocked"],
+		"title": {
+			"fr": "Canal débutant",
+			"en": "Channel beginner"
+		},
+		"description": {
+			"fr": "Trouver la matrice génératrice."
+		}
+	},
+	"canal_2_staircase": {
+		"category": "story",
+		"conditions": ["canal_2_hall_elevatorUnlocked"],
+		"title": {
+			"fr": "L'oeil de faucon",
+			"en": "Falcon's eye"
+		},
+		"description": {
+			"fr": "Savoir calculer une distance."
+		}
+	},
+	"canal_2_roomFloor": {
+		"category": "story",
+		"conditions": ["canal_2_roomFloor_PostItResolution"],
+		"title": {
+			"fr": "Roi des H",
+			"en": "King of H"
+		},
+		"description": {
+			"fr": "Calcuer des matrices de contrôle."
+		}
+	},
+	"source_1_entrance": {
+		"category": "story",
+		"conditions": ["source_1_entrance_noMoreDoorPlayed"],
+		"title": {
+			"fr": "Déséquilibré",
+			"en": "Unbalanced"
+		},
+		"description": {
+			"fr": "Restaurer l'équilibre.",
+			"en": "Restore balance and harmony."
+		}
+	},
+	"source_2": {
+		"category": "story",
+		"conditions": ["source_2_finished"],
+		"title": {
+			"fr": "La complainte du croupier automate",
+			"en": "Against all odds"
+		},
+		"description": {
+			"fr": "S'échapper du casino.",
+			"en": "Escape the casino."
+		}
+	},
+	"source_2_shannon": {
+		"category": "story",
+		"conditions": ["source_2_controlRoom_shannonRiddleAchievement"],
+		"title": {
+			"fr": "Entropie",
+			"en": "Entropy"
+		},
+		"description": {
+			"fr": "Deviner un mot de passe efficacement.",
+			"en": "Guess a password efficiently."
+		}
+	},
+	"mechanic": {
+		"category": "secret",
+		"conditions": ["source_2_casino_slotMachineRepaired"],
+		"title": {
+			"fr": "Mécano",
+			"en": "Mechanic"
+		},
+		"description": {
+			"fr": "Réparer une machine à sous.",
+			"en": "Repair a slot machine."
+		}
+	},
+	"source_3": {
+		"category": "story",
+		"conditions": ["source_3_finished"],
+		"title": {
+			"fr": "On the road again",
+			"en": "Highway to Hell"
+		},
+		"description": {
+			"fr": "Faire le plein.",
+			"en": "Get a refuel."
+		}
+	},
+	"source_3_pool": {
+		"category": "secret",
+		"conditions": ["source_3_children_poolAchievement"],
+		"title": {
+			"fr": "Encore une fois",
+			"en": "Bazinga!"
+		},
+		"description": {
+			"fr": "Vous ne savez vraiment pas vous arrêter...",
+			"en": "You really can't stop..."
+		}
+	},
+	"source_3_car": {
+		"category": "story",
+		"conditions": ["source_3_storage_carRiddleBoxOpen"],
+		"title": {
+			"fr": "Vandale",
+			"en": "Hooligan"
+		},
+		"description": {
+			"fr": "Piller une épave.",
+			"en": "Loot a wreck."
+		}
+	},
+	"map": {
+		"category": "general",
+		"conditions": ["mapUnlocked"],
+		"title": {
+			"fr": "Creusez ici",
+			"en": "Dig here"
+		},
+		"description": {
+			"fr": "Trouver une carte.",
+			"en": "Find a map."
+		}
+	},
+	"inventory": {
+		"category": "general",
+		"conditions": ["inventoryUnlocked"],
+		"title": {
+			"fr": "Victor l'explorateur",
+			"en": "Victor the explorer"
+		},
+		"description": {
+			"fr": "Débloquer l'inventaire.",
+			"en": "Unlock the inventory."
+		}
+	},
+	"encyclopedia": {
+		"category": "general",
+		"conditions": ["encyclopediaUnlocked"],
+		"title": {
+			"fr": "Encyclopédie",
+			"en": "Encyclopedia"
+		},
+		"description": {
+			"fr": "Trouver l'encyclopédie.",
+			"en": "Find the encyclopedia."
+		}
+	},
+	"log": {
+		"category": "general",
+		"conditions": ["logUnlocked"],
+		"title": {
+			"fr": "Journal",
+			"en": "Log"
+		},
+		"description": {
+			"fr": "Débloquer le journal.",
+			"en": "Unlock the log."
+		}
+	},
+	"perfectquiz": {
+		"category": "general",
+		"conditions": ["perfectQuiz"],
+		"title": {
+			"fr": "Incollable",
+			"en": "Unbeatable"
+		},
+		"description": {
+			"fr": "Ne faire aucune erreur dans un quiz.",
+			"en": "Get all the right answers in a quiz."
+		}
+	}
+}

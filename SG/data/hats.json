@@ -1,0 +1,58 @@
+﻿{
+	"layton": {
+		"name": {
+			"fr": "Chapeau de Layton",
+			"en": "Layton's Hat"
+		},
+		"description": {
+			"fr": "C'est un élégant haut-de-forme.",
+			"en": "An elegant top hat."
+		},
+		"source": "store",
+		"cost": "4"
+	},
+	"pigeon": {
+		"name": {
+			"fr": "Chapeau de pigeon",
+			"en": "Pigeon's hat"
+		},
+		"description": {
+			"fr": "Un pigeon grandeur nature.",
+			"en": "A life-size pigeon."
+		},
+		"source": "hidden"
+	},
+	"crown": {
+		"name": {
+			"fr": "Couronne",
+			"en": "Crown"
+		},
+		"description": {
+			"fr": "Roi Victor.",
+			"en": "King Victor."
+		},
+		"source": "story"
+	},
+	"cap": {
+		"name": {
+			"fr": "Casquette",
+			"en": "Cap"
+		},
+		"description": {
+			"fr": "Une casquette de mécano du casino Tesla.",
+			"en": "A mechanic's cap from the Tesla Casino."
+		},
+		"source": "hidden"
+	},
+	"wizard_hat": {
+		"name": {
+			"fr": "Chapeau de sorcier",
+			"en": "Wizard hat"
+		},
+		"description": {
+			"fr": "Un chapeau de sorcier.",
+			"en": "A wizard hat."
+		},
+		"source": "story"
+	}
+}

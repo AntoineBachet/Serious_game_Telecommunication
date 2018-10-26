@@ -1,0 +1,43 @@
+{
+	"menu": {
+		"music": ["Sims", "Sims_2"]
+	},
+	"quiz": {
+		"music": ["PeerGynt1_03", "PeerGynt1_04", "PeerGynt1_11", "PeerGynt1_13", "PeerGynt2_01"]
+	},
+	"no_music": {
+		"music": []
+	},
+	"intro": {
+		"music": ["Enslaved"]
+	},
+	"tutorial": {
+		"1": {
+			"music": ["Village1", "Village2", "Village3"]
+		}
+	},
+	"ligne": {
+		"1": {
+			"music": ["Vivaldi_printemps2", "Vivaldi_ete1", "Vivaldi_ete2", "Vivaldi_automne2"]
+		}
+	},
+	"canal": {
+		"1": {
+			"music": ["Starcraft"]
+		},
+		"2": {
+			"music": ["Starcraft"]
+		}
+	},
+	"source": {
+		"1": {
+			"music": ["Forest1", "Forest2"]
+		},
+		"2": {
+			"music": ["Joplin1", "Joplin2", "Joplin3", "Joplin4", "Joplin5"]
+		},
+		"3": {
+			"music": ["Starcraft2_T5"]
+		}
+	}
+}

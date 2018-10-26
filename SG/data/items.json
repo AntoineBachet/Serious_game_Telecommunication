@@ -1,0 +1,280 @@
+﻿{
+	"tutorial_1_village_shovel": {
+		"name": {
+			"fr": "Pelle",
+			"en": "Shovel"
+		},
+		"description": {
+			"fr": "C'est une pelle. Elle peut être utilisée pour creuser.",
+			"en": "It's a shovel. It can be used to dig."
+		}
+	},
+	"tutorial_1_village_key": {
+		"name": {
+			"fr": "Clé",
+			"en": "Key"
+		},
+		"description": {
+			"fr": "C'est une clé ramassée à Bourg-Palette.",
+			"en": "It's a key picked up in Pallet Town."
+		}
+	},
+	"tutorial_1_house_scales": {
+		"name": {
+			"fr": "Balance de Roberval",
+			"en": "Roberval's scales"
+		},
+		"description": {
+			"fr": "Une vieille balance.",
+			"en": "An old set of scales."
+		}
+	},
+	"tutorial_1_house_marbles": {
+		"name": {
+			"fr": "Billes",
+			"en": "Marbles"
+		},
+		"description": {
+			"fr": "Une poignée de billes.",
+			"en": "A handful of marbles."
+		}
+	},
+	"tutorial_1_house_sticks": {
+		"name": {
+			"fr": "Bâtonnets",
+			"en": "Sticks"
+		},
+		"description": {
+			"fr": "Une boîte de bâtonnets.",
+			"en": "A box filled with sticks."
+		}
+	},
+	"poney": {
+		"name": {
+			"fr": "Epona",
+			"en": "Epona"
+		},
+		"description": {
+			"fr": "La jument de Link.",
+			"en": "Link's mare."
+		}
+	},
+	"potato": {
+		"name": {
+			"fr": "Pomme de terre",
+			"en": "Potato"
+		},
+		"description": {
+			"fr": "C'est une pomme de terre ramassée à Bourg-Palette.",
+			"en": "A potato picked up in Pallet Town."
+		}
+	},
+	"tutorial_1_secretroom_ampoule": {
+		"name": {
+			"fr": "Ampoule",
+			"en": "Light bulb"
+		},
+		"description": {
+			"fr": "C'est une ampoule ramassée dans le coffre-fort.",
+			"en": "A potato picked up in Pallet Town."
+		}
+	},
+	"tutorial_1_house_oscilloscope": {
+		"name": {
+			"fr": "Oscilloscope",
+			"en": "Oscilloscope"
+		},
+		"description": {
+			"fr": "C'est un oscilloscope.",
+			"en": "It's an oscilloscope."
+		}
+	},
+	"tutorial_1_secretroom_brailleDisplay": {
+		"name": {
+			"fr": "Plage braille",
+			"en": "Braille display"
+		},
+		"description": {
+			"fr": "C'est une plage braille.",
+			"en": "It's a refreshable Braille display."
+		}
+	},
+	"tutorial_1_uselesshouse_plush": {
+		"name": {
+			"fr": "Peluche",
+			"en": "Plush"
+		},
+		"description": {
+			"fr": "C'est une adorable peluche.",
+			"en": "It's a cute plush."
+		}
+	},
+	"canal_1_entrance_entranceRiddle": {
+		"name": {
+			"fr": "Morceau de papier",
+			"en": "Piece of paper"
+		},
+		"description": {
+			"fr": "C'est un morceau de papier avec des 0 et des 1 inscrits dessus.",
+			"en": "It's a piece of paper with 0s and 1s written on it."
+		}
+	},
+	"canal_2_building_matG": {
+		"name": {
+			"fr": "Morceau de papier"
+		},
+		"description": {
+			"fr": "Une morceau de papier trouvé sous le pot de fleurs à l'entrée de l'immeuble."
+		}
+	},
+	"canal_2_floor_toolBox": {
+		"name": {
+			"fr": "Caisse à Outils",
+			"en": "Toolbox"
+		},
+		"description": {
+			"fr": "Une caisse à outils trouvée dans l'étage dévasté.",
+			"en": "A toolbox found in a devasted floor "
+		}
+	},
+	"canal_2_loft_asciiRiddle": {
+		"name": {
+			"fr": "Morceau de papier",
+			"en": "Piece of paper"
+		},
+		"description": {
+			"fr": "Un morceau de papier donné par le scientifique.",
+			"en": "A piece of paper given by the scientist."
+		}
+	},
+	"canal_2_loft_keyRoofTop": {
+		"name": {
+			"fr": "Clé d'une grille",
+			"en": "Key"
+		},
+		"description": {
+			"fr": "Clé donné par le scientifique du loft.",
+			"en": "Key given by the scientist in the loft."
+		}
+	},
+	"source_2_casino_cardToken": {
+		"name": {
+			"fr": "Jeton de casino",
+			"en": "Casino token"
+		},
+		"description": {
+			"fr": "Un jeton de casino gagné en devinant une carte d'un jeu de 32 cartes.",
+			"en": "A casino token won by finding a card in a deck of 32 cards."
+		}
+	},
+	"source_2_casino_diceToken": {
+		"name": {
+			"fr": "Jeton de casino",
+			"en": "Casino token"
+		},
+		"description": {
+			"fr": "Un jeton de casino gagné en devinant la somme d'un jet de deux dés à quatre faces.",
+			"en": "A casino token won by finding the sum of two four-sided dice."
+		}
+	},
+	"source_2_casino_loadedDiceToken": {
+		"name": {
+			"fr": "Jeton de casino",
+			"en": "Casino token"
+		},
+		"description": {
+			"fr": "Un jeton de casino gagné en trouvant le dé pipé parmi douze dés.",
+			"en": "A casino token won by finding a loaded die among twelve dice."
+		}
+	},
+	"source_2_miniGameRoom_sparePart": {
+		"name": {
+			"fr": "Pièce détachée",
+			"en": "Spare part"
+		},
+		"description": {
+			"fr": "Une pièce détachée gagnée au blackjack contre la barmaid du casino des robots.",
+			"en": "A spare part won in blackjack against the barmaid of the robots' casino."
+		}
+	},
+	"source_2_casino_tool": {
+		"name": {
+			"fr": "Outil étrange",
+			"en": "Weird tool"
+		},
+		"description": {
+			"fr": "Un outil utilisé par l'équipe de maintenance du casino des robots.",
+			"en": "A tool used by the maintenance staff in the robots casino."
+		}
+	},
+	"source_3_shop_tiles": {
+		"name": {
+			"fr": "Tuiles en bois",
+			"en": "Wooden tiles"
+		},
+		"description": {
+			"fr": "Des tuiles en bois trouvées dans un jeu de Mahjong.",
+			"en": "Some wooden tiles from a Mahjong game."
+		}
+	},
+	"source_3_shop_bottles": {
+		"name": {
+			"fr": "Bouteilles vides",
+			"en": "Empty bottles"
+		},
+		"description": {
+			"fr": "Des bouteilles vides trouvées sur une aire d'autoroute.",
+			"en": "Some empty bottles found on a motorway rest area."
+		}
+	},
+	"source_3_toilets_bottles": {
+		"name": {
+			"fr": "Bouteilles remplies",
+			"en": "Filled bottles"
+		},
+		"description": {
+			"fr": "Des bouteilles remplie d'eau du robinet trouvées sur une aire d'autoroute.",
+			"en": "Some bottles filled with tab water found on a motorway rest area."
+		}
+	},
+	"source_3_shop_chocolate": {
+		"name": {
+			"fr": "Barres chocolatées",
+			"en": "Chocolate bars"
+		},
+		"description": {
+			"fr": "Des barres chocolatées trouvées sur une aire d'autoroute.",
+			"en": "Some chocolate bars found on a motorway rest area."
+		}
+	},
+	"source_3_shop_noodles": {
+		"name": {
+			"fr": "Nouilles instantanées",
+			"en": "Instant noodles"
+		},
+		"description": {
+			"fr": "Des boîtes de nouilles instantanées trouvées sur une aire d'autoroute.",
+			"en": "Cups of instant noodles found on a motorway rest area."
+		}
+	},
+	"source_3_toilets_firstAidKit": {
+		"name": {
+			"fr": "Trousse de premiers soins",
+			"en": "First-aid kit"
+		},
+		"description": {
+			"fr": "Une trousse de premiers soins trouvée sur une aire d'autoroute.",
+			"en": "A first-aid kit found on a motorway rest area."
+		}
+	},
+	"patate_sacree_1_outside_key": {
+		"name": {
+			"fr": "Clé des vaches",
+			"en": "Cow's key"
+		},
+		"description": {
+			"fr": "Il n'y a pas de niveau des vaches.",
+			"en": "There is no cow level."
+		}
+	}
+}

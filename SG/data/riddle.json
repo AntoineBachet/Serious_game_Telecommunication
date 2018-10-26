@@ -1,0 +1,377 @@
+﻿{
+	"tutorial": {
+		"1": {
+			"house": {
+				"piano": {
+					"answer": "d1 d1 d1 f1 e1 f1 g1 d1 d1 d1 d1 f1 e1 a1 b1 g1",
+					"rythme": "d d c c n n n b d d c c n n n* n*",
+					"tempo": "72"
+				},
+				"desk": {
+					"answers": ["1809", "1829", "1852"]
+				},
+				"chest": {
+					"riddle": {
+						"fr": "Combien de combinaisons peut-on faire avec un symbole braille ?",
+						"en": "How many combinaisons can be done with one braille symbol?"
+					},
+					"answer": "000001110101100111"
+				},
+				"secret_door": {
+					"answer": "000101011100110010100000101110101110101010101110"
+				},
+				"board": {
+					"fr": "res://assets/game/tutorial/1/house/tableau_blanc.png",
+					"en": "res://assets/game/tutorial/1/house/tableau_blanc_anglais.png"
+				}
+
+			},
+			"secretroom": {
+				"lamp": {
+					"code": {
+						"fr": "* *-** * -*-* - *-* --- -- *- --* -* * - ** *** -- *",
+						"en": "* *-** * -*-* - *-* --- -- *- --* -* * - ** *** --"
+					}
+				},
+				"computer": {
+					"answer": "-- *- -**- *-- * *-** *-**"
+				},
+				"safe": {
+					"answer": {
+						"fr": ["PRUNE", "CAROTTE", "CITRON"],
+						"en": ["PLUM", "CARROT", "LEMON"]
+					},
+					"green": {
+						"fr": "EMERAUDE",
+						"en": "EMERALD"
+					},
+					"carrot": {
+						"fr": "CAROTTE",
+						"en": "CARROT"
+					},
+					"pink": {
+						"fr": "ROSE",
+						"en": "ROSE"
+					},
+					"lemon": {
+						"fr": "CITRON",
+						"en": "LEMON"
+					},
+					"purple": {
+						"fr": "PRUNE",
+						"en": "PLUM"
+					},
+					"blue": {
+						"fr": "SCHTROUMPF",
+						"en": "SMURF"
+					},
+					"lien": {
+						"fr": "res://assets/game/tutorial/1/secretroom/safePuzzleFrench.png",
+						"en": "res://assets/game/tutorial/1/secretroom/safePuzzleEnglish.png"
+					}
+				}
+			}
+		}
+	},
+
+
+	"source": {
+		"2": {
+			"controlRoom": {
+				"unlockControlRobots": {
+					"answer": "2.65563906",
+					"question": {
+						"fr": "[center]Programme de contrôle des robots[/center]\n\n\nLe programme est bloqué.\n\nPour le débloquer, résolvez l'énigme suivante :\n\n\nQuelle est l'entropie de la somme de deux dés à quatre faces ?\n(avec deux décimales, arrondi à l'inférieur)"
+					}
+				},
+				"shannonRiddle": {
+					"answers": {
+						"fr": ["LES JEUX SONT FAITS.", "LE TRIPLE SEPT OFFRE LE JACKPOT.", "UN JEU DE CARTES CONTIENT QUATRE COULEURS.", "UN CASINO EST UN LIEU PROPOSANT DES JEUX DE HASARD.", "LE CROUPIER EST UN EMPLOYE DONT LA FONCTION EST DE DIRIGER UNE TABLE DE JEU.", "UN ROBOT EST UNE MACHINE CONCUE POUR ACCOMPLIR AUTOMATIQUEMENT DES TACHES."],
+						"en": ["ALL BETS ARE OFF.", "THREE SEVEN GIVE THE JACKPOT.", "THERE ARE FOUR COLORS IN A DECK OF CARDS.", "A CASINO IS A FACILITY WHICH HOUSES GAMBLING ACTIVITIES.", "A CROUPIER IS SOMEONE APPOINTED AT A GAMBLING TABLE TO ASSIST IN THE CONDUCT OF THE GAME.", "A ROBOT IS A MACHINE CAPABLE OF CARRYING OUT A COMPLEX SERIES OF ACTIONS AUTOMATICALLY."]
+					},
+					"entropy": {
+						"fr": "3.954",
+						"en": "2.62"
+					}
+				}
+			},
+
+			"miniGameRoom": {
+				"piano": {
+					"answer": "d1 e1 f1 g1 f1 a1 a1 d1 e1 f1 a1 f1 d1 a1 g1",
+					"rythme": "b n* d d b n* c n* c c c c3 c3 c3 b*",
+					"tempo": "96",
+					"probaTitle": {
+						"fr": "Probabilités des notes :",
+						"en": "Probabilities of the notes:"
+					},
+					"riddle": {
+						"fr": {
+							"c1": {
+								"proba": "0"
+							},
+							"d1": {
+								"proba": "0,257",
+								"info": "2,0"
+							},
+							"e1": {
+								"proba": "0,133",
+								"info": "2,9"
+							},
+							"f1": {
+								"proba": "0,206",
+								"info": "2,3"
+							},
+							"g1": {
+								"proba": "0,217",
+								"info": "2,2"
+							},
+							"a1": {
+								"proba": "0,189",
+								"info": "2,4"
+							},
+							"b1": {
+								"proba": "0"
+							}
+						},
+						"en": {
+							"c1": {
+								"proba": "0"
+							},
+							"d1": {
+								"proba": "0.257",
+								"info": "2.0"
+							},
+							"e1": {
+								"proba": "0.133",
+								"info": "2.9"
+							},
+							"f1": {
+								"proba": "0.206",
+								"info": "2.3"
+							},
+							"g1": {
+								"proba": "0.217",
+								"info": "2.2"
+							},
+							"a1": {
+								"proba": "0.189",
+								"info": "2.4"
+							},
+							"b1": {
+								"proba": "0"
+							}
+						}
+
+					}
+				}
+			}
+		},
+
+		"3": {
+			"shop": {
+				"tile1": {
+					"code": ["00", "010", "011", "10", "11"],
+					"riddle": "010001001111",
+					"answer": "10324"
+				},
+				"tile2": {
+					"code": ["0", "00", "10", "1", "01"],
+					"riddle": "10010",
+					"possibilities": ["2030", "3130", "3040", "3002"]
+				},
+				"tile3": {
+					"code": ["0", "00", "00", "10", "11"],
+					"riddle": "000010",
+					"possibilities": ["0013", "0023", "0103", "0203", "1003", "2003"]
+				}
+			},
+			"toilets": {
+				"halfHuffman_riddle": {
+					"plus": "+",
+					"fois": "x",
+					"rond": "o",
+					"diese": "#",
+					"star": "*",
+					"riddle": "100110111001000001",
+					"answer": "+#*++xo*"
+				}
+			},
+			"storage": {
+				"piano": {
+					"answer": "e1 a1 c2 b1 a1 c2 a1 b1 a1 f1 g1 e1",
+					"rythme": "d d d d d d d d d d d b",
+					"tempo": "60",
+					"riddle": "010101111110101111101110101011100010",
+					"code": {
+						"c1": ["Do1", "000"],
+						"d1": ["Ré1", "001"],
+						"e1": ["Mi1", "010"],
+						"f1": ["Fa1", "011"],
+						"g1": ["Sol1", "100"],
+						"a1": ["La1", "101"],
+						"b1": ["Si1", "110"],
+						"c2": ["Do2", "111"]
+					}
+				},
+				"car": {
+					"canal": "26",
+					"frequency": "892",
+					"code1": {
+						"fr": "res://assets/game/source/3/storage/carRiddle1_fr.png",
+						"en": "res://assets/game/source/3/storage/carRiddle1_en.png"
+					},
+					"answer": "91190"
+				}
+			}
+		}
+	},
+
+
+	"canal": {
+		"1": {
+			"entrance": {
+				"entranceRiddle": {
+					"receivedMessage": "10111001100100001010110010010000111110001001",
+					"receivedWord": "Manap",
+					"originalMessage": "10011001100100001010110010010000111100001001",
+					"originalWord": "Canal"
+				}
+			}
+		},
+		"2": {
+			"building": {
+				"Digicode": {
+					"answer": "[1, 0, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1]"
+				}
+			},
+			"staircase": {
+				"Interruptor": {
+					"answer": "[0, 0, 1, 0, 1]"
+				}
+			},
+			"floor": {
+				"elevator": {
+					"answer": "[0, 1, 1, 0]"
+				}
+			},
+			"loftEntrance": {
+				"loftDigic": {
+					"answer": "[1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1]"
+				}
+			},
+			"roomFloor": {
+				"postIt": {
+					"answer": "[1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 1]"
+				}
+			},
+			"loft": {
+				"asciiRiddle": {
+					"receivedMessage": "110101110000011011101",
+					"receivedWord": "qv'",
+					"originalMessage": "110101110001111111111",
+					"originalWord": "cAU"
+				},
+
+				"piano": {
+					"answer": "e1 e1 e1 c1 g1 e1 c1 g1 e1 b1 b1 b1 c2 g1 d1s c1 g1 e1",
+					"rythme": "n n n b d d b d d n n n b d d b d d ",
+					"tempo": "90",
+					"probaTitle": {
+						"fr": "Probabilités des notes :",
+						"en": "Probabilities of the notes:"
+					},
+					"riddle": {
+						"fr": {
+							"c1": {
+								"prob": "0,23",
+								"capa": "0,22"
+							},
+							"d1": {
+								"prob": "0,257",
+								"capa": "0,18"
+							},
+							"e1": {
+								"prob": "0,133",
+								"capa": "0,43"
+							},
+							"f1": {
+								"prob": "0,48",
+								"capa": "0,001"
+							},
+							"g1": {
+								"prob": "0,33",
+								"capa": "0,08"
+							},
+							"a1": {
+								"prob": "0,05",
+								"capa": "0,71"
+							},
+							"b1": {
+								"prob": "0,68",
+								"capa": "0,1"
+							},
+							"d1s": {
+								"prob": "0,72",
+								"capa": "0,14"
+							},
+							"c2": {
+								"prob": "0,86",
+								"capa": "0,42"
+							}
+						},
+						"en": {
+							"c1": {
+								"prob": "0,23",
+								"capa": "0,22"
+							},
+							"d1": {
+								"prob": "0.257",
+								"capa": "0,18"
+							},
+							"e1": {
+								"prob": "0.133",
+								"capa": "0,43"
+							},
+							"f1": {
+								"prob": "0,48",
+								"capa": "0,001"
+							},
+							"g1": {
+								"prob": "0.33",
+								"capa": "0,08"
+							},
+							"a1": {
+								"prob": "0.05",
+								"capa": "0,71"
+							},
+							"b1": {
+								"prob": "0,68",
+								"capa": "0,1"
+							},
+							"d1s": {
+								"prob": "0,72",
+								"capa": "0,14"
+							},
+							"c2": {
+								"prob": "0,86",
+								"capa": "0,42"
+							}
+						}
+
+					}
+				}
+			},
+
+			"ligne": {
+				"1": {
+					"entry": {
+						"answer": {
+							"fr": "nrz"
+						}
+					}
+				}
+			}
+		}
+	}
+}

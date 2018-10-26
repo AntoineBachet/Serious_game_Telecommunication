@@ -1,0 +1,70 @@
+﻿{
+	"res://scenes/game/tutorial/1/village.tscn": {
+		"fr": "Bourg-Palette (Village)",
+		"en": "Pallet Town (Village)"
+	},
+	"res://scenes/game/tutorial/1/house.tscn": {
+		"fr": "Bourg-Palette (Maison)",
+		"en": "Pallet Town (House)"
+	},
+	"res://scenes/game/tutorial/1/secretroom.tscn": {
+		"fr": "Bourg-Palette (Pièce secrète)",
+		"en": "Pallet Town (Secret room)"
+	},
+	"res://scenes/game/tutorial/1/uselesshouse.tscn": {
+		"fr": "Bourg-Palette (Maison bizarre)",
+		"en": "Pallet Town (Weird house)"
+	},
+	"res://scenes/game/ligne/1/ligne_entry.tscn": {
+		"fr": "Ancien bunker (Entrée)",
+		"en": "Old bunker (Entrance)"
+	},
+	"res://scenes/game/canal/1/entrance.tscn": {
+		"fr": "Banlieue (Rue)",
+		"en": "Suburb (Street)"
+	},
+	"res://scenes/game/canal/2/building.tscn": {
+		"fr": "Immeuble (Extérieur)",
+		"en": "Building (Outdoor)"
+	},
+	"res://scenes/game/source/1/source_entry.tscn": {
+		"fr": "Forêt (Route)",
+		"en": "Forest (Road)"
+	},
+	"res://scenes/game/source/2/village.tscn": {
+		"fr": "Casino Tesla (Village)",
+		"en": "Tesla Casino (Village)"
+	},
+	"res://scenes/game/source/2/casino.tscn": {
+		"fr": "Casino Tesla (Casino)",
+		"en": "Tesla Casino (Casino)"
+	},
+	"res://scenes/game/source/2/controlRoom.tscn": {
+		"fr": "Casino Tesla (Salle de contrôle)",
+		"en": "Tesla Casino (Control room)"
+	},
+	"res://scenes/game/source/2/miniGameRoom.tscn": {
+		"fr": "Casino Tesla (Bar)",
+		"en": "Tesla Casino (Bar)"
+	},
+	"res://scenes/game/source/3/outside.tscn": {
+		"fr": "Aire d'autoroute (Extérieur)",
+		"en": "Motorway rest area (Outside)"
+	},
+	"res://scenes/game/source/3/shop.tscn": {
+		"fr": "Aire d'autoroute (Magasin)",
+		"en": "Motorway rest area (Shop)"
+	},
+	"res://scenes/game/source/3/toilets.tscn": {
+		"fr": "Aire d'autoroute (Toilettes)",
+		"en": "Motorway rest area (Toilets)"
+	},
+	"res://scenes/game/source/3/children_area.tscn": {
+		"fr": "Aire d'autoroute (Aire de jeux)",
+		"en": "Motorway rest area (Playground)"
+	},
+	"res://scenes/game/source/3/storage.tscn": {
+		"fr": "Aire d'autoroute (Réserve)",
+		"en": "Motorway rest area (Storage room)"
+	}
+}

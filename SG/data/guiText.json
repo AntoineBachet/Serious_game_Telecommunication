@@ -1,0 +1,322 @@
+﻿{
+	"gameTitle": {
+		"fr": "Signal et Communication - le jeu",
+		"en": "Serious Game about Telecommunications"
+	},
+	"newGameButton": {
+		"fr": "Nouvelle partie",
+		"en": "New Game"
+	},
+	"saveGameButton": {
+		"fr": "Sauvegarder la partie",
+		"en": "Save Game"
+	},
+	"loadGameButton": {
+		"fr": "Charger une partie",
+		"en": "Load Game"
+	},
+	"settingsButton": {
+		"fr": "Options",
+		"en": "Settings"
+	},
+	"debugMenuButton": {
+		"fr": "Menu de débug",
+		"en": "Debug menu"
+	},
+	"exitGameButton": {
+		"fr": "Quitter le jeu",
+		"en": "Quit Game"
+	},
+	"foreword": {
+		"fr": "Ce jeu consiste à résoudre des énigmes et déchiffrer des codes. Ayez un papier et un crayon sous la main !\n\nVotre progression est sauvegardée automatiquement lorsque vous voyagez, mais pensez à sauvegarder régulièrement.",
+		"en": "This game is about solving riddles and deciphering codes. Have a pen and a piece of paper to hand!\n\nYour progress is saved automatically when you travel, but don't forget to save regularly ."
+	},
+	"startGame": {
+		"fr": "Commencer le jeu",
+		"en": "Start the game"
+	},
+	"buttonToLog": {
+		"fr": "Journal",
+		"en": "Log"
+	},
+	"buttonToInventory": {
+		"fr": "Inventaire",
+		"en": "Inventory"
+	},
+	"buttonToEncyclopedia": {
+		"fr": "Encyclopédie",
+		"en": "Encyclopedia"
+	},
+	"buttonToMap": {
+		"fr": "Carte",
+		"en": "Map"
+	},
+	"buttonToMenu": {
+		"fr": "Menu",
+		"en": "Menu"
+	},
+	"useButton": {
+		"fr": "Utiliser",
+		"en": "Use"
+	},
+	"returnButton": {
+		"fr": "Retour",
+		"en": "Back"
+	},
+	"tipButton": {
+		"fr": "Indice",
+		"en": "Tip"
+	},
+	"travelButton": {
+		"fr": "Voyager",
+		"en": "Travel"
+	},
+	"nextSceneButton": {
+		"fr": "Niveau suivant",
+		"en": "Next level"
+	},
+	"backToLogButton": {
+		"fr": "Retour au journal",
+		"en": "Back to log"
+	},
+	"encyclopediaTooltip": {
+		"fr": "Cliquez pour sélectionner cette entrée",
+		"en": "Click to select this entry"
+	},
+	"applyButton": {
+		"fr": "Appliquer",
+		"en": "Apply"
+	},
+	"languageLabel": {
+		"fr": "Langue",
+		"en": "Language"
+	},
+	"debugModeLabel": {
+		"fr": "Mode débug",
+		"en": "Debug mode"
+	},
+	"password": {
+		"fr": "Mot de passe",
+		"en": "Password"
+	},
+	"fullscreenLabel": {
+		"fr": "Mode plein écran",
+		"en": "Fullscreen mode"
+	},
+	"deleteButton": {
+		"fr": "Supprimer",
+		"en": "Delete"
+	},
+	"validateButton": {
+		"fr": "Valider",
+		"en": "Validate"
+	},
+	"loadButton": {
+		"fr": "Charger",
+		"en": "Load"
+	},
+	"saveButton": {
+		"fr": "Sauvegarder",
+		"en": "Save"
+	},
+	"emptySlot": {
+		"fr": "Emplacement vide",
+		"en": "Empty Slot"
+	},
+	"mainMenuButton": {
+		"fr": "Retour au menu principal",
+		"en": "Back to Main Menu"
+	},
+	"resumeButton": {
+		"fr": "Reprendre",
+		"en": "Resume"
+	},
+	"aboutButton": {
+		"fr": "À propos",
+		"en": "About"
+	},
+	"aboutText": {
+		"fr": "Jeu autour du cours de Signal et communications de CentraleSupélec cursus Ingénieur Supélec, réalisé dans le cadre d'un projet long de deuxième année en 2016-2017, en utilisant Godot Engine.\n\n\nÉtudiants : Roman Grelot, Aurélie Peng, Laurène Pigeot, Inès Urrésola\n\nEnseignants : Jacques Antoine, Lionel Husson, Marc-Antoine Weisser"
+	},
+	"gameVersion": {
+		"fr": "Alpha 8"
+	},
+	"mapHere": {
+		"fr": "[Vous êtes ici] ",
+		"en": "[You are here] "
+	},
+	"mapFinished": {
+		"fr": "[Niveau terminé] ",
+		"en": "[Level finished] "
+	},
+	"achievementsButton": {
+		"fr": "Succès",
+		"en": "Achievements"
+	},
+	"right_answer": {
+		"fr": "Bonne réponse : ",
+		"en": "Right answer: "
+	},
+	"achievementUnlocked": {
+		"fr": "Succès débloqué",
+		"en": "Achievement unlocked"
+	},
+	"tobecontinuedText": {
+		"fr": "Vous ne pouvez pas aller plus loin dans cette version. Revenez plus tard. Il vous reste peut-être d'autres lieux à visiter.\nSi vous avez terminé, veuillez cliquer sur le bouton ci-dessous pour remplir un court formulaire sur votre expérience de jeu.",
+		"en": "You can't go further in this version. Come back later. Maybe there are other places you still haven't been to.\nIf you're done, please click the button below to fill in a short form about your game experience."
+	},
+	"tobecontinuedText2": {
+		"fr": "Fin de l'épisode 1. Vous ne pouvez pas aller plus loin dans cette version. Merci d'avoir joué !\nVeuillez cliquer sur le bouton ci-dessous pour remplir un court formulaire sur votre expérience de jeu.",
+		"en": "End of episode 1. You can't go further in this version. Thanks for playing!\nPlease click the button below to fill in a short form about your game experience."
+	},
+	"tobecontinued": {
+		"fr": "À suivre",
+		"en": "To be continued"
+	},
+	"autosave": {
+		"fr": "Sauvegarde automatique",
+		"en": "Autosave"
+	},
+	"resetSettings": {
+		"fr": "Réinitialiser aux options par défaut",
+		"en": "Reset to the default settings"
+	},
+	"unavailableQuestion": {
+		"fr": "Question bloquée : un événement n'a pas été réalisé dans le niveau précédent",
+		"en": "Question unavailable: an event was not realised in the previous level"
+	},
+	"nextButton": {
+		"fr": "Suivant",
+		"en": "Next"
+	},
+	"pressAnyKeyToContinue": {
+		"fr": "Appuyez sur une touche pour continuer",
+		"en": "Press any key to continue"
+	},
+	"achievementCategoryMisc": {
+		"fr": "Général",
+		"en": "Miscellaneous"
+	},
+	"achievementCategoryStory": {
+		"fr": "Histoire",
+		"en": "Story"
+	},
+	"achievementCategorySecret": {
+		"fr": "Secret",
+		"en": "Secret"
+	},
+	"logReplayQuiz": {
+		"fr": "Rejouer le quiz",
+		"en": "Replay the quiz"
+	},
+	"logQuizPlace": {
+		"fr": "Lieu",
+		"en": "Place"
+	},
+	"logOneQuestion": {
+		"fr": "question",
+		"en": "question"
+	},
+	"logMoreThanOneQuestion": {
+		"fr": "questions",
+		"en": "questions"
+	},
+	"logCurrentScore": {
+		"fr": "Score actuel",
+		"en": "Current score"
+	},
+	"logQuestions": {
+		"fr": "Questions",
+		"en": "Questions"
+	},
+	"logQuestionsLocked": {
+		"fr": "Questions bloquées",
+		"en": "Unavailable questions"
+	},
+	"characterCustomizationButton": {
+		"fr": "Personnalisation",
+		"en": "Customization"
+	},
+	"cheatButton": {
+		"fr": "Tricher",
+		"en": "Cheat"
+	},
+	"cancel": {
+		"fr": "Annuler",
+		"en": "Cancel"
+	},
+	"unsavedProgressWillBeLost": {
+		"fr": "Êtes-vous sûr ? Toute progression non sauvegardée sera perdue.",
+		"en": "Are you sure? All unsaved progress will be lost."
+	},
+	"buy": {
+		"fr": "Acheter",
+		"en": "Buy"
+	},
+	"reportURL": {
+		"fr": "https://docs.google.com/forms/d/e/1FAIpQLScfwXQZNO1B3_S_KRoPNymnX1kia8CagJsaeJxohU-kwsHNqg/viewform"
+	},
+	"reportButton": {
+		"fr": "Remplir le formulaire"
+	},
+	"characterCustomizationSource": {
+		"fr": "Source :",
+		"en": "Source:"
+	},
+	"characterCustomizationHidden": {
+		"fr": "Caché",
+		"en": "Hidden"
+	},
+	"characterCustomizationStory": {
+		"fr": "Histoire",
+		"en": "Story"
+	},
+	"characterCustomizationStore": {
+		"fr": "Magasin",
+		"en": "Store"
+	},
+	"characterCustomizationCost": {
+		"fr": "Coût :",
+		"en": "Cost:"
+	},
+	"characterCustomizationLocked": {
+		"fr": "Verrouillé",
+		"en": "Locked"
+	},
+	"characterCustomizationMoney": {
+		"fr": "Argent :",
+		"en": "Money:"
+	},
+	"characterCustomizationPoints": {
+		"fr": " points",
+		"en": " points"
+	},
+	"characterCustomizationBuyText": {
+		"fr": "Voulez-vous acheter %s pour %s points ?",
+		"en": "Do you want to buy %s for %s points?"
+	},
+	"error": {
+		"fr": "Erreur",
+		"en": "Error"
+	},
+	"resetButton": {
+		"fr": "Réinitialiser",
+		"en": "Reset"
+	},
+	"yes": {
+		"fr": "Oui",
+		"en": "No"
+	},
+	"no": {
+		"fr": "Non",
+		"en": "No"
+	},
+	"encyclopediaUnread": {
+		"fr": "Non lu",
+		"en": "Unread"
+	},
+	"pianoKeys": {
+		"fr": ["Do", "Ré", "Mi", "Fa", "Sol", "La", "Si"],
+		"en": ["C", "D", "E", "F", "G", "A", "B "]
+	}
+}

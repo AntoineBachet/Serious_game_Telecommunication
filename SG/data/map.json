@@ -1,0 +1,74 @@
+﻿{
+	"tutorial_1": {
+		"name": {
+			"fr": "Bourg-Palette",
+			"en": "Pallet Town"
+		},
+		"description": {
+			"fr": "C'était votre maison.",
+			"en": "It used to be your house."
+		},
+		"path": "res://scenes/game/tutorial/1/village.tscn",
+		"condition_finished": "tutorial_1_secretroom_computerPuzzleSolved"
+	},
+	"source_1": {
+		"name": {
+			"fr": "Forêt",
+			"en": "Forest"
+		},
+		"description": {
+			"fr": "Une forêt sinistre.",
+			"en": "A gloomy forest."
+		},
+		"path": "res://scenes/game/source/1/source_entry.tscn",
+		"condition_finished": "source_1_entrance_noMoreDoorPlayed"
+	},
+	"source_2": {
+		"name": {
+			"fr": "Casino Tesla",
+			"en": "Tesla Casino"
+		},
+		"description": {
+			"fr": "Un casino dans un village abandonné.",
+			"en": "A casino in an abandoned village."
+		},
+		"path": "res://scenes/game/source/2/village.tscn",
+		"condition_finished": "source_2_village_exitCasinoPlayed"
+	},
+	"source_3": {
+		"name": {
+			"fr": "Aire d'autoroute",
+			"en": "Motorway rest area"
+		},
+		"description": {
+			"fr": "Une aire d'autoroute.",
+			"en": "A motorway rest area."
+		},
+		"path": "res://scenes/game/source/3/outside.tscn",
+		"condition_finished": "condition"
+	},
+	"canal_1": {
+		"name": {
+			"fr": "Banlieue",
+			"en": "Suburb"
+		},
+		"description": {
+			"fr": "Une banlieue abandonnée.",
+			"en": "An abandoned suburb."
+		},
+		"path": "res://scenes/game/canal/1/entrance.tscn",
+		"condition_finished": "canal_1_entrance_outroPlayed"
+	},
+	"ligne_1": {
+		"name": {
+			"fr": "Ancien bunker",
+			"en": "Old bunker"
+		},
+		"description": {
+			"fr": "Un endroit perdu dans la forêt.",
+			"en": "A place lost in the forest."
+		},
+		"path": "res://scenes/game/ligne/1/ligne_entry.tscn",
+		"condition_finished": "ligne_1_entrySolved"
+	}
+}
